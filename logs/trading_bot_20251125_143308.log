@@ -1,0 +1,13 @@
+2025-11-25 14:33:08,400 - trading_bot - INFO - Auto training window selected: 2020-11-25 -> 2025-11-25
+2025-11-25 14:33:08,400 - trading_bot - INFO - Training window: 2020-11-25 -> 2025-11-25
+2025-11-25 14:33:08,403 - trading_bot - INFO - Fetching SPY bars from Alpaca (5Min)...
+2025-11-25 14:37:19,633 - trading_bot - INFO - Loaded H4 data directly: 5417 bars
+2025-11-25 14:37:19,654 - trading_bot - INFO - Loaded Daily data directly: 1303 bars
+2025-11-25 14:38:04,611 - trading_bot - INFO - Generating candidates...
+2025-11-25 14:38:15,985 - trading_bot - INFO - Scanning... 2.1% (5000/234326)
+2025-11-25 14:38:29,509 - trading_bot - INFO - Scanning... 4.3% (10000/234326)
+2025-11-25 14:38:47,221 - trading_bot - INFO - Scanning... 6.4% (15000/234326)
+2025-11-25 14:38:56,988 - trading_bot - INFO - Scanning... 8.5% (20000/234326)
+2025-11-25 14:39:15,046 - trading_bot - INFO - Scanning... 10.7% (25000/234326)
+2025-11-25 14:39:30,249 - trading_bot - INFO - Scanning... 12.8% (30000/234326)
+2025-11-25 14:39:42,888 - trading_bot - INFO - Scanning... 14.9% (35000/234326)

@@ -1,0 +1,3 @@
+2025-11-19 21:55:05,834 - trading_bot - INFO - Loading data from Data/XAUUSD_M1.csv
+2025-11-19 21:55:05,835 - trading_bot - INFO - Detected 7 data columns but only 6 headers. Patching headers.
+2025-11-19 21:55:06,410 - trading_bot - WARNING - No data found for the specified date range.

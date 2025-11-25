@@ -1,0 +1,4 @@
+2025-11-19 21:54:29,961 - trading_bot - INFO - Loading data from Data/XAUUSD_M1.csv
+2025-11-19 21:54:29,962 - trading_bot - INFO - Detected 7 data columns but only 6 headers. Patching headers.
+2025-11-19 21:54:30,534 - trading_bot - INFO - Data loaded: 0 rows M1
+2025-11-19 21:54:30,537 - trading_bot - INFO - Resampled: H4=0, H1=0

@@ -1,0 +1,11 @@
+2025-11-19 22:12:23,775 - trading_bot - INFO - Loading data from Data/XAU_1m_data.csv
+2025-11-19 22:13:00,901 - trading_bot - INFO - Data loaded: 6631694 rows M1
+2025-11-19 22:13:01,389 - trading_bot - INFO - Resampled: H4=32268, H1=122564
+2025-11-19 22:13:13,965 - trading_bot - INFO - Detected 18292 FVGs and 10347 OBs
+2025-11-19 22:13:13,965 - trading_bot - INFO - Generating candidates...
+2025-11-19 22:14:29,009 - trading_bot - INFO - Generated 25333 candidates
+2025-11-19 22:14:29,016 - trading_bot - INFO - Model loaded from models/lgbm_model.pkl
+2025-11-19 22:14:29,147 - trading_bot - INFO - Backtesting 7386 trades out of 25333 candidates...
+2025-11-19 22:14:29,152 - trading_bot - INFO - Cycle payout: $402.64 at 2004-07-14 15:00:00
+2025-11-19 22:14:29,152 - trading_bot - WARNING - Max drawdown reached. Equity: 5519.69, Limit: 5520.00
+2025-11-19 22:14:29,479 - trading_bot - INFO - Reports saved to reports/20251119_221429

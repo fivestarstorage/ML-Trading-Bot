@@ -1,0 +1,10 @@
+2025-11-19 21:58:26,439 - trading_bot - INFO - Loading data from Data/XAUUSD_M1.csv
+2025-11-19 21:58:26,439 - trading_bot - INFO - Detected 7 data columns but only 6 headers. Patching headers.
+2025-11-19 21:58:26,992 - trading_bot - INFO - Data loaded: 200000 rows M1
+2025-11-19 21:58:27,011 - trading_bot - INFO - Resampled: H4=902, H1=3336
+2025-11-19 21:58:27,341 - trading_bot - INFO - Detected 556 FVGs and 321 OBs
+2025-11-19 21:58:27,341 - trading_bot - INFO - Generating candidates...
+2025-11-19 21:58:28,387 - trading_bot - INFO - Generated 472 candidates
+2025-11-19 21:58:28,397 - trading_bot - INFO - Model loaded from models/lgbm_model.pkl
+2025-11-19 21:58:28,403 - trading_bot - INFO - Backtesting 124 trades out of 472 candidates...
+2025-11-19 21:58:28,749 - trading_bot - INFO - Reports saved to reports

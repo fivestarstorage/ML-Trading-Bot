@@ -1,0 +1,8 @@
+2025-11-19 21:42:52,219 - trading_bot - INFO - Loading data from Data/XAUUSD_M1.csv
+2025-11-19 21:42:52,220 - trading_bot - INFO - Detected 7 data columns but only 6 headers. Patching headers.
+2025-11-19 21:42:52,764 - trading_bot - INFO - Data loaded: 200000 rows M1
+2025-11-19 21:42:52,786 - trading_bot - INFO - Resampled: H4=902, H1=3336
+2025-11-19 21:42:53,004 - trading_bot - INFO - Detected 556 FVGs and 321 OBs
+2025-11-19 21:42:53,004 - trading_bot - INFO - Generating candidates...
+2025-11-19 21:42:53,736 - trading_bot - INFO - Generated 472 candidates
+2025-11-19 21:42:53,737 - trading_bot - INFO - Starting WFA from 2025-05-09 12:00:00 to 2025-11-17 03:00:00

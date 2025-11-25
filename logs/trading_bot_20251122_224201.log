@@ -1,0 +1,43 @@
+2025-11-22 22:42:01,451 - trading_bot - INFO - Loading data from Data/XAU_5m_data.csv
+2025-11-22 22:42:13,669 - trading_bot - INFO - Data loaded: 43457 rows (Base Timeframe 5m)
+2025-11-22 22:42:16,316 - trading_bot - INFO - Loading data from Data/XAU_4h_data.csv
+2025-11-22 22:42:16,519 - trading_bot - INFO - Loaded H4 data directly: 952 bars
+2025-11-22 22:42:16,519 - trading_bot - INFO - Loading data from Data/XAU_1d_data.csv
+2025-11-22 22:42:16,560 - trading_bot - INFO - Loaded Daily data directly: 160 bars
+2025-11-22 22:42:16,619 - trading_bot - INFO - H4=952, H1=3630
+2025-11-22 22:42:25,421 - trading_bot - INFO - Using SMC (Smart Money Concepts) strategy
+2025-11-22 22:42:31,717 - trading_bot - INFO - Detected 7706 FVGs and 4524 OBs on Base Timeframe
+2025-11-22 22:42:32,948 - trading_bot - INFO - Generating candidates...
+2025-11-22 22:42:35,593 - trading_bot - INFO - Scanning... 11.5% (5000/43457)
+2025-11-22 22:42:40,994 - trading_bot - INFO - Scanning... 23.0% (10000/43457)
+2025-11-22 22:42:45,002 - trading_bot - INFO - Scanning... 34.5% (15000/43457)
+2025-11-22 22:42:52,188 - trading_bot - INFO - Scanning... 46.0% (20000/43457)
+2025-11-22 22:42:54,916 - trading_bot - INFO - Scanning... 57.5% (25000/43457)
+2025-11-22 22:42:57,657 - trading_bot - INFO - Scanning... 69.0% (30000/43457)
+2025-11-22 22:43:00,302 - trading_bot - INFO - Scanning... 80.5% (35000/43457)
+2025-11-22 22:43:03,044 - trading_bot - INFO - Scanning... 92.0% (40000/43457)
+2025-11-22 22:43:04,802 - trading_bot - INFO - Generated 2 candidates
+2025-11-22 22:43:04,802 - trading_bot - INFO - ======================================================================
+2025-11-22 22:43:04,802 - trading_bot - INFO - VARIABLE OPTIMIZATION
+2025-11-22 22:43:04,802 - trading_bot - INFO - ======================================================================
+2025-11-22 22:43:04,802 - trading_bot - INFO - Testing period: 2025-01-01 to 2025-10-01
+2025-11-22 22:43:04,802 - trading_bot - INFO - Max drawdown limit: 8.0%
+2025-11-22 22:43:04,802 - trading_bot - INFO - Initial capital: $6000.00
+2025-11-22 22:43:04,802 - trading_bot - INFO - Loading data from Data/XAU_5m_data.csv
+2025-11-22 22:43:12,681 - trading_bot - INFO - Loading data from Data/XAU_4h_data.csv
+2025-11-22 22:43:12,771 - trading_bot - INFO - Loaded H4 data directly: 952 bars
+2025-11-22 22:43:12,771 - trading_bot - INFO - Loading data from Data/XAU_1d_data.csv
+2025-11-22 22:43:12,788 - trading_bot - INFO - Loaded Daily data directly: 160 bars
+2025-11-22 22:43:16,370 - trading_bot - INFO - Generating candidates...
+2025-11-22 22:43:18,824 - trading_bot - INFO - Scanning... 11.5% (5000/43457)
+2025-11-22 22:43:21,502 - trading_bot - INFO - Scanning... 23.0% (10000/43457)
+2025-11-22 22:43:24,395 - trading_bot - INFO - Scanning... 34.5% (15000/43457)
+2025-11-22 22:43:27,024 - trading_bot - INFO - Scanning... 46.0% (20000/43457)
+2025-11-22 22:43:29,743 - trading_bot - INFO - Scanning... 57.5% (25000/43457)
+2025-11-22 22:43:32,506 - trading_bot - INFO - Scanning... 69.0% (30000/43457)
+2025-11-22 22:43:35,174 - trading_bot - INFO - Scanning... 80.5% (35000/43457)
+2025-11-22 22:43:37,671 - trading_bot - INFO - Scanning... 92.0% (40000/43457)
+2025-11-22 22:43:39,011 - trading_bot - INFO - Generated 2 candidates with default config
+2025-11-22 22:43:39,011 - trading_bot - WARNING - ⚠️  Candidate count is extremely low for optimisation. Relaxing filters (killzone, daily trend, sweeps, displacement, volume) to continue.
+2025-11-22 22:43:41,837 - trading_bot - INFO - Generating candidates...
+2025-11-22 22:43:45,966 - trading_bot - INFO - Scanning... 11.5% (5000/43457)

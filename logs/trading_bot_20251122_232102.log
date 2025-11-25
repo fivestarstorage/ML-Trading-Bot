@@ -1,0 +1,45 @@
+2025-11-22 23:21:02,300 - trading_bot - INFO - Loading data from Data/XAU_5m_data.csv
+2025-11-22 23:21:05,427 - trading_bot - INFO - Data loaded: 43457 rows (Base Timeframe 5m)
+2025-11-22 23:21:05,427 - trading_bot - INFO - Loading data from Data/XAU_4h_data.csv
+2025-11-22 23:21:05,483 - trading_bot - INFO - Loaded H4 data directly: 952 bars
+2025-11-22 23:21:05,483 - trading_bot - INFO - Loading data from Data/XAU_1d_data.csv
+2025-11-22 23:21:05,494 - trading_bot - INFO - Loaded Daily data directly: 160 bars
+2025-11-22 23:21:05,498 - trading_bot - INFO - H4=952, H1=3630
+2025-11-22 23:21:05,764 - trading_bot - INFO - Using SMC (Smart Money Concepts) strategy
+2025-11-22 23:21:07,335 - trading_bot - INFO - Detected 7706 FVGs and 4524 OBs on Base Timeframe
+2025-11-22 23:21:07,336 - trading_bot - INFO - Generating candidates...
+2025-11-22 23:21:08,869 - trading_bot - INFO - Scanning... 11.5% (5000/43457)
+2025-11-22 23:21:10,667 - trading_bot - INFO - Scanning... 23.0% (10000/43457)
+2025-11-22 23:21:12,456 - trading_bot - INFO - Scanning... 34.5% (15000/43457)
+2025-11-22 23:21:14,147 - trading_bot - INFO - Scanning... 46.0% (20000/43457)
+2025-11-22 23:21:15,851 - trading_bot - INFO - Scanning... 57.5% (25000/43457)
+2025-11-22 23:21:17,694 - trading_bot - INFO - Scanning... 69.0% (30000/43457)
+2025-11-22 23:21:19,449 - trading_bot - INFO - Scanning... 80.5% (35000/43457)
+2025-11-22 23:21:21,475 - trading_bot - INFO - Scanning... 92.0% (40000/43457)
+2025-11-22 23:21:22,714 - trading_bot - INFO - Generated 3127 candidates
+2025-11-22 23:21:22,724 - trading_bot - INFO - Model loaded from models/lgbm_model.pkl
+2025-11-22 23:21:22,752 - trading_bot - INFO - 
+============================================================
+2025-11-22 23:21:22,752 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-22 23:21:22,752 - trading_bot - INFO - ============================================================
+2025-11-22 23:21:22,752 - trading_bot - INFO - Total candidates: 3127
+2025-11-22 23:21:22,752 - trading_bot - INFO - Mean probability: 0.508
+2025-11-22 23:21:22,753 - trading_bot - INFO - Median probability: 0.498
+2025-11-22 23:21:22,753 - trading_bot - INFO - Std probability: 0.175
+2025-11-22 23:21:22,753 - trading_bot - INFO - Min probability: 0.028
+2025-11-22 23:21:22,753 - trading_bot - INFO - Max probability: 0.966
+2025-11-22 23:21:22,753 - trading_bot - INFO - 
+Probability distribution:
+2025-11-22 23:21:22,753 - trading_bot - INFO -   < 0.3: 355 (11.4%)
+2025-11-22 23:21:22,753 - trading_bot - INFO -   0.3-0.4: 404 (12.9%)
+2025-11-22 23:21:22,753 - trading_bot - INFO -   0.4-0.5: 821 (26.3%)
+2025-11-22 23:21:22,753 - trading_bot - INFO -   0.5-0.6: 681 (21.8%)
+2025-11-22 23:21:22,753 - trading_bot - INFO -   >= 0.6: 866 (27.7%)
+2025-11-22 23:21:22,753 - trading_bot - INFO - 
+Using threshold: 0.58
+2025-11-22 23:21:22,754 - trading_bot - INFO - Candidates above threshold: 964 (30.8%)
+2025-11-22 23:21:22,767 - trading_bot - INFO - After cooldown filter: 482 trades (removed 482 clustered trades)
+2025-11-22 23:21:22,767 - trading_bot - INFO - Backtesting 482 trades out of 3127 candidates...
+2025-11-22 23:21:22,767 - trading_bot - INFO - Initial capital: $6000.00, Risk per trade: 0.45%
+2025-11-22 23:21:22,780 - trading_bot - INFO - Backtest complete! Final Equity: $18239.62 | Total PnL: $12239.62 | Win Rate: 77.0% (371W/111L)
+2025-11-22 23:21:23,119 - trading_bot - INFO - Reports saved to reports/20251122_232122

@@ -1,0 +1,144 @@
+2025-11-22 17:50:08,158 - trading_bot - INFO - ================================================================================
+2025-11-22 17:50:08,159 - trading_bot - INFO - TESTING ON 2024 DATA (NO OVERFITTING)
+2025-11-22 17:50:08,159 - trading_bot - INFO - ================================================================================
+2025-11-22 17:50:08,159 - trading_bot - INFO - Training: 2020-01-01 to 2023-12-31
+2025-11-22 17:50:08,159 - trading_bot - INFO - Testing: 2024-01-01 to 2024-12-31
+2025-11-22 17:50:08,159 - trading_bot - INFO - ================================================================================
+2025-11-22 17:50:08,161 - trading_bot - INFO - 
+Loaded configuration from reports/strategy_found_20251122_174839/configuration.csv
+2025-11-22 17:50:08,161 - trading_bot - INFO - 
+[1/4] Training model on 2020-2023 data...
+2025-11-22 17:50:08,161 - trading_bot - INFO - Loading data from Data/XAU_5M_data.csv
+2025-11-22 17:50:11,161 - trading_bot - INFO - Training data: 281922 bars (2020-01-02 06:00:00 to 2023-12-29 23:40:00)
+2025-11-22 17:50:11,162 - trading_bot - INFO - Loading data from Data/XAU_4h_data.csv
+2025-11-22 17:50:11,213 - trading_bot - INFO - Loaded H4 data directly: 6179 bars
+2025-11-22 17:50:22,755 - trading_bot - INFO - Generating candidates...
+2025-11-22 17:50:27,564 - trading_bot - INFO - Scanning... 1.8% (5000/281922)
+2025-11-22 17:50:35,440 - trading_bot - INFO - Scanning... 3.5% (10000/281922)
+2025-11-22 17:50:43,835 - trading_bot - INFO - Scanning... 5.3% (15000/281922)
+2025-11-22 17:50:50,529 - trading_bot - INFO - Scanning... 7.1% (20000/281922)
+2025-11-22 17:50:57,925 - trading_bot - INFO - Scanning... 8.9% (25000/281922)
+2025-11-22 17:51:05,540 - trading_bot - INFO - Scanning... 10.6% (30000/281922)
+2025-11-22 17:51:13,392 - trading_bot - INFO - Scanning... 12.4% (35000/281922)
+2025-11-22 17:51:22,517 - trading_bot - INFO - Scanning... 14.2% (40000/281922)
+2025-11-22 17:51:32,597 - trading_bot - INFO - Scanning... 16.0% (45000/281922)
+2025-11-22 17:51:42,359 - trading_bot - INFO - Scanning... 17.7% (50000/281922)
+2025-11-22 17:51:52,031 - trading_bot - INFO - Scanning... 19.5% (55000/281922)
+2025-11-22 17:52:01,485 - trading_bot - INFO - Scanning... 21.3% (60000/281922)
+2025-11-22 17:52:10,223 - trading_bot - INFO - Scanning... 23.1% (65000/281922)
+2025-11-22 17:52:20,864 - trading_bot - INFO - Scanning... 24.8% (70000/281922)
+2025-11-22 17:52:28,466 - trading_bot - INFO - Scanning... 26.6% (75000/281922)
+2025-11-22 17:52:35,797 - trading_bot - INFO - Scanning... 28.4% (80000/281922)
+2025-11-22 17:52:46,458 - trading_bot - INFO - Scanning... 30.2% (85000/281922)
+2025-11-22 17:52:55,146 - trading_bot - INFO - Scanning... 31.9% (90000/281922)
+2025-11-22 17:53:07,160 - trading_bot - INFO - Scanning... 33.7% (95000/281922)
+2025-11-22 17:53:18,415 - trading_bot - INFO - Scanning... 35.5% (100000/281922)
+2025-11-22 17:53:25,789 - trading_bot - INFO - Scanning... 37.2% (105000/281922)
+2025-11-22 17:53:34,766 - trading_bot - INFO - Scanning... 39.0% (110000/281922)
+2025-11-22 17:53:44,524 - trading_bot - INFO - Scanning... 40.8% (115000/281922)
+2025-11-22 17:53:56,079 - trading_bot - INFO - Scanning... 42.6% (120000/281922)
+2025-11-22 17:54:07,454 - trading_bot - INFO - Scanning... 44.3% (125000/281922)
+2025-11-22 17:54:18,483 - trading_bot - INFO - Scanning... 46.1% (130000/281922)
+2025-11-22 17:54:27,865 - trading_bot - INFO - Scanning... 47.9% (135000/281922)
+2025-11-22 17:54:38,649 - trading_bot - INFO - Scanning... 49.7% (140000/281922)
+2025-11-22 17:54:49,304 - trading_bot - INFO - Scanning... 51.4% (145000/281922)
+2025-11-22 17:55:02,512 - trading_bot - INFO - Scanning... 53.2% (150000/281922)
+2025-11-22 17:55:13,887 - trading_bot - INFO - Scanning... 55.0% (155000/281922)
+2025-11-22 17:55:25,909 - trading_bot - INFO - Scanning... 56.8% (160000/281922)
+2025-11-22 17:55:37,631 - trading_bot - INFO - Scanning... 58.5% (165000/281922)
+2025-11-22 17:55:47,549 - trading_bot - INFO - Scanning... 60.3% (170000/281922)
+2025-11-22 17:55:58,492 - trading_bot - INFO - Scanning... 62.1% (175000/281922)
+2025-11-22 17:56:07,113 - trading_bot - INFO - Scanning... 63.8% (180000/281922)
+2025-11-22 17:56:18,610 - trading_bot - INFO - Scanning... 65.6% (185000/281922)
+2025-11-22 17:56:29,535 - trading_bot - INFO - Scanning... 67.4% (190000/281922)
+2025-11-22 17:56:38,754 - trading_bot - INFO - Scanning... 69.2% (195000/281922)
+2025-11-22 17:56:48,071 - trading_bot - INFO - Scanning... 70.9% (200000/281922)
+2025-11-22 17:57:00,222 - trading_bot - INFO - Scanning... 72.7% (205000/281922)
+2025-11-22 17:57:10,668 - trading_bot - INFO - Scanning... 74.5% (210000/281922)
+2025-11-22 17:57:24,883 - trading_bot - INFO - Scanning... 76.3% (215000/281922)
+2025-11-22 17:57:35,726 - trading_bot - INFO - Scanning... 78.0% (220000/281922)
+2025-11-22 17:57:47,655 - trading_bot - INFO - Scanning... 79.8% (225000/281922)
+2025-11-22 17:57:58,301 - trading_bot - INFO - Scanning... 81.6% (230000/281922)
+2025-11-22 17:58:09,253 - trading_bot - INFO - Scanning... 83.4% (235000/281922)
+2025-11-22 17:58:20,066 - trading_bot - INFO - Scanning... 85.1% (240000/281922)
+2025-11-22 17:58:32,421 - trading_bot - INFO - Scanning... 86.9% (245000/281922)
+2025-11-22 17:58:44,625 - trading_bot - INFO - Scanning... 88.7% (250000/281922)
+2025-11-22 17:58:57,164 - trading_bot - INFO - Scanning... 90.5% (255000/281922)
+2025-11-22 17:59:09,649 - trading_bot - INFO - Scanning... 92.2% (260000/281922)
+2025-11-22 17:59:22,734 - trading_bot - INFO - Scanning... 94.0% (265000/281922)
+2025-11-22 17:59:35,154 - trading_bot - INFO - Scanning... 95.8% (270000/281922)
+2025-11-22 17:59:47,041 - trading_bot - INFO - Scanning... 97.5% (275000/281922)
+2025-11-22 17:59:58,144 - trading_bot - INFO - Scanning... 99.3% (280000/281922)
+2025-11-22 18:00:01,965 - trading_bot - INFO - Generated 145214 training candidates
+2025-11-22 18:00:01,968 - trading_bot - INFO - Training LGBM with 145214 samples...
+2025-11-22 18:00:08,040 - trading_bot - INFO - Model saved to models/lgbm_model_2024_test.pkl
+2025-11-22 18:00:08,040 - trading_bot - INFO - ✓ Model trained and saved to models/lgbm_model_2024_test.pkl
+2025-11-22 18:00:08,040 - trading_bot - INFO - 
+[2/4] Loading 2024 test data...
+2025-11-22 18:00:08,040 - trading_bot - INFO - Loading data from Data/XAU_5M_data.csv
+2025-11-22 18:00:11,044 - trading_bot - INFO - Test data: 70934 bars (2024-01-02 01:00:00 to 2024-12-30 23:55:00)
+2025-11-22 18:00:11,044 - trading_bot - INFO - Loading data from Data/XAU_4h_data.csv
+2025-11-22 18:00:11,094 - trading_bot - INFO - Loaded H4 data directly: 1549 bars
+2025-11-22 18:00:14,078 - trading_bot - INFO - Generating candidates...
+2025-11-22 18:00:16,598 - trading_bot - INFO - Scanning... 7.0% (5000/70934)
+2025-11-22 18:00:20,263 - trading_bot - INFO - Scanning... 14.1% (10000/70934)
+2025-11-22 18:00:23,621 - trading_bot - INFO - Scanning... 21.1% (15000/70934)
+2025-11-22 18:00:27,121 - trading_bot - INFO - Scanning... 28.2% (20000/70934)
+2025-11-22 18:00:29,850 - trading_bot - INFO - Scanning... 35.2% (25000/70934)
+2025-11-22 18:00:33,480 - trading_bot - INFO - Scanning... 42.3% (30000/70934)
+2025-11-22 18:00:37,148 - trading_bot - INFO - Scanning... 49.3% (35000/70934)
+2025-11-22 18:00:40,777 - trading_bot - INFO - Scanning... 56.4% (40000/70934)
+2025-11-22 18:00:44,016 - trading_bot - INFO - Scanning... 63.4% (45000/70934)
+2025-11-22 18:00:48,959 - trading_bot - INFO - Scanning... 70.5% (50000/70934)
+2025-11-22 18:00:52,638 - trading_bot - INFO - Scanning... 77.5% (55000/70934)
+2025-11-22 18:00:57,622 - trading_bot - INFO - Scanning... 84.6% (60000/70934)
+2025-11-22 18:01:00,999 - trading_bot - INFO - Scanning... 91.6% (65000/70934)
+2025-11-22 18:01:05,636 - trading_bot - INFO - Scanning... 98.7% (70000/70934)
+2025-11-22 18:01:06,124 - trading_bot - INFO - Generated 32522 test candidates
+2025-11-22 18:01:06,124 - trading_bot - INFO - 
+[3/4] Generating predictions with trained model...
+2025-11-22 18:01:06,131 - trading_bot - INFO - Model loaded from models/lgbm_model_2024_test.pkl
+2025-11-22 18:01:06,298 - trading_bot - INFO - Mean probability: 0.257
+2025-11-22 18:01:06,299 - trading_bot - INFO - Candidates above threshold (0.22): 26106
+2025-11-22 18:01:06,299 - trading_bot - INFO - 
+[4/4] Running backtest on 2024 data...
+2025-11-22 18:01:06,299 - trading_bot - INFO - 
+============================================================
+2025-11-22 18:01:06,299 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-22 18:01:06,299 - trading_bot - INFO - ============================================================
+2025-11-22 18:01:06,299 - trading_bot - INFO - Total candidates: 32522
+2025-11-22 18:01:06,299 - trading_bot - INFO - Mean probability: 0.257
+2025-11-22 18:01:06,300 - trading_bot - INFO - Median probability: 0.256
+2025-11-22 18:01:06,300 - trading_bot - INFO - Std probability: 0.058
+2025-11-22 18:01:06,300 - trading_bot - INFO - Min probability: 0.013
+2025-11-22 18:01:06,300 - trading_bot - INFO - Max probability: 0.733
+2025-11-22 18:01:06,300 - trading_bot - INFO - 
+Probability distribution:
+2025-11-22 18:01:06,300 - trading_bot - INFO -   < 0.3: 26581 (81.7%)
+2025-11-22 18:01:06,300 - trading_bot - INFO -   0.3-0.4: 5542 (17.0%)
+2025-11-22 18:01:06,300 - trading_bot - INFO -   0.4-0.5: 333 (1.0%)
+2025-11-22 18:01:06,301 - trading_bot - INFO -   0.5-0.6: 51 (0.2%)
+2025-11-22 18:01:06,301 - trading_bot - INFO -   >= 0.6: 15 (0.0%)
+2025-11-22 18:01:06,301 - trading_bot - INFO - 
+Using threshold: 0.22
+2025-11-22 18:01:06,303 - trading_bot - INFO - Candidates above threshold: 26106 (80.3%)
+2025-11-22 18:01:06,304 - trading_bot - INFO - After OB-only filter: 1464 candidates (removed 24642 FVG)
+2025-11-22 18:01:06,326 - trading_bot - INFO - After cooldown filter: 435 trades (removed 25671 clustered trades)
+2025-11-22 18:01:06,326 - trading_bot - INFO - Backtesting 435 trades out of 32522 candidates...
+2025-11-22 18:01:06,326 - trading_bot - INFO - Initial capital: $1000.00, Risk per trade: 4.50%
+2025-11-22 18:01:06,335 - trading_bot - INFO - Backtest complete! Final Equity: $378.47 | Total PnL: $-621.53 | Win Rate: 30.1% (131W/304L)
+2025-11-22 18:01:06,336 - trading_bot - INFO - 
+================================================================================
+2025-11-22 18:01:06,336 - trading_bot - INFO - 2024 BACKTEST RESULTS (NO OVERFITTING)
+2025-11-22 18:01:06,336 - trading_bot - INFO - ================================================================================
+2025-11-22 18:01:06,336 - trading_bot - INFO - Total Trades: 435
+2025-11-22 18:01:06,336 - trading_bot - INFO - Wins: 131, Losses: 304
+2025-11-22 18:01:06,336 - trading_bot - INFO - Win Rate: 30.11%
+2025-11-22 18:01:06,336 - trading_bot - INFO - Net Profit: $-621.53
+2025-11-22 18:01:06,336 - trading_bot - INFO - Profit Factor: 0.96
+2025-11-22 18:01:06,337 - trading_bot - INFO - Max Drawdown: 153.76%
+2025-11-22 18:01:06,344 - trading_bot - INFO - 
+Generating equity curve visualization...
+2025-11-22 18:01:06,749 - trading_bot - INFO - ✓ Equity curve saved to reports/2024_test_20251122_180106/equity_curve_2024.png
+2025-11-22 18:01:06,750 - trading_bot - INFO - ✓ Full results saved to reports/2024_test_20251122_180106
+2025-11-22 18:01:06,750 - trading_bot - INFO - ================================================================================

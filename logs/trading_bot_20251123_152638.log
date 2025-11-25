@@ -1,0 +1,1216 @@
+2025-11-23 15:26:38,252 - trading_bot - INFO - Loading data from Data/XAU_5m_data.csv
+2025-11-23 15:26:41,086 - trading_bot - INFO - Data loaded: 43457 rows (Base Timeframe 5m)
+2025-11-23 15:26:41,086 - trading_bot - INFO - Loading data from Data/XAU_4h_data.csv
+2025-11-23 15:26:41,139 - trading_bot - INFO - Loaded H4 data directly: 952 bars
+2025-11-23 15:26:41,139 - trading_bot - INFO - Loading data from Data/XAU_1d_data.csv
+2025-11-23 15:26:41,149 - trading_bot - INFO - Loaded Daily data directly: 160 bars
+2025-11-23 15:26:41,152 - trading_bot - INFO - H4=952, H1=3630
+2025-11-23 15:26:41,411 - trading_bot - INFO - Using SMC (Smart Money Concepts) strategy
+2025-11-23 15:26:43,054 - trading_bot - INFO - Detected 7706 FVGs and 4524 OBs on Base Timeframe
+2025-11-23 15:26:43,054 - trading_bot - INFO - Generating candidates...
+2025-11-23 15:26:44,633 - trading_bot - INFO - Scanning... 11.5% (5000/43457)
+2025-11-23 15:26:46,437 - trading_bot - INFO - Scanning... 23.0% (10000/43457)
+2025-11-23 15:26:48,115 - trading_bot - INFO - Scanning... 34.5% (15000/43457)
+2025-11-23 15:26:49,702 - trading_bot - INFO - Scanning... 46.0% (20000/43457)
+2025-11-23 15:26:51,303 - trading_bot - INFO - Scanning... 57.5% (25000/43457)
+2025-11-23 15:26:53,025 - trading_bot - INFO - Scanning... 69.0% (30000/43457)
+2025-11-23 15:26:54,667 - trading_bot - INFO - Scanning... 80.5% (35000/43457)
+2025-11-23 15:26:56,560 - trading_bot - INFO - Scanning... 92.0% (40000/43457)
+2025-11-23 15:26:57,718 - trading_bot - INFO - Generated 3127 candidates
+2025-11-23 15:26:57,721 - trading_bot - WARNING - [WFA] Fold 1: insufficient training samples (0) for window ending 2025-01-01 00:00:00. Skipping month.
+2025-11-23 15:26:57,721 - trading_bot - INFO - [WFA] Fold 2: training on 244 samples (2021-02-01 -> 2025-02-01), scoring 507 trades.
+2025-11-23 15:26:57,721 - trading_bot - INFO - Training LGBM with 244 samples...
+2025-11-23 15:26:58,713 - trading_bot - INFO - 
+============================================================
+2025-11-23 15:26:58,713 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-23 15:26:58,713 - trading_bot - INFO - ============================================================
+2025-11-23 15:26:58,713 - trading_bot - INFO - Total candidates: 507
+2025-11-23 15:26:58,713 - trading_bot - INFO - Mean probability: 0.537
+2025-11-23 15:26:58,713 - trading_bot - INFO - Median probability: 0.531
+2025-11-23 15:26:58,713 - trading_bot - INFO - Std probability: 0.217
+2025-11-23 15:26:58,713 - trading_bot - INFO - Min probability: 0.043
+2025-11-23 15:26:58,713 - trading_bot - INFO - Max probability: 0.966
+2025-11-23 15:26:58,713 - trading_bot - INFO - 
+Probability distribution:
+2025-11-23 15:26:58,713 - trading_bot - INFO -   < 0.3: 74 (14.6%)
+2025-11-23 15:26:58,713 - trading_bot - INFO -   0.3-0.4: 63 (12.4%)
+2025-11-23 15:26:58,714 - trading_bot - INFO -   0.4-0.5: 91 (17.9%)
+2025-11-23 15:26:58,714 - trading_bot - INFO -   0.5-0.6: 75 (14.8%)
+2025-11-23 15:26:58,714 - trading_bot - INFO -   >= 0.6: 204 (40.2%)
+2025-11-23 15:26:58,714 - trading_bot - INFO - 
+Using threshold: 0.58
+2025-11-23 15:26:58,714 - trading_bot - INFO - Candidates above threshold: 222 (43.8%)
+2025-11-23 15:26:58,718 - trading_bot - INFO - After cooldown filter: 116 trades (removed 106 clustered trades)
+2025-11-23 15:26:58,718 - trading_bot - INFO - Backtesting 116 trades out of 507 candidates...
+2025-11-23 15:26:58,718 - trading_bot - INFO - Initial capital: $6000.00, Risk per trade: 0.60%
+2025-11-23 15:26:58,720 - trading_bot - INFO - Backtest complete! Final Equity: $6404.54 | Total PnL: $404.54 | Win Rate: 60.3% (70W/46L)
+2025-11-23 15:26:58,722 - trading_bot - INFO - 
+============================================================
+2025-11-23 15:26:58,722 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-23 15:26:58,722 - trading_bot - INFO - ============================================================
+2025-11-23 15:26:58,722 - trading_bot - INFO - Total candidates: 507
+2025-11-23 15:26:58,722 - trading_bot - INFO - Mean probability: 0.537
+2025-11-23 15:26:58,722 - trading_bot - INFO - Median probability: 0.531
+2025-11-23 15:26:58,722 - trading_bot - INFO - Std probability: 0.217
+2025-11-23 15:26:58,722 - trading_bot - INFO - Min probability: 0.043
+2025-11-23 15:26:58,722 - trading_bot - INFO - Max probability: 0.966
+2025-11-23 15:26:58,722 - trading_bot - INFO - 
+Probability distribution:
+2025-11-23 15:26:58,722 - trading_bot - INFO -   < 0.3: 74 (14.6%)
+2025-11-23 15:26:58,722 - trading_bot - INFO -   0.3-0.4: 63 (12.4%)
+2025-11-23 15:26:58,722 - trading_bot - INFO -   0.4-0.5: 91 (17.9%)
+2025-11-23 15:26:58,723 - trading_bot - INFO -   0.5-0.6: 75 (14.8%)
+2025-11-23 15:26:58,723 - trading_bot - INFO -   >= 0.6: 204 (40.2%)
+2025-11-23 15:26:58,723 - trading_bot - INFO - 
+Using threshold: 0.6
+2025-11-23 15:26:58,723 - trading_bot - INFO - Candidates above threshold: 204 (40.2%)
+2025-11-23 15:26:58,726 - trading_bot - INFO - After cooldown filter: 108 trades (removed 96 clustered trades)
+2025-11-23 15:26:58,726 - trading_bot - INFO - Backtesting 108 trades out of 507 candidates...
+2025-11-23 15:26:58,726 - trading_bot - INFO - Initial capital: $6000.00, Risk per trade: 0.60%
+2025-11-23 15:26:58,729 - trading_bot - INFO - Backtest complete! Final Equity: $6173.29 | Total PnL: $173.29 | Win Rate: 57.4% (62W/46L)
+2025-11-23 15:26:58,730 - trading_bot - INFO - 
+============================================================
+2025-11-23 15:26:58,730 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-23 15:26:58,730 - trading_bot - INFO - ============================================================
+2025-11-23 15:26:58,730 - trading_bot - INFO - Total candidates: 507
+2025-11-23 15:26:58,730 - trading_bot - INFO - Mean probability: 0.537
+2025-11-23 15:26:58,730 - trading_bot - INFO - Median probability: 0.531
+2025-11-23 15:26:58,730 - trading_bot - INFO - Std probability: 0.217
+2025-11-23 15:26:58,730 - trading_bot - INFO - Min probability: 0.043
+2025-11-23 15:26:58,730 - trading_bot - INFO - Max probability: 0.966
+2025-11-23 15:26:58,730 - trading_bot - INFO - 
+Probability distribution:
+2025-11-23 15:26:58,730 - trading_bot - INFO -   < 0.3: 74 (14.6%)
+2025-11-23 15:26:58,730 - trading_bot - INFO -   0.3-0.4: 63 (12.4%)
+2025-11-23 15:26:58,730 - trading_bot - INFO -   0.4-0.5: 91 (17.9%)
+2025-11-23 15:26:58,731 - trading_bot - INFO -   0.5-0.6: 75 (14.8%)
+2025-11-23 15:26:58,731 - trading_bot - INFO -   >= 0.6: 204 (40.2%)
+2025-11-23 15:26:58,731 - trading_bot - INFO - 
+Using threshold: 0.62
+2025-11-23 15:26:58,731 - trading_bot - INFO - Candidates above threshold: 191 (37.7%)
+2025-11-23 15:26:58,734 - trading_bot - INFO - After cooldown filter: 102 trades (removed 89 clustered trades)
+2025-11-23 15:26:58,734 - trading_bot - INFO - Backtesting 102 trades out of 507 candidates...
+2025-11-23 15:26:58,734 - trading_bot - INFO - Initial capital: $6000.00, Risk per trade: 0.60%
+2025-11-23 15:26:58,736 - trading_bot - INFO - Backtest complete! Final Equity: $6133.02 | Total PnL: $133.02 | Win Rate: 56.9% (58W/44L)
+2025-11-23 15:26:58,738 - trading_bot - INFO - 
+============================================================
+2025-11-23 15:26:58,738 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-23 15:26:58,738 - trading_bot - INFO - ============================================================
+2025-11-23 15:26:58,738 - trading_bot - INFO - Total candidates: 507
+2025-11-23 15:26:58,738 - trading_bot - INFO - Mean probability: 0.537
+2025-11-23 15:26:58,738 - trading_bot - INFO - Median probability: 0.531
+2025-11-23 15:26:58,738 - trading_bot - INFO - Std probability: 0.217
+2025-11-23 15:26:58,738 - trading_bot - INFO - Min probability: 0.043
+2025-11-23 15:26:58,738 - trading_bot - INFO - Max probability: 0.966
+2025-11-23 15:26:58,738 - trading_bot - INFO - 
+Probability distribution:
+2025-11-23 15:26:58,738 - trading_bot - INFO -   < 0.3: 74 (14.6%)
+2025-11-23 15:26:58,738 - trading_bot - INFO -   0.3-0.4: 63 (12.4%)
+2025-11-23 15:26:58,738 - trading_bot - INFO -   0.4-0.5: 91 (17.9%)
+2025-11-23 15:26:58,738 - trading_bot - INFO -   0.5-0.6: 75 (14.8%)
+2025-11-23 15:26:58,738 - trading_bot - INFO -   >= 0.6: 204 (40.2%)
+2025-11-23 15:26:58,739 - trading_bot - INFO - 
+Using threshold: 0.65
+2025-11-23 15:26:58,739 - trading_bot - INFO - Candidates above threshold: 171 (33.7%)
+2025-11-23 15:26:58,741 - trading_bot - INFO - After cooldown filter: 99 trades (removed 72 clustered trades)
+2025-11-23 15:26:58,741 - trading_bot - INFO - Backtesting 99 trades out of 507 candidates...
+2025-11-23 15:26:58,741 - trading_bot - INFO - Initial capital: $6000.00, Risk per trade: 0.60%
+2025-11-23 15:26:58,744 - trading_bot - INFO - Backtest complete! Final Equity: $6166.39 | Total PnL: $166.39 | Win Rate: 57.6% (57W/42L)
+2025-11-23 15:26:58,745 - trading_bot - INFO - 
+============================================================
+2025-11-23 15:26:58,745 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-23 15:26:58,745 - trading_bot - INFO - ============================================================
+2025-11-23 15:26:58,745 - trading_bot - INFO - Total candidates: 507
+2025-11-23 15:26:58,745 - trading_bot - INFO - Mean probability: 0.537
+2025-11-23 15:26:58,745 - trading_bot - INFO - Median probability: 0.531
+2025-11-23 15:26:58,745 - trading_bot - INFO - Std probability: 0.217
+2025-11-23 15:26:58,745 - trading_bot - INFO - Min probability: 0.043
+2025-11-23 15:26:58,745 - trading_bot - INFO - Max probability: 0.966
+2025-11-23 15:26:58,745 - trading_bot - INFO - 
+Probability distribution:
+2025-11-23 15:26:58,745 - trading_bot - INFO -   < 0.3: 74 (14.6%)
+2025-11-23 15:26:58,745 - trading_bot - INFO -   0.3-0.4: 63 (12.4%)
+2025-11-23 15:26:58,746 - trading_bot - INFO -   0.4-0.5: 91 (17.9%)
+2025-11-23 15:26:58,746 - trading_bot - INFO -   0.5-0.6: 75 (14.8%)
+2025-11-23 15:26:58,746 - trading_bot - INFO -   >= 0.6: 204 (40.2%)
+2025-11-23 15:26:58,746 - trading_bot - INFO - 
+Using threshold: 0.68
+2025-11-23 15:26:58,746 - trading_bot - INFO - Candidates above threshold: 148 (29.2%)
+2025-11-23 15:26:58,748 - trading_bot - INFO - After cooldown filter: 83 trades (removed 65 clustered trades)
+2025-11-23 15:26:58,748 - trading_bot - INFO - Backtesting 83 trades out of 507 candidates...
+2025-11-23 15:26:58,748 - trading_bot - INFO - Initial capital: $6000.00, Risk per trade: 0.60%
+2025-11-23 15:26:58,750 - trading_bot - INFO - Backtest complete! Final Equity: $6098.57 | Total PnL: $98.57 | Win Rate: 56.6% (47W/36L)
+2025-11-23 15:26:58,752 - trading_bot - INFO - 
+============================================================
+2025-11-23 15:26:58,752 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-23 15:26:58,752 - trading_bot - INFO - ============================================================
+2025-11-23 15:26:58,752 - trading_bot - INFO - Total candidates: 507
+2025-11-23 15:26:58,752 - trading_bot - INFO - Mean probability: 0.537
+2025-11-23 15:26:58,752 - trading_bot - INFO - Median probability: 0.531
+2025-11-23 15:26:58,752 - trading_bot - INFO - Std probability: 0.217
+2025-11-23 15:26:58,752 - trading_bot - INFO - Min probability: 0.043
+2025-11-23 15:26:58,752 - trading_bot - INFO - Max probability: 0.966
+2025-11-23 15:26:58,752 - trading_bot - INFO - 
+Probability distribution:
+2025-11-23 15:26:58,752 - trading_bot - INFO -   < 0.3: 74 (14.6%)
+2025-11-23 15:26:58,752 - trading_bot - INFO -   0.3-0.4: 63 (12.4%)
+2025-11-23 15:26:58,752 - trading_bot - INFO -   0.4-0.5: 91 (17.9%)
+2025-11-23 15:26:58,752 - trading_bot - INFO -   0.5-0.6: 75 (14.8%)
+2025-11-23 15:26:58,752 - trading_bot - INFO -   >= 0.6: 204 (40.2%)
+2025-11-23 15:26:58,752 - trading_bot - INFO - 
+Using threshold: 0.7
+2025-11-23 15:26:58,752 - trading_bot - INFO - Candidates above threshold: 133 (26.2%)
+2025-11-23 15:26:58,755 - trading_bot - INFO - After cooldown filter: 76 trades (removed 57 clustered trades)
+2025-11-23 15:26:58,755 - trading_bot - INFO - Backtesting 76 trades out of 507 candidates...
+2025-11-23 15:26:58,755 - trading_bot - INFO - Initial capital: $6000.00, Risk per trade: 0.60%
+2025-11-23 15:26:58,757 - trading_bot - INFO - Backtest complete! Final Equity: $6231.24 | Total PnL: $231.24 | Win Rate: 59.2% (45W/31L)
+2025-11-23 15:26:58,758 - trading_bot - INFO - [WFA] Fold 3: training on 751 samples (2021-03-01 -> 2025-03-01), scoring 313 trades.
+2025-11-23 15:26:58,758 - trading_bot - INFO - Training LGBM with 751 samples...
+2025-11-23 15:27:00,771 - trading_bot - INFO - 
+============================================================
+2025-11-23 15:27:00,771 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-23 15:27:00,771 - trading_bot - INFO - ============================================================
+2025-11-23 15:27:00,771 - trading_bot - INFO - Total candidates: 313
+2025-11-23 15:27:00,771 - trading_bot - INFO - Mean probability: 0.499
+2025-11-23 15:27:00,771 - trading_bot - INFO - Median probability: 0.470
+2025-11-23 15:27:00,771 - trading_bot - INFO - Std probability: 0.270
+2025-11-23 15:27:00,771 - trading_bot - INFO - Min probability: 0.013
+2025-11-23 15:27:00,771 - trading_bot - INFO - Max probability: 0.991
+2025-11-23 15:27:00,771 - trading_bot - INFO - 
+Probability distribution:
+2025-11-23 15:27:00,772 - trading_bot - INFO -   < 0.3: 87 (27.8%)
+2025-11-23 15:27:00,772 - trading_bot - INFO -   0.3-0.4: 41 (13.1%)
+2025-11-23 15:27:00,772 - trading_bot - INFO -   0.4-0.5: 35 (11.2%)
+2025-11-23 15:27:00,772 - trading_bot - INFO -   0.5-0.6: 27 (8.6%)
+2025-11-23 15:27:00,772 - trading_bot - INFO -   >= 0.6: 123 (39.3%)
+2025-11-23 15:27:00,772 - trading_bot - INFO - 
+Using threshold: 0.58
+2025-11-23 15:27:00,772 - trading_bot - INFO - Candidates above threshold: 128 (40.9%)
+2025-11-23 15:27:00,775 - trading_bot - INFO - After cooldown filter: 68 trades (removed 60 clustered trades)
+2025-11-23 15:27:00,775 - trading_bot - INFO - Backtesting 68 trades out of 313 candidates...
+2025-11-23 15:27:00,775 - trading_bot - INFO - Initial capital: $6000.00, Risk per trade: 0.60%
+2025-11-23 15:27:00,776 - trading_bot - INFO - Backtest complete! Final Equity: $6585.98 | Total PnL: $585.98 | Win Rate: 67.6% (46W/22L)
+2025-11-23 15:27:00,778 - trading_bot - INFO - 
+============================================================
+2025-11-23 15:27:00,778 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-23 15:27:00,778 - trading_bot - INFO - ============================================================
+2025-11-23 15:27:00,778 - trading_bot - INFO - Total candidates: 313
+2025-11-23 15:27:00,778 - trading_bot - INFO - Mean probability: 0.499
+2025-11-23 15:27:00,778 - trading_bot - INFO - Median probability: 0.470
+2025-11-23 15:27:00,778 - trading_bot - INFO - Std probability: 0.270
+2025-11-23 15:27:00,778 - trading_bot - INFO - Min probability: 0.013
+2025-11-23 15:27:00,778 - trading_bot - INFO - Max probability: 0.991
+2025-11-23 15:27:00,778 - trading_bot - INFO - 
+Probability distribution:
+2025-11-23 15:27:00,778 - trading_bot - INFO -   < 0.3: 87 (27.8%)
+2025-11-23 15:27:00,778 - trading_bot - INFO -   0.3-0.4: 41 (13.1%)
+2025-11-23 15:27:00,778 - trading_bot - INFO -   0.4-0.5: 35 (11.2%)
+2025-11-23 15:27:00,778 - trading_bot - INFO -   0.5-0.6: 27 (8.6%)
+2025-11-23 15:27:00,778 - trading_bot - INFO -   >= 0.6: 123 (39.3%)
+2025-11-23 15:27:00,778 - trading_bot - INFO - 
+Using threshold: 0.6
+2025-11-23 15:27:00,779 - trading_bot - INFO - Candidates above threshold: 123 (39.3%)
+2025-11-23 15:27:00,781 - trading_bot - INFO - After cooldown filter: 64 trades (removed 59 clustered trades)
+2025-11-23 15:27:00,781 - trading_bot - INFO - Backtesting 64 trades out of 313 candidates...
+2025-11-23 15:27:00,781 - trading_bot - INFO - Initial capital: $6000.00, Risk per trade: 0.60%
+2025-11-23 15:27:00,782 - trading_bot - INFO - Backtest complete! Final Equity: $6599.83 | Total PnL: $599.83 | Win Rate: 68.8% (44W/20L)
+2025-11-23 15:27:00,784 - trading_bot - INFO - 
+============================================================
+2025-11-23 15:27:00,784 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-23 15:27:00,784 - trading_bot - INFO - ============================================================
+2025-11-23 15:27:00,784 - trading_bot - INFO - Total candidates: 313
+2025-11-23 15:27:00,784 - trading_bot - INFO - Mean probability: 0.499
+2025-11-23 15:27:00,784 - trading_bot - INFO - Median probability: 0.470
+2025-11-23 15:27:00,784 - trading_bot - INFO - Std probability: 0.270
+2025-11-23 15:27:00,784 - trading_bot - INFO - Min probability: 0.013
+2025-11-23 15:27:00,784 - trading_bot - INFO - Max probability: 0.991
+2025-11-23 15:27:00,784 - trading_bot - INFO - 
+Probability distribution:
+2025-11-23 15:27:00,784 - trading_bot - INFO -   < 0.3: 87 (27.8%)
+2025-11-23 15:27:00,784 - trading_bot - INFO -   0.3-0.4: 41 (13.1%)
+2025-11-23 15:27:00,784 - trading_bot - INFO -   0.4-0.5: 35 (11.2%)
+2025-11-23 15:27:00,784 - trading_bot - INFO -   0.5-0.6: 27 (8.6%)
+2025-11-23 15:27:00,784 - trading_bot - INFO -   >= 0.6: 123 (39.3%)
+2025-11-23 15:27:00,784 - trading_bot - INFO - 
+Using threshold: 0.62
+2025-11-23 15:27:00,784 - trading_bot - INFO - Candidates above threshold: 117 (37.4%)
+2025-11-23 15:27:00,786 - trading_bot - INFO - After cooldown filter: 62 trades (removed 55 clustered trades)
+2025-11-23 15:27:00,786 - trading_bot - INFO - Backtesting 62 trades out of 313 candidates...
+2025-11-23 15:27:00,786 - trading_bot - INFO - Initial capital: $6000.00, Risk per trade: 0.60%
+2025-11-23 15:27:00,788 - trading_bot - INFO - Backtest complete! Final Equity: $6534.31 | Total PnL: $534.31 | Win Rate: 67.7% (42W/20L)
+2025-11-23 15:27:00,789 - trading_bot - INFO - 
+============================================================
+2025-11-23 15:27:00,789 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-23 15:27:00,789 - trading_bot - INFO - ============================================================
+2025-11-23 15:27:00,789 - trading_bot - INFO - Total candidates: 313
+2025-11-23 15:27:00,789 - trading_bot - INFO - Mean probability: 0.499
+2025-11-23 15:27:00,789 - trading_bot - INFO - Median probability: 0.470
+2025-11-23 15:27:00,789 - trading_bot - INFO - Std probability: 0.270
+2025-11-23 15:27:00,789 - trading_bot - INFO - Min probability: 0.013
+2025-11-23 15:27:00,789 - trading_bot - INFO - Max probability: 0.991
+2025-11-23 15:27:00,789 - trading_bot - INFO - 
+Probability distribution:
+2025-11-23 15:27:00,790 - trading_bot - INFO -   < 0.3: 87 (27.8%)
+2025-11-23 15:27:00,790 - trading_bot - INFO -   0.3-0.4: 41 (13.1%)
+2025-11-23 15:27:00,790 - trading_bot - INFO -   0.4-0.5: 35 (11.2%)
+2025-11-23 15:27:00,790 - trading_bot - INFO -   0.5-0.6: 27 (8.6%)
+2025-11-23 15:27:00,790 - trading_bot - INFO -   >= 0.6: 123 (39.3%)
+2025-11-23 15:27:00,790 - trading_bot - INFO - 
+Using threshold: 0.65
+2025-11-23 15:27:00,790 - trading_bot - INFO - Candidates above threshold: 108 (34.5%)
+2025-11-23 15:27:00,792 - trading_bot - INFO - After cooldown filter: 59 trades (removed 49 clustered trades)
+2025-11-23 15:27:00,792 - trading_bot - INFO - Backtesting 59 trades out of 313 candidates...
+2025-11-23 15:27:00,792 - trading_bot - INFO - Initial capital: $6000.00, Risk per trade: 0.60%
+2025-11-23 15:27:00,794 - trading_bot - INFO - Backtest complete! Final Equity: $6501.49 | Total PnL: $501.49 | Win Rate: 67.8% (40W/19L)
+2025-11-23 15:27:00,795 - trading_bot - INFO - 
+============================================================
+2025-11-23 15:27:00,795 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-23 15:27:00,795 - trading_bot - INFO - ============================================================
+2025-11-23 15:27:00,795 - trading_bot - INFO - Total candidates: 313
+2025-11-23 15:27:00,795 - trading_bot - INFO - Mean probability: 0.499
+2025-11-23 15:27:00,795 - trading_bot - INFO - Median probability: 0.470
+2025-11-23 15:27:00,796 - trading_bot - INFO - Std probability: 0.270
+2025-11-23 15:27:00,796 - trading_bot - INFO - Min probability: 0.013
+2025-11-23 15:27:00,796 - trading_bot - INFO - Max probability: 0.991
+2025-11-23 15:27:00,796 - trading_bot - INFO - 
+Probability distribution:
+2025-11-23 15:27:00,796 - trading_bot - INFO -   < 0.3: 87 (27.8%)
+2025-11-23 15:27:00,796 - trading_bot - INFO -   0.3-0.4: 41 (13.1%)
+2025-11-23 15:27:00,796 - trading_bot - INFO -   0.4-0.5: 35 (11.2%)
+2025-11-23 15:27:00,796 - trading_bot - INFO -   0.5-0.6: 27 (8.6%)
+2025-11-23 15:27:00,796 - trading_bot - INFO -   >= 0.6: 123 (39.3%)
+2025-11-23 15:27:00,796 - trading_bot - INFO - 
+Using threshold: 0.68
+2025-11-23 15:27:00,796 - trading_bot - INFO - Candidates above threshold: 98 (31.3%)
+2025-11-23 15:27:00,798 - trading_bot - INFO - After cooldown filter: 55 trades (removed 43 clustered trades)
+2025-11-23 15:27:00,798 - trading_bot - INFO - Backtesting 55 trades out of 313 candidates...
+2025-11-23 15:27:00,798 - trading_bot - INFO - Initial capital: $6000.00, Risk per trade: 0.60%
+2025-11-23 15:27:00,800 - trading_bot - INFO - Backtest complete! Final Equity: $6659.43 | Total PnL: $659.43 | Win Rate: 72.7% (40W/15L)
+2025-11-23 15:27:00,801 - trading_bot - INFO - 
+============================================================
+2025-11-23 15:27:00,801 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-23 15:27:00,801 - trading_bot - INFO - ============================================================
+2025-11-23 15:27:00,801 - trading_bot - INFO - Total candidates: 313
+2025-11-23 15:27:00,801 - trading_bot - INFO - Mean probability: 0.499
+2025-11-23 15:27:00,801 - trading_bot - INFO - Median probability: 0.470
+2025-11-23 15:27:00,801 - trading_bot - INFO - Std probability: 0.270
+2025-11-23 15:27:00,801 - trading_bot - INFO - Min probability: 0.013
+2025-11-23 15:27:00,801 - trading_bot - INFO - Max probability: 0.991
+2025-11-23 15:27:00,801 - trading_bot - INFO - 
+Probability distribution:
+2025-11-23 15:27:00,801 - trading_bot - INFO -   < 0.3: 87 (27.8%)
+2025-11-23 15:27:00,801 - trading_bot - INFO -   0.3-0.4: 41 (13.1%)
+2025-11-23 15:27:00,801 - trading_bot - INFO -   0.4-0.5: 35 (11.2%)
+2025-11-23 15:27:00,801 - trading_bot - INFO -   0.5-0.6: 27 (8.6%)
+2025-11-23 15:27:00,802 - trading_bot - INFO -   >= 0.6: 123 (39.3%)
+2025-11-23 15:27:00,802 - trading_bot - INFO - 
+Using threshold: 0.7
+2025-11-23 15:27:00,802 - trading_bot - INFO - Candidates above threshold: 88 (28.1%)
+2025-11-23 15:27:00,803 - trading_bot - INFO - After cooldown filter: 49 trades (removed 39 clustered trades)
+2025-11-23 15:27:00,803 - trading_bot - INFO - Backtesting 49 trades out of 313 candidates...
+2025-11-23 15:27:00,803 - trading_bot - INFO - Initial capital: $6000.00, Risk per trade: 0.60%
+2025-11-23 15:27:00,805 - trading_bot - INFO - Backtest complete! Final Equity: $6631.62 | Total PnL: $631.62 | Win Rate: 73.5% (36W/13L)
+2025-11-23 15:27:00,806 - trading_bot - INFO - [WFA] Fold 4: training on 1064 samples (2021-04-01 -> 2025-04-01), scoring 134 trades.
+2025-11-23 15:27:00,806 - trading_bot - INFO - Training LGBM with 1064 samples...
+2025-11-23 15:27:03,237 - trading_bot - INFO - 
+============================================================
+2025-11-23 15:27:03,238 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-23 15:27:03,238 - trading_bot - INFO - ============================================================
+2025-11-23 15:27:03,238 - trading_bot - INFO - Total candidates: 134
+2025-11-23 15:27:03,238 - trading_bot - INFO - Mean probability: 0.547
+2025-11-23 15:27:03,238 - trading_bot - INFO - Median probability: 0.572
+2025-11-23 15:27:03,238 - trading_bot - INFO - Std probability: 0.282
+2025-11-23 15:27:03,238 - trading_bot - INFO - Min probability: 0.008
+2025-11-23 15:27:03,238 - trading_bot - INFO - Max probability: 0.969
+2025-11-23 15:27:03,238 - trading_bot - INFO - 
+Probability distribution:
+2025-11-23 15:27:03,238 - trading_bot - INFO -   < 0.3: 35 (26.1%)
+2025-11-23 15:27:03,238 - trading_bot - INFO -   0.3-0.4: 12 (9.0%)
+2025-11-23 15:27:03,238 - trading_bot - INFO -   0.4-0.5: 7 (5.2%)
+2025-11-23 15:27:03,238 - trading_bot - INFO -   0.5-0.6: 15 (11.2%)
+2025-11-23 15:27:03,238 - trading_bot - INFO -   >= 0.6: 65 (48.5%)
+2025-11-23 15:27:03,238 - trading_bot - INFO - 
+Using threshold: 0.58
+2025-11-23 15:27:03,239 - trading_bot - INFO - Candidates above threshold: 65 (48.5%)
+2025-11-23 15:27:03,240 - trading_bot - INFO - After cooldown filter: 31 trades (removed 34 clustered trades)
+2025-11-23 15:27:03,240 - trading_bot - INFO - Backtesting 31 trades out of 134 candidates...
+2025-11-23 15:27:03,240 - trading_bot - INFO - Initial capital: $6000.00, Risk per trade: 0.60%
+2025-11-23 15:27:03,241 - trading_bot - INFO - Backtest complete! Final Equity: $5774.01 | Total PnL: $-225.99 | Win Rate: 41.9% (13W/18L)
+2025-11-23 15:27:03,242 - trading_bot - INFO - 
+============================================================
+2025-11-23 15:27:03,242 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-23 15:27:03,242 - trading_bot - INFO - ============================================================
+2025-11-23 15:27:03,242 - trading_bot - INFO - Total candidates: 134
+2025-11-23 15:27:03,242 - trading_bot - INFO - Mean probability: 0.547
+2025-11-23 15:27:03,242 - trading_bot - INFO - Median probability: 0.572
+2025-11-23 15:27:03,242 - trading_bot - INFO - Std probability: 0.282
+2025-11-23 15:27:03,242 - trading_bot - INFO - Min probability: 0.008
+2025-11-23 15:27:03,242 - trading_bot - INFO - Max probability: 0.969
+2025-11-23 15:27:03,242 - trading_bot - INFO - 
+Probability distribution:
+2025-11-23 15:27:03,242 - trading_bot - INFO -   < 0.3: 35 (26.1%)
+2025-11-23 15:27:03,242 - trading_bot - INFO -   0.3-0.4: 12 (9.0%)
+2025-11-23 15:27:03,243 - trading_bot - INFO -   0.4-0.5: 7 (5.2%)
+2025-11-23 15:27:03,243 - trading_bot - INFO -   0.5-0.6: 15 (11.2%)
+2025-11-23 15:27:03,243 - trading_bot - INFO -   >= 0.6: 65 (48.5%)
+2025-11-23 15:27:03,243 - trading_bot - INFO - 
+Using threshold: 0.6
+2025-11-23 15:27:03,243 - trading_bot - INFO - Candidates above threshold: 65 (48.5%)
+2025-11-23 15:27:03,244 - trading_bot - INFO - After cooldown filter: 31 trades (removed 34 clustered trades)
+2025-11-23 15:27:03,244 - trading_bot - INFO - Backtesting 31 trades out of 134 candidates...
+2025-11-23 15:27:03,244 - trading_bot - INFO - Initial capital: $6000.00, Risk per trade: 0.60%
+2025-11-23 15:27:03,245 - trading_bot - INFO - Backtest complete! Final Equity: $5774.01 | Total PnL: $-225.99 | Win Rate: 41.9% (13W/18L)
+2025-11-23 15:27:03,246 - trading_bot - INFO - 
+============================================================
+2025-11-23 15:27:03,246 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-23 15:27:03,246 - trading_bot - INFO - ============================================================
+2025-11-23 15:27:03,246 - trading_bot - INFO - Total candidates: 134
+2025-11-23 15:27:03,246 - trading_bot - INFO - Mean probability: 0.547
+2025-11-23 15:27:03,246 - trading_bot - INFO - Median probability: 0.572
+2025-11-23 15:27:03,246 - trading_bot - INFO - Std probability: 0.282
+2025-11-23 15:27:03,246 - trading_bot - INFO - Min probability: 0.008
+2025-11-23 15:27:03,246 - trading_bot - INFO - Max probability: 0.969
+2025-11-23 15:27:03,246 - trading_bot - INFO - 
+Probability distribution:
+2025-11-23 15:27:03,246 - trading_bot - INFO -   < 0.3: 35 (26.1%)
+2025-11-23 15:27:03,247 - trading_bot - INFO -   0.3-0.4: 12 (9.0%)
+2025-11-23 15:27:03,247 - trading_bot - INFO -   0.4-0.5: 7 (5.2%)
+2025-11-23 15:27:03,247 - trading_bot - INFO -   0.5-0.6: 15 (11.2%)
+2025-11-23 15:27:03,247 - trading_bot - INFO -   >= 0.6: 65 (48.5%)
+2025-11-23 15:27:03,247 - trading_bot - INFO - 
+Using threshold: 0.62
+2025-11-23 15:27:03,247 - trading_bot - INFO - Candidates above threshold: 62 (46.3%)
+2025-11-23 15:27:03,248 - trading_bot - INFO - After cooldown filter: 29 trades (removed 33 clustered trades)
+2025-11-23 15:27:03,248 - trading_bot - INFO - Backtesting 29 trades out of 134 candidates...
+2025-11-23 15:27:03,248 - trading_bot - INFO - Initial capital: $6000.00, Risk per trade: 0.60%
+2025-11-23 15:27:03,249 - trading_bot - INFO - Backtest complete! Final Equity: $5848.08 | Total PnL: $-151.92 | Win Rate: 44.8% (13W/16L)
+2025-11-23 15:27:03,250 - trading_bot - INFO - 
+============================================================
+2025-11-23 15:27:03,250 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-23 15:27:03,250 - trading_bot - INFO - ============================================================
+2025-11-23 15:27:03,250 - trading_bot - INFO - Total candidates: 134
+2025-11-23 15:27:03,250 - trading_bot - INFO - Mean probability: 0.547
+2025-11-23 15:27:03,250 - trading_bot - INFO - Median probability: 0.572
+2025-11-23 15:27:03,250 - trading_bot - INFO - Std probability: 0.282
+2025-11-23 15:27:03,250 - trading_bot - INFO - Min probability: 0.008
+2025-11-23 15:27:03,250 - trading_bot - INFO - Max probability: 0.969
+2025-11-23 15:27:03,250 - trading_bot - INFO - 
+Probability distribution:
+2025-11-23 15:27:03,250 - trading_bot - INFO -   < 0.3: 35 (26.1%)
+2025-11-23 15:27:03,250 - trading_bot - INFO -   0.3-0.4: 12 (9.0%)
+2025-11-23 15:27:03,250 - trading_bot - INFO -   0.4-0.5: 7 (5.2%)
+2025-11-23 15:27:03,251 - trading_bot - INFO -   0.5-0.6: 15 (11.2%)
+2025-11-23 15:27:03,251 - trading_bot - INFO -   >= 0.6: 65 (48.5%)
+2025-11-23 15:27:03,251 - trading_bot - INFO - 
+Using threshold: 0.65
+2025-11-23 15:27:03,251 - trading_bot - INFO - Candidates above threshold: 58 (43.3%)
+2025-11-23 15:27:03,252 - trading_bot - INFO - After cooldown filter: 28 trades (removed 30 clustered trades)
+2025-11-23 15:27:03,252 - trading_bot - INFO - Backtesting 28 trades out of 134 candidates...
+2025-11-23 15:27:03,252 - trading_bot - INFO - Initial capital: $6000.00, Risk per trade: 0.60%
+2025-11-23 15:27:03,253 - trading_bot - INFO - Backtest complete! Final Equity: $5773.74 | Total PnL: $-226.26 | Win Rate: 39.3% (11W/17L)
+2025-11-23 15:27:03,254 - trading_bot - INFO - 
+============================================================
+2025-11-23 15:27:03,254 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-23 15:27:03,254 - trading_bot - INFO - ============================================================
+2025-11-23 15:27:03,254 - trading_bot - INFO - Total candidates: 134
+2025-11-23 15:27:03,254 - trading_bot - INFO - Mean probability: 0.547
+2025-11-23 15:27:03,254 - trading_bot - INFO - Median probability: 0.572
+2025-11-23 15:27:03,254 - trading_bot - INFO - Std probability: 0.282
+2025-11-23 15:27:03,254 - trading_bot - INFO - Min probability: 0.008
+2025-11-23 15:27:03,254 - trading_bot - INFO - Max probability: 0.969
+2025-11-23 15:27:03,254 - trading_bot - INFO - 
+Probability distribution:
+2025-11-23 15:27:03,254 - trading_bot - INFO -   < 0.3: 35 (26.1%)
+2025-11-23 15:27:03,254 - trading_bot - INFO -   0.3-0.4: 12 (9.0%)
+2025-11-23 15:27:03,254 - trading_bot - INFO -   0.4-0.5: 7 (5.2%)
+2025-11-23 15:27:03,254 - trading_bot - INFO -   0.5-0.6: 15 (11.2%)
+2025-11-23 15:27:03,254 - trading_bot - INFO -   >= 0.6: 65 (48.5%)
+2025-11-23 15:27:03,254 - trading_bot - INFO - 
+Using threshold: 0.68
+2025-11-23 15:27:03,255 - trading_bot - INFO - Candidates above threshold: 55 (41.0%)
+2025-11-23 15:27:03,256 - trading_bot - INFO - After cooldown filter: 28 trades (removed 27 clustered trades)
+2025-11-23 15:27:03,256 - trading_bot - INFO - Backtesting 28 trades out of 134 candidates...
+2025-11-23 15:27:03,256 - trading_bot - INFO - Initial capital: $6000.00, Risk per trade: 0.60%
+2025-11-23 15:27:03,257 - trading_bot - INFO - Backtest complete! Final Equity: $5773.74 | Total PnL: $-226.26 | Win Rate: 39.3% (11W/17L)
+2025-11-23 15:27:03,257 - trading_bot - INFO - 
+============================================================
+2025-11-23 15:27:03,257 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-23 15:27:03,257 - trading_bot - INFO - ============================================================
+2025-11-23 15:27:03,257 - trading_bot - INFO - Total candidates: 134
+2025-11-23 15:27:03,257 - trading_bot - INFO - Mean probability: 0.547
+2025-11-23 15:27:03,257 - trading_bot - INFO - Median probability: 0.572
+2025-11-23 15:27:03,257 - trading_bot - INFO - Std probability: 0.282
+2025-11-23 15:27:03,258 - trading_bot - INFO - Min probability: 0.008
+2025-11-23 15:27:03,258 - trading_bot - INFO - Max probability: 0.969
+2025-11-23 15:27:03,258 - trading_bot - INFO - 
+Probability distribution:
+2025-11-23 15:27:03,258 - trading_bot - INFO -   < 0.3: 35 (26.1%)
+2025-11-23 15:27:03,258 - trading_bot - INFO -   0.3-0.4: 12 (9.0%)
+2025-11-23 15:27:03,258 - trading_bot - INFO -   0.4-0.5: 7 (5.2%)
+2025-11-23 15:27:03,258 - trading_bot - INFO -   0.5-0.6: 15 (11.2%)
+2025-11-23 15:27:03,258 - trading_bot - INFO -   >= 0.6: 65 (48.5%)
+2025-11-23 15:27:03,258 - trading_bot - INFO - 
+Using threshold: 0.7
+2025-11-23 15:27:03,259 - trading_bot - INFO - Candidates above threshold: 55 (41.0%)
+2025-11-23 15:27:03,260 - trading_bot - INFO - After cooldown filter: 28 trades (removed 27 clustered trades)
+2025-11-23 15:27:03,260 - trading_bot - INFO - Backtesting 28 trades out of 134 candidates...
+2025-11-23 15:27:03,260 - trading_bot - INFO - Initial capital: $6000.00, Risk per trade: 0.60%
+2025-11-23 15:27:03,261 - trading_bot - INFO - Backtest complete! Final Equity: $5773.74 | Total PnL: $-226.26 | Win Rate: 39.3% (11W/17L)
+2025-11-23 15:27:03,261 - trading_bot - INFO - [WFA] Fold 4 skipped (no profitable threshold found).
+2025-11-23 15:27:03,262 - trading_bot - INFO - [WFA] Fold 5: training on 1198 samples (2021-05-01 -> 2025-05-01), scoring 223 trades.
+2025-11-23 15:27:03,263 - trading_bot - INFO - Training LGBM with 1198 samples...
+2025-11-23 15:27:05,831 - trading_bot - INFO - 
+============================================================
+2025-11-23 15:27:05,831 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-23 15:27:05,831 - trading_bot - INFO - ============================================================
+2025-11-23 15:27:05,831 - trading_bot - INFO - Total candidates: 223
+2025-11-23 15:27:05,831 - trading_bot - INFO - Mean probability: 0.489
+2025-11-23 15:27:05,831 - trading_bot - INFO - Median probability: 0.469
+2025-11-23 15:27:05,832 - trading_bot - INFO - Std probability: 0.241
+2025-11-23 15:27:05,832 - trading_bot - INFO - Min probability: 0.039
+2025-11-23 15:27:05,832 - trading_bot - INFO - Max probability: 0.990
+2025-11-23 15:27:05,832 - trading_bot - INFO - 
+Probability distribution:
+2025-11-23 15:27:05,832 - trading_bot - INFO -   < 0.3: 60 (26.9%)
+2025-11-23 15:27:05,832 - trading_bot - INFO -   0.3-0.4: 25 (11.2%)
+2025-11-23 15:27:05,832 - trading_bot - INFO -   0.4-0.5: 37 (16.6%)
+2025-11-23 15:27:05,832 - trading_bot - INFO -   0.5-0.6: 25 (11.2%)
+2025-11-23 15:27:05,832 - trading_bot - INFO -   >= 0.6: 76 (34.1%)
+2025-11-23 15:27:05,832 - trading_bot - INFO - 
+Using threshold: 0.58
+2025-11-23 15:27:05,832 - trading_bot - INFO - Candidates above threshold: 82 (36.8%)
+2025-11-23 15:27:05,834 - trading_bot - INFO - After cooldown filter: 37 trades (removed 45 clustered trades)
+2025-11-23 15:27:05,834 - trading_bot - INFO - Backtesting 37 trades out of 223 candidates...
+2025-11-23 15:27:05,834 - trading_bot - INFO - Initial capital: $6000.00, Risk per trade: 0.60%
+2025-11-23 15:27:05,835 - trading_bot - INFO - Backtest complete! Final Equity: $5825.18 | Total PnL: $-174.82 | Win Rate: 45.9% (17W/20L)
+2025-11-23 15:27:05,836 - trading_bot - INFO - 
+============================================================
+2025-11-23 15:27:05,836 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-23 15:27:05,836 - trading_bot - INFO - ============================================================
+2025-11-23 15:27:05,836 - trading_bot - INFO - Total candidates: 223
+2025-11-23 15:27:05,836 - trading_bot - INFO - Mean probability: 0.489
+2025-11-23 15:27:05,836 - trading_bot - INFO - Median probability: 0.469
+2025-11-23 15:27:05,836 - trading_bot - INFO - Std probability: 0.241
+2025-11-23 15:27:05,836 - trading_bot - INFO - Min probability: 0.039
+2025-11-23 15:27:05,836 - trading_bot - INFO - Max probability: 0.990
+2025-11-23 15:27:05,836 - trading_bot - INFO - 
+Probability distribution:
+2025-11-23 15:27:05,836 - trading_bot - INFO -   < 0.3: 60 (26.9%)
+2025-11-23 15:27:05,837 - trading_bot - INFO -   0.3-0.4: 25 (11.2%)
+2025-11-23 15:27:05,837 - trading_bot - INFO -   0.4-0.5: 37 (16.6%)
+2025-11-23 15:27:05,837 - trading_bot - INFO -   0.5-0.6: 25 (11.2%)
+2025-11-23 15:27:05,837 - trading_bot - INFO -   >= 0.6: 76 (34.1%)
+2025-11-23 15:27:05,837 - trading_bot - INFO - 
+Using threshold: 0.6
+2025-11-23 15:27:05,837 - trading_bot - INFO - Candidates above threshold: 76 (34.1%)
+2025-11-23 15:27:05,839 - trading_bot - INFO - After cooldown filter: 36 trades (removed 40 clustered trades)
+2025-11-23 15:27:05,839 - trading_bot - INFO - Backtesting 36 trades out of 223 candidates...
+2025-11-23 15:27:05,839 - trading_bot - INFO - Initial capital: $6000.00, Risk per trade: 0.60%
+2025-11-23 15:27:05,840 - trading_bot - INFO - Backtest complete! Final Equity: $5841.28 | Total PnL: $-158.72 | Win Rate: 47.2% (17W/19L)
+2025-11-23 15:27:05,841 - trading_bot - INFO - 
+============================================================
+2025-11-23 15:27:05,841 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-23 15:27:05,841 - trading_bot - INFO - ============================================================
+2025-11-23 15:27:05,841 - trading_bot - INFO - Total candidates: 223
+2025-11-23 15:27:05,841 - trading_bot - INFO - Mean probability: 0.489
+2025-11-23 15:27:05,841 - trading_bot - INFO - Median probability: 0.469
+2025-11-23 15:27:05,841 - trading_bot - INFO - Std probability: 0.241
+2025-11-23 15:27:05,841 - trading_bot - INFO - Min probability: 0.039
+2025-11-23 15:27:05,841 - trading_bot - INFO - Max probability: 0.990
+2025-11-23 15:27:05,841 - trading_bot - INFO - 
+Probability distribution:
+2025-11-23 15:27:05,841 - trading_bot - INFO -   < 0.3: 60 (26.9%)
+2025-11-23 15:27:05,842 - trading_bot - INFO -   0.3-0.4: 25 (11.2%)
+2025-11-23 15:27:05,842 - trading_bot - INFO -   0.4-0.5: 37 (16.6%)
+2025-11-23 15:27:05,842 - trading_bot - INFO -   0.5-0.6: 25 (11.2%)
+2025-11-23 15:27:05,842 - trading_bot - INFO -   >= 0.6: 76 (34.1%)
+2025-11-23 15:27:05,842 - trading_bot - INFO - 
+Using threshold: 0.62
+2025-11-23 15:27:05,842 - trading_bot - INFO - Candidates above threshold: 68 (30.5%)
+2025-11-23 15:27:05,843 - trading_bot - INFO - After cooldown filter: 32 trades (removed 36 clustered trades)
+2025-11-23 15:27:05,843 - trading_bot - INFO - Backtesting 32 trades out of 223 candidates...
+2025-11-23 15:27:05,843 - trading_bot - INFO - Initial capital: $6000.00, Risk per trade: 0.60%
+2025-11-23 15:27:05,844 - trading_bot - INFO - Backtest complete! Final Equity: $5910.05 | Total PnL: $-89.95 | Win Rate: 50.0% (16W/16L)
+2025-11-23 15:27:05,845 - trading_bot - INFO - 
+============================================================
+2025-11-23 15:27:05,846 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-23 15:27:05,846 - trading_bot - INFO - ============================================================
+2025-11-23 15:27:05,846 - trading_bot - INFO - Total candidates: 223
+2025-11-23 15:27:05,846 - trading_bot - INFO - Mean probability: 0.489
+2025-11-23 15:27:05,846 - trading_bot - INFO - Median probability: 0.469
+2025-11-23 15:27:05,846 - trading_bot - INFO - Std probability: 0.241
+2025-11-23 15:27:05,846 - trading_bot - INFO - Min probability: 0.039
+2025-11-23 15:27:05,846 - trading_bot - INFO - Max probability: 0.990
+2025-11-23 15:27:05,846 - trading_bot - INFO - 
+Probability distribution:
+2025-11-23 15:27:05,846 - trading_bot - INFO -   < 0.3: 60 (26.9%)
+2025-11-23 15:27:05,846 - trading_bot - INFO -   0.3-0.4: 25 (11.2%)
+2025-11-23 15:27:05,846 - trading_bot - INFO -   0.4-0.5: 37 (16.6%)
+2025-11-23 15:27:05,846 - trading_bot - INFO -   0.5-0.6: 25 (11.2%)
+2025-11-23 15:27:05,846 - trading_bot - INFO -   >= 0.6: 76 (34.1%)
+2025-11-23 15:27:05,846 - trading_bot - INFO - 
+Using threshold: 0.65
+2025-11-23 15:27:05,846 - trading_bot - INFO - Candidates above threshold: 61 (27.4%)
+2025-11-23 15:27:05,848 - trading_bot - INFO - After cooldown filter: 29 trades (removed 32 clustered trades)
+2025-11-23 15:27:05,848 - trading_bot - INFO - Backtesting 29 trades out of 223 candidates...
+2025-11-23 15:27:05,848 - trading_bot - INFO - Initial capital: $6000.00, Risk per trade: 0.60%
+2025-11-23 15:27:05,849 - trading_bot - INFO - Backtest complete! Final Equity: $5830.38 | Total PnL: $-169.62 | Win Rate: 44.8% (13W/16L)
+2025-11-23 15:27:05,849 - trading_bot - INFO - 
+============================================================
+2025-11-23 15:27:05,849 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-23 15:27:05,849 - trading_bot - INFO - ============================================================
+2025-11-23 15:27:05,849 - trading_bot - INFO - Total candidates: 223
+2025-11-23 15:27:05,849 - trading_bot - INFO - Mean probability: 0.489
+2025-11-23 15:27:05,849 - trading_bot - INFO - Median probability: 0.469
+2025-11-23 15:27:05,850 - trading_bot - INFO - Std probability: 0.241
+2025-11-23 15:27:05,850 - trading_bot - INFO - Min probability: 0.039
+2025-11-23 15:27:05,850 - trading_bot - INFO - Max probability: 0.990
+2025-11-23 15:27:05,850 - trading_bot - INFO - 
+Probability distribution:
+2025-11-23 15:27:05,850 - trading_bot - INFO -   < 0.3: 60 (26.9%)
+2025-11-23 15:27:05,850 - trading_bot - INFO -   0.3-0.4: 25 (11.2%)
+2025-11-23 15:27:05,850 - trading_bot - INFO -   0.4-0.5: 37 (16.6%)
+2025-11-23 15:27:05,850 - trading_bot - INFO -   0.5-0.6: 25 (11.2%)
+2025-11-23 15:27:05,850 - trading_bot - INFO -   >= 0.6: 76 (34.1%)
+2025-11-23 15:27:05,850 - trading_bot - INFO - 
+Using threshold: 0.68
+2025-11-23 15:27:05,850 - trading_bot - INFO - Candidates above threshold: 52 (23.3%)
+2025-11-23 15:27:05,851 - trading_bot - INFO - After cooldown filter: 26 trades (removed 26 clustered trades)
+2025-11-23 15:27:05,851 - trading_bot - INFO - Backtesting 26 trades out of 223 candidates...
+2025-11-23 15:27:05,851 - trading_bot - INFO - Initial capital: $6000.00, Risk per trade: 0.60%
+2025-11-23 15:27:05,852 - trading_bot - INFO - Backtest complete! Final Equity: $5955.99 | Total PnL: $-44.01 | Win Rate: 50.0% (13W/13L)
+2025-11-23 15:27:05,853 - trading_bot - INFO - 
+============================================================
+2025-11-23 15:27:05,853 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-23 15:27:05,853 - trading_bot - INFO - ============================================================
+2025-11-23 15:27:05,853 - trading_bot - INFO - Total candidates: 223
+2025-11-23 15:27:05,853 - trading_bot - INFO - Mean probability: 0.489
+2025-11-23 15:27:05,853 - trading_bot - INFO - Median probability: 0.469
+2025-11-23 15:27:05,853 - trading_bot - INFO - Std probability: 0.241
+2025-11-23 15:27:05,853 - trading_bot - INFO - Min probability: 0.039
+2025-11-23 15:27:05,853 - trading_bot - INFO - Max probability: 0.990
+2025-11-23 15:27:05,853 - trading_bot - INFO - 
+Probability distribution:
+2025-11-23 15:27:05,853 - trading_bot - INFO -   < 0.3: 60 (26.9%)
+2025-11-23 15:27:05,853 - trading_bot - INFO -   0.3-0.4: 25 (11.2%)
+2025-11-23 15:27:05,854 - trading_bot - INFO -   0.4-0.5: 37 (16.6%)
+2025-11-23 15:27:05,854 - trading_bot - INFO -   0.5-0.6: 25 (11.2%)
+2025-11-23 15:27:05,854 - trading_bot - INFO -   >= 0.6: 76 (34.1%)
+2025-11-23 15:27:05,854 - trading_bot - INFO - 
+Using threshold: 0.7
+2025-11-23 15:27:05,854 - trading_bot - INFO - Candidates above threshold: 46 (20.6%)
+2025-11-23 15:27:05,855 - trading_bot - INFO - After cooldown filter: 23 trades (removed 23 clustered trades)
+2025-11-23 15:27:05,855 - trading_bot - INFO - Backtesting 23 trades out of 223 candidates...
+2025-11-23 15:27:05,855 - trading_bot - INFO - Initial capital: $6000.00, Risk per trade: 0.60%
+2025-11-23 15:27:05,856 - trading_bot - INFO - Backtest complete! Final Equity: $5987.99 | Total PnL: $-12.01 | Win Rate: 52.2% (12W/11L)
+2025-11-23 15:27:05,856 - trading_bot - INFO - [WFA] Fold 5 skipped (no profitable threshold found).
+2025-11-23 15:27:05,857 - trading_bot - INFO - [WFA] Fold 6: training on 1421 samples (2021-06-01 -> 2025-06-01), scoring 262 trades.
+2025-11-23 15:27:05,857 - trading_bot - INFO - Training LGBM with 1421 samples...
+2025-11-23 15:27:08,617 - trading_bot - INFO - 
+============================================================
+2025-11-23 15:27:08,617 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-23 15:27:08,617 - trading_bot - INFO - ============================================================
+2025-11-23 15:27:08,617 - trading_bot - INFO - Total candidates: 262
+2025-11-23 15:27:08,617 - trading_bot - INFO - Mean probability: 0.549
+2025-11-23 15:27:08,617 - trading_bot - INFO - Median probability: 0.538
+2025-11-23 15:27:08,617 - trading_bot - INFO - Std probability: 0.285
+2025-11-23 15:27:08,617 - trading_bot - INFO - Min probability: 0.024
+2025-11-23 15:27:08,617 - trading_bot - INFO - Max probability: 0.992
+2025-11-23 15:27:08,617 - trading_bot - INFO - 
+Probability distribution:
+2025-11-23 15:27:08,617 - trading_bot - INFO -   < 0.3: 68 (26.0%)
+2025-11-23 15:27:08,617 - trading_bot - INFO -   0.3-0.4: 26 (9.9%)
+2025-11-23 15:27:08,618 - trading_bot - INFO -   0.4-0.5: 23 (8.8%)
+2025-11-23 15:27:08,618 - trading_bot - INFO -   0.5-0.6: 31 (11.8%)
+2025-11-23 15:27:08,618 - trading_bot - INFO -   >= 0.6: 114 (43.5%)
+2025-11-23 15:27:08,618 - trading_bot - INFO - 
+Using threshold: 0.58
+2025-11-23 15:27:08,618 - trading_bot - INFO - Candidates above threshold: 120 (45.8%)
+2025-11-23 15:27:08,620 - trading_bot - INFO - After cooldown filter: 54 trades (removed 66 clustered trades)
+2025-11-23 15:27:08,620 - trading_bot - INFO - Backtesting 54 trades out of 262 candidates...
+2025-11-23 15:27:08,620 - trading_bot - INFO - Initial capital: $6000.00, Risk per trade: 0.60%
+2025-11-23 15:27:08,622 - trading_bot - INFO - Backtest complete! Final Equity: $6257.73 | Total PnL: $257.73 | Win Rate: 61.1% (33W/21L)
+2025-11-23 15:27:08,623 - trading_bot - INFO - 
+============================================================
+2025-11-23 15:27:08,623 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-23 15:27:08,623 - trading_bot - INFO - ============================================================
+2025-11-23 15:27:08,623 - trading_bot - INFO - Total candidates: 262
+2025-11-23 15:27:08,623 - trading_bot - INFO - Mean probability: 0.549
+2025-11-23 15:27:08,623 - trading_bot - INFO - Median probability: 0.538
+2025-11-23 15:27:08,623 - trading_bot - INFO - Std probability: 0.285
+2025-11-23 15:27:08,623 - trading_bot - INFO - Min probability: 0.024
+2025-11-23 15:27:08,623 - trading_bot - INFO - Max probability: 0.992
+2025-11-23 15:27:08,623 - trading_bot - INFO - 
+Probability distribution:
+2025-11-23 15:27:08,623 - trading_bot - INFO -   < 0.3: 68 (26.0%)
+2025-11-23 15:27:08,623 - trading_bot - INFO -   0.3-0.4: 26 (9.9%)
+2025-11-23 15:27:08,623 - trading_bot - INFO -   0.4-0.5: 23 (8.8%)
+2025-11-23 15:27:08,624 - trading_bot - INFO -   0.5-0.6: 31 (11.8%)
+2025-11-23 15:27:08,624 - trading_bot - INFO -   >= 0.6: 114 (43.5%)
+2025-11-23 15:27:08,624 - trading_bot - INFO - 
+Using threshold: 0.6
+2025-11-23 15:27:08,624 - trading_bot - INFO - Candidates above threshold: 114 (43.5%)
+2025-11-23 15:27:08,626 - trading_bot - INFO - After cooldown filter: 49 trades (removed 65 clustered trades)
+2025-11-23 15:27:08,626 - trading_bot - INFO - Backtesting 49 trades out of 262 candidates...
+2025-11-23 15:27:08,626 - trading_bot - INFO - Initial capital: $6000.00, Risk per trade: 0.60%
+2025-11-23 15:27:08,627 - trading_bot - INFO - Backtest complete! Final Equity: $6307.98 | Total PnL: $307.98 | Win Rate: 63.3% (31W/18L)
+2025-11-23 15:27:08,628 - trading_bot - INFO - 
+============================================================
+2025-11-23 15:27:08,628 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-23 15:27:08,628 - trading_bot - INFO - ============================================================
+2025-11-23 15:27:08,628 - trading_bot - INFO - Total candidates: 262
+2025-11-23 15:27:08,628 - trading_bot - INFO - Mean probability: 0.549
+2025-11-23 15:27:08,628 - trading_bot - INFO - Median probability: 0.538
+2025-11-23 15:27:08,628 - trading_bot - INFO - Std probability: 0.285
+2025-11-23 15:27:08,628 - trading_bot - INFO - Min probability: 0.024
+2025-11-23 15:27:08,628 - trading_bot - INFO - Max probability: 0.992
+2025-11-23 15:27:08,628 - trading_bot - INFO - 
+Probability distribution:
+2025-11-23 15:27:08,628 - trading_bot - INFO -   < 0.3: 68 (26.0%)
+2025-11-23 15:27:08,629 - trading_bot - INFO -   0.3-0.4: 26 (9.9%)
+2025-11-23 15:27:08,629 - trading_bot - INFO -   0.4-0.5: 23 (8.8%)
+2025-11-23 15:27:08,629 - trading_bot - INFO -   0.5-0.6: 31 (11.8%)
+2025-11-23 15:27:08,629 - trading_bot - INFO -   >= 0.6: 114 (43.5%)
+2025-11-23 15:27:08,629 - trading_bot - INFO - 
+Using threshold: 0.62
+2025-11-23 15:27:08,629 - trading_bot - INFO - Candidates above threshold: 108 (41.2%)
+2025-11-23 15:27:08,631 - trading_bot - INFO - After cooldown filter: 47 trades (removed 61 clustered trades)
+2025-11-23 15:27:08,631 - trading_bot - INFO - Backtesting 47 trades out of 262 candidates...
+2025-11-23 15:27:08,631 - trading_bot - INFO - Initial capital: $6000.00, Risk per trade: 0.60%
+2025-11-23 15:27:08,632 - trading_bot - INFO - Backtest complete! Final Equity: $6384.53 | Total PnL: $384.53 | Win Rate: 66.0% (31W/16L)
+2025-11-23 15:27:08,633 - trading_bot - INFO - 
+============================================================
+2025-11-23 15:27:08,633 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-23 15:27:08,633 - trading_bot - INFO - ============================================================
+2025-11-23 15:27:08,633 - trading_bot - INFO - Total candidates: 262
+2025-11-23 15:27:08,633 - trading_bot - INFO - Mean probability: 0.549
+2025-11-23 15:27:08,633 - trading_bot - INFO - Median probability: 0.538
+2025-11-23 15:27:08,633 - trading_bot - INFO - Std probability: 0.285
+2025-11-23 15:27:08,633 - trading_bot - INFO - Min probability: 0.024
+2025-11-23 15:27:08,633 - trading_bot - INFO - Max probability: 0.992
+2025-11-23 15:27:08,634 - trading_bot - INFO - 
+Probability distribution:
+2025-11-23 15:27:08,634 - trading_bot - INFO -   < 0.3: 68 (26.0%)
+2025-11-23 15:27:08,634 - trading_bot - INFO -   0.3-0.4: 26 (9.9%)
+2025-11-23 15:27:08,634 - trading_bot - INFO -   0.4-0.5: 23 (8.8%)
+2025-11-23 15:27:08,634 - trading_bot - INFO -   0.5-0.6: 31 (11.8%)
+2025-11-23 15:27:08,634 - trading_bot - INFO -   >= 0.6: 114 (43.5%)
+2025-11-23 15:27:08,634 - trading_bot - INFO - 
+Using threshold: 0.65
+2025-11-23 15:27:08,634 - trading_bot - INFO - Candidates above threshold: 101 (38.5%)
+2025-11-23 15:27:08,636 - trading_bot - INFO - After cooldown filter: 46 trades (removed 55 clustered trades)
+2025-11-23 15:27:08,636 - trading_bot - INFO - Backtesting 46 trades out of 262 candidates...
+2025-11-23 15:27:08,636 - trading_bot - INFO - Initial capital: $6000.00, Risk per trade: 0.60%
+2025-11-23 15:27:08,637 - trading_bot - INFO - Backtest complete! Final Equity: $6495.51 | Total PnL: $495.51 | Win Rate: 69.6% (32W/14L)
+2025-11-23 15:27:08,638 - trading_bot - INFO - 
+============================================================
+2025-11-23 15:27:08,638 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-23 15:27:08,638 - trading_bot - INFO - ============================================================
+2025-11-23 15:27:08,638 - trading_bot - INFO - Total candidates: 262
+2025-11-23 15:27:08,638 - trading_bot - INFO - Mean probability: 0.549
+2025-11-23 15:27:08,638 - trading_bot - INFO - Median probability: 0.538
+2025-11-23 15:27:08,638 - trading_bot - INFO - Std probability: 0.285
+2025-11-23 15:27:08,638 - trading_bot - INFO - Min probability: 0.024
+2025-11-23 15:27:08,638 - trading_bot - INFO - Max probability: 0.992
+2025-11-23 15:27:08,638 - trading_bot - INFO - 
+Probability distribution:
+2025-11-23 15:27:08,638 - trading_bot - INFO -   < 0.3: 68 (26.0%)
+2025-11-23 15:27:08,639 - trading_bot - INFO -   0.3-0.4: 26 (9.9%)
+2025-11-23 15:27:08,639 - trading_bot - INFO -   0.4-0.5: 23 (8.8%)
+2025-11-23 15:27:08,639 - trading_bot - INFO -   0.5-0.6: 31 (11.8%)
+2025-11-23 15:27:08,639 - trading_bot - INFO -   >= 0.6: 114 (43.5%)
+2025-11-23 15:27:08,639 - trading_bot - INFO - 
+Using threshold: 0.68
+2025-11-23 15:27:08,639 - trading_bot - INFO - Candidates above threshold: 94 (35.9%)
+2025-11-23 15:27:08,641 - trading_bot - INFO - After cooldown filter: 42 trades (removed 52 clustered trades)
+2025-11-23 15:27:08,641 - trading_bot - INFO - Backtesting 42 trades out of 262 candidates...
+2025-11-23 15:27:08,641 - trading_bot - INFO - Initial capital: $6000.00, Risk per trade: 0.60%
+2025-11-23 15:27:08,642 - trading_bot - INFO - Backtest complete! Final Equity: $6575.11 | Total PnL: $575.11 | Win Rate: 73.8% (31W/11L)
+2025-11-23 15:27:08,643 - trading_bot - INFO - 
+============================================================
+2025-11-23 15:27:08,643 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-23 15:27:08,643 - trading_bot - INFO - ============================================================
+2025-11-23 15:27:08,643 - trading_bot - INFO - Total candidates: 262
+2025-11-23 15:27:08,643 - trading_bot - INFO - Mean probability: 0.549
+2025-11-23 15:27:08,643 - trading_bot - INFO - Median probability: 0.538
+2025-11-23 15:27:08,643 - trading_bot - INFO - Std probability: 0.285
+2025-11-23 15:27:08,643 - trading_bot - INFO - Min probability: 0.024
+2025-11-23 15:27:08,643 - trading_bot - INFO - Max probability: 0.992
+2025-11-23 15:27:08,643 - trading_bot - INFO - 
+Probability distribution:
+2025-11-23 15:27:08,643 - trading_bot - INFO -   < 0.3: 68 (26.0%)
+2025-11-23 15:27:08,643 - trading_bot - INFO -   0.3-0.4: 26 (9.9%)
+2025-11-23 15:27:08,644 - trading_bot - INFO -   0.4-0.5: 23 (8.8%)
+2025-11-23 15:27:08,644 - trading_bot - INFO -   0.5-0.6: 31 (11.8%)
+2025-11-23 15:27:08,644 - trading_bot - INFO -   >= 0.6: 114 (43.5%)
+2025-11-23 15:27:08,644 - trading_bot - INFO - 
+Using threshold: 0.7
+2025-11-23 15:27:08,644 - trading_bot - INFO - Candidates above threshold: 87 (33.2%)
+2025-11-23 15:27:08,645 - trading_bot - INFO - After cooldown filter: 36 trades (removed 51 clustered trades)
+2025-11-23 15:27:08,645 - trading_bot - INFO - Backtesting 36 trades out of 262 candidates...
+2025-11-23 15:27:08,645 - trading_bot - INFO - Initial capital: $6000.00, Risk per trade: 0.60%
+2025-11-23 15:27:08,646 - trading_bot - INFO - Backtest complete! Final Equity: $6518.26 | Total PnL: $518.26 | Win Rate: 75.0% (27W/9L)
+2025-11-23 15:27:08,648 - trading_bot - INFO - [WFA] Fold 7: training on 1683 samples (2021-07-01 -> 2025-07-01), scoring 484 trades.
+2025-11-23 15:27:08,648 - trading_bot - INFO - Training LGBM with 1683 samples...
+2025-11-23 15:27:11,547 - trading_bot - INFO - 
+============================================================
+2025-11-23 15:27:11,547 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-23 15:27:11,547 - trading_bot - INFO - ============================================================
+2025-11-23 15:27:11,547 - trading_bot - INFO - Total candidates: 484
+2025-11-23 15:27:11,547 - trading_bot - INFO - Mean probability: 0.480
+2025-11-23 15:27:11,547 - trading_bot - INFO - Median probability: 0.482
+2025-11-23 15:27:11,547 - trading_bot - INFO - Std probability: 0.214
+2025-11-23 15:27:11,547 - trading_bot - INFO - Min probability: 0.008
+2025-11-23 15:27:11,547 - trading_bot - INFO - Max probability: 0.928
+2025-11-23 15:27:11,547 - trading_bot - INFO - 
+Probability distribution:
+2025-11-23 15:27:11,547 - trading_bot - INFO -   < 0.3: 98 (20.2%)
+2025-11-23 15:27:11,547 - trading_bot - INFO -   0.3-0.4: 65 (13.4%)
+2025-11-23 15:27:11,547 - trading_bot - INFO -   0.4-0.5: 96 (19.8%)
+2025-11-23 15:27:11,548 - trading_bot - INFO -   0.5-0.6: 85 (17.6%)
+2025-11-23 15:27:11,548 - trading_bot - INFO -   >= 0.6: 140 (28.9%)
+2025-11-23 15:27:11,548 - trading_bot - INFO - 
+Using threshold: 0.58
+2025-11-23 15:27:11,548 - trading_bot - INFO - Candidates above threshold: 162 (33.5%)
+2025-11-23 15:27:11,551 - trading_bot - INFO - After cooldown filter: 93 trades (removed 69 clustered trades)
+2025-11-23 15:27:11,551 - trading_bot - INFO - Backtesting 93 trades out of 484 candidates...
+2025-11-23 15:27:11,551 - trading_bot - INFO - Initial capital: $6000.00, Risk per trade: 0.60%
+2025-11-23 15:27:11,553 - trading_bot - INFO - Backtest complete! Final Equity: $6124.39 | Total PnL: $124.39 | Win Rate: 57.0% (53W/40L)
+2025-11-23 15:27:11,554 - trading_bot - INFO - 
+============================================================
+2025-11-23 15:27:11,554 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-23 15:27:11,554 - trading_bot - INFO - ============================================================
+2025-11-23 15:27:11,554 - trading_bot - INFO - Total candidates: 484
+2025-11-23 15:27:11,554 - trading_bot - INFO - Mean probability: 0.480
+2025-11-23 15:27:11,554 - trading_bot - INFO - Median probability: 0.482
+2025-11-23 15:27:11,555 - trading_bot - INFO - Std probability: 0.214
+2025-11-23 15:27:11,555 - trading_bot - INFO - Min probability: 0.008
+2025-11-23 15:27:11,555 - trading_bot - INFO - Max probability: 0.928
+2025-11-23 15:27:11,555 - trading_bot - INFO - 
+Probability distribution:
+2025-11-23 15:27:11,555 - trading_bot - INFO -   < 0.3: 98 (20.2%)
+2025-11-23 15:27:11,555 - trading_bot - INFO -   0.3-0.4: 65 (13.4%)
+2025-11-23 15:27:11,555 - trading_bot - INFO -   0.4-0.5: 96 (19.8%)
+2025-11-23 15:27:11,555 - trading_bot - INFO -   0.5-0.6: 85 (17.6%)
+2025-11-23 15:27:11,555 - trading_bot - INFO -   >= 0.6: 140 (28.9%)
+2025-11-23 15:27:11,555 - trading_bot - INFO - 
+Using threshold: 0.6
+2025-11-23 15:27:11,555 - trading_bot - INFO - Candidates above threshold: 140 (28.9%)
+2025-11-23 15:27:11,558 - trading_bot - INFO - After cooldown filter: 82 trades (removed 58 clustered trades)
+2025-11-23 15:27:11,558 - trading_bot - INFO - Backtesting 82 trades out of 484 candidates...
+2025-11-23 15:27:11,558 - trading_bot - INFO - Initial capital: $6000.00, Risk per trade: 0.60%
+2025-11-23 15:27:11,560 - trading_bot - INFO - Backtest complete! Final Equity: $6078.33 | Total PnL: $78.33 | Win Rate: 56.1% (46W/36L)
+2025-11-23 15:27:11,562 - trading_bot - INFO - 
+============================================================
+2025-11-23 15:27:11,562 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-23 15:27:11,562 - trading_bot - INFO - ============================================================
+2025-11-23 15:27:11,562 - trading_bot - INFO - Total candidates: 484
+2025-11-23 15:27:11,562 - trading_bot - INFO - Mean probability: 0.480
+2025-11-23 15:27:11,562 - trading_bot - INFO - Median probability: 0.482
+2025-11-23 15:27:11,562 - trading_bot - INFO - Std probability: 0.214
+2025-11-23 15:27:11,562 - trading_bot - INFO - Min probability: 0.008
+2025-11-23 15:27:11,562 - trading_bot - INFO - Max probability: 0.928
+2025-11-23 15:27:11,562 - trading_bot - INFO - 
+Probability distribution:
+2025-11-23 15:27:11,562 - trading_bot - INFO -   < 0.3: 98 (20.2%)
+2025-11-23 15:27:11,562 - trading_bot - INFO -   0.3-0.4: 65 (13.4%)
+2025-11-23 15:27:11,562 - trading_bot - INFO -   0.4-0.5: 96 (19.8%)
+2025-11-23 15:27:11,562 - trading_bot - INFO -   0.5-0.6: 85 (17.6%)
+2025-11-23 15:27:11,562 - trading_bot - INFO -   >= 0.6: 140 (28.9%)
+2025-11-23 15:27:11,562 - trading_bot - INFO - 
+Using threshold: 0.62
+2025-11-23 15:27:11,563 - trading_bot - INFO - Candidates above threshold: 128 (26.4%)
+2025-11-23 15:27:11,565 - trading_bot - INFO - After cooldown filter: 78 trades (removed 50 clustered trades)
+2025-11-23 15:27:11,565 - trading_bot - INFO - Backtesting 78 trades out of 484 candidates...
+2025-11-23 15:27:11,565 - trading_bot - INFO - Initial capital: $6000.00, Risk per trade: 0.60%
+2025-11-23 15:27:11,567 - trading_bot - INFO - Backtest complete! Final Equity: $6237.86 | Total PnL: $237.86 | Win Rate: 59.0% (46W/32L)
+2025-11-23 15:27:11,568 - trading_bot - INFO - 
+============================================================
+2025-11-23 15:27:11,568 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-23 15:27:11,568 - trading_bot - INFO - ============================================================
+2025-11-23 15:27:11,568 - trading_bot - INFO - Total candidates: 484
+2025-11-23 15:27:11,568 - trading_bot - INFO - Mean probability: 0.480
+2025-11-23 15:27:11,568 - trading_bot - INFO - Median probability: 0.482
+2025-11-23 15:27:11,568 - trading_bot - INFO - Std probability: 0.214
+2025-11-23 15:27:11,568 - trading_bot - INFO - Min probability: 0.008
+2025-11-23 15:27:11,568 - trading_bot - INFO - Max probability: 0.928
+2025-11-23 15:27:11,568 - trading_bot - INFO - 
+Probability distribution:
+2025-11-23 15:27:11,569 - trading_bot - INFO -   < 0.3: 98 (20.2%)
+2025-11-23 15:27:11,569 - trading_bot - INFO -   0.3-0.4: 65 (13.4%)
+2025-11-23 15:27:11,569 - trading_bot - INFO -   0.4-0.5: 96 (19.8%)
+2025-11-23 15:27:11,569 - trading_bot - INFO -   0.5-0.6: 85 (17.6%)
+2025-11-23 15:27:11,569 - trading_bot - INFO -   >= 0.6: 140 (28.9%)
+2025-11-23 15:27:11,569 - trading_bot - INFO - 
+Using threshold: 0.65
+2025-11-23 15:27:11,569 - trading_bot - INFO - Candidates above threshold: 112 (23.1%)
+2025-11-23 15:27:11,571 - trading_bot - INFO - After cooldown filter: 71 trades (removed 41 clustered trades)
+2025-11-23 15:27:11,571 - trading_bot - INFO - Backtesting 71 trades out of 484 candidates...
+2025-11-23 15:27:11,571 - trading_bot - INFO - Initial capital: $6000.00, Risk per trade: 0.60%
+2025-11-23 15:27:11,573 - trading_bot - INFO - Backtest complete! Final Equity: $6299.41 | Total PnL: $299.41 | Win Rate: 60.6% (43W/28L)
+2025-11-23 15:27:11,574 - trading_bot - INFO - 
+============================================================
+2025-11-23 15:27:11,574 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-23 15:27:11,574 - trading_bot - INFO - ============================================================
+2025-11-23 15:27:11,574 - trading_bot - INFO - Total candidates: 484
+2025-11-23 15:27:11,574 - trading_bot - INFO - Mean probability: 0.480
+2025-11-23 15:27:11,574 - trading_bot - INFO - Median probability: 0.482
+2025-11-23 15:27:11,574 - trading_bot - INFO - Std probability: 0.214
+2025-11-23 15:27:11,574 - trading_bot - INFO - Min probability: 0.008
+2025-11-23 15:27:11,574 - trading_bot - INFO - Max probability: 0.928
+2025-11-23 15:27:11,574 - trading_bot - INFO - 
+Probability distribution:
+2025-11-23 15:27:11,575 - trading_bot - INFO -   < 0.3: 98 (20.2%)
+2025-11-23 15:27:11,575 - trading_bot - INFO -   0.3-0.4: 65 (13.4%)
+2025-11-23 15:27:11,575 - trading_bot - INFO -   0.4-0.5: 96 (19.8%)
+2025-11-23 15:27:11,575 - trading_bot - INFO -   0.5-0.6: 85 (17.6%)
+2025-11-23 15:27:11,575 - trading_bot - INFO -   >= 0.6: 140 (28.9%)
+2025-11-23 15:27:11,575 - trading_bot - INFO - 
+Using threshold: 0.68
+2025-11-23 15:27:11,575 - trading_bot - INFO - Candidates above threshold: 96 (19.8%)
+2025-11-23 15:27:11,577 - trading_bot - INFO - After cooldown filter: 64 trades (removed 32 clustered trades)
+2025-11-23 15:27:11,577 - trading_bot - INFO - Backtesting 64 trades out of 484 candidates...
+2025-11-23 15:27:11,577 - trading_bot - INFO - Initial capital: $6000.00, Risk per trade: 0.60%
+2025-11-23 15:27:11,578 - trading_bot - INFO - Backtest complete! Final Equity: $6155.15 | Total PnL: $155.15 | Win Rate: 57.8% (37W/27L)
+2025-11-23 15:27:11,580 - trading_bot - INFO - 
+============================================================
+2025-11-23 15:27:11,580 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-23 15:27:11,580 - trading_bot - INFO - ============================================================
+2025-11-23 15:27:11,580 - trading_bot - INFO - Total candidates: 484
+2025-11-23 15:27:11,580 - trading_bot - INFO - Mean probability: 0.480
+2025-11-23 15:27:11,580 - trading_bot - INFO - Median probability: 0.482
+2025-11-23 15:27:11,580 - trading_bot - INFO - Std probability: 0.214
+2025-11-23 15:27:11,580 - trading_bot - INFO - Min probability: 0.008
+2025-11-23 15:27:11,580 - trading_bot - INFO - Max probability: 0.928
+2025-11-23 15:27:11,580 - trading_bot - INFO - 
+Probability distribution:
+2025-11-23 15:27:11,580 - trading_bot - INFO -   < 0.3: 98 (20.2%)
+2025-11-23 15:27:11,580 - trading_bot - INFO -   0.3-0.4: 65 (13.4%)
+2025-11-23 15:27:11,580 - trading_bot - INFO -   0.4-0.5: 96 (19.8%)
+2025-11-23 15:27:11,580 - trading_bot - INFO -   0.5-0.6: 85 (17.6%)
+2025-11-23 15:27:11,580 - trading_bot - INFO -   >= 0.6: 140 (28.9%)
+2025-11-23 15:27:11,580 - trading_bot - INFO - 
+Using threshold: 0.7
+2025-11-23 15:27:11,580 - trading_bot - INFO - Candidates above threshold: 86 (17.8%)
+2025-11-23 15:27:11,582 - trading_bot - INFO - After cooldown filter: 57 trades (removed 29 clustered trades)
+2025-11-23 15:27:11,582 - trading_bot - INFO - Backtesting 57 trades out of 484 candidates...
+2025-11-23 15:27:11,582 - trading_bot - INFO - Initial capital: $6000.00, Risk per trade: 0.60%
+2025-11-23 15:27:11,583 - trading_bot - INFO - Backtest complete! Final Equity: $6201.53 | Total PnL: $201.53 | Win Rate: 59.6% (34W/23L)
+2025-11-23 15:27:11,585 - trading_bot - INFO - [WFA] Fold 8: training on 2167 samples (2021-08-01 -> 2025-08-01), scoring 503 trades.
+2025-11-23 15:27:11,585 - trading_bot - INFO - Training LGBM with 2167 samples...
+2025-11-23 15:27:14,394 - trading_bot - INFO - 
+============================================================
+2025-11-23 15:27:14,394 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-23 15:27:14,394 - trading_bot - INFO - ============================================================
+2025-11-23 15:27:14,394 - trading_bot - INFO - Total candidates: 503
+2025-11-23 15:27:14,395 - trading_bot - INFO - Mean probability: 0.440
+2025-11-23 15:27:14,395 - trading_bot - INFO - Median probability: 0.381
+2025-11-23 15:27:14,395 - trading_bot - INFO - Std probability: 0.264
+2025-11-23 15:27:14,395 - trading_bot - INFO - Min probability: 0.028
+2025-11-23 15:27:14,395 - trading_bot - INFO - Max probability: 0.984
+2025-11-23 15:27:14,395 - trading_bot - INFO - 
+Probability distribution:
+2025-11-23 15:27:14,395 - trading_bot - INFO -   < 0.3: 195 (38.8%)
+2025-11-23 15:27:14,395 - trading_bot - INFO -   0.3-0.4: 70 (13.9%)
+2025-11-23 15:27:14,395 - trading_bot - INFO -   0.4-0.5: 62 (12.3%)
+2025-11-23 15:27:14,395 - trading_bot - INFO -   0.5-0.6: 45 (8.9%)
+2025-11-23 15:27:14,395 - trading_bot - INFO -   >= 0.6: 131 (26.0%)
+2025-11-23 15:27:14,395 - trading_bot - INFO - 
+Using threshold: 0.58
+2025-11-23 15:27:14,396 - trading_bot - INFO - Candidates above threshold: 140 (27.8%)
+2025-11-23 15:27:14,398 - trading_bot - INFO - After cooldown filter: 77 trades (removed 63 clustered trades)
+2025-11-23 15:27:14,398 - trading_bot - INFO - Backtesting 77 trades out of 503 candidates...
+2025-11-23 15:27:14,398 - trading_bot - INFO - Initial capital: $6000.00, Risk per trade: 0.60%
+2025-11-23 15:27:14,400 - trading_bot - INFO - Backtest complete! Final Equity: $6226.89 | Total PnL: $226.89 | Win Rate: 58.4% (45W/32L)
+2025-11-23 15:27:14,402 - trading_bot - INFO - 
+============================================================
+2025-11-23 15:27:14,402 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-23 15:27:14,402 - trading_bot - INFO - ============================================================
+2025-11-23 15:27:14,402 - trading_bot - INFO - Total candidates: 503
+2025-11-23 15:27:14,402 - trading_bot - INFO - Mean probability: 0.440
+2025-11-23 15:27:14,402 - trading_bot - INFO - Median probability: 0.381
+2025-11-23 15:27:14,402 - trading_bot - INFO - Std probability: 0.264
+2025-11-23 15:27:14,402 - trading_bot - INFO - Min probability: 0.028
+2025-11-23 15:27:14,402 - trading_bot - INFO - Max probability: 0.984
+2025-11-23 15:27:14,402 - trading_bot - INFO - 
+Probability distribution:
+2025-11-23 15:27:14,402 - trading_bot - INFO -   < 0.3: 195 (38.8%)
+2025-11-23 15:27:14,402 - trading_bot - INFO -   0.3-0.4: 70 (13.9%)
+2025-11-23 15:27:14,402 - trading_bot - INFO -   0.4-0.5: 62 (12.3%)
+2025-11-23 15:27:14,402 - trading_bot - INFO -   0.5-0.6: 45 (8.9%)
+2025-11-23 15:27:14,402 - trading_bot - INFO -   >= 0.6: 131 (26.0%)
+2025-11-23 15:27:14,402 - trading_bot - INFO - 
+Using threshold: 0.6
+2025-11-23 15:27:14,403 - trading_bot - INFO - Candidates above threshold: 131 (26.0%)
+2025-11-23 15:27:14,405 - trading_bot - INFO - After cooldown filter: 68 trades (removed 63 clustered trades)
+2025-11-23 15:27:14,405 - trading_bot - INFO - Backtesting 68 trades out of 503 candidates...
+2025-11-23 15:27:14,405 - trading_bot - INFO - Initial capital: $6000.00, Risk per trade: 0.60%
+2025-11-23 15:27:14,407 - trading_bot - INFO - Backtest complete! Final Equity: $6291.29 | Total PnL: $291.29 | Win Rate: 60.3% (41W/27L)
+2025-11-23 15:27:14,409 - trading_bot - INFO - 
+============================================================
+2025-11-23 15:27:14,409 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-23 15:27:14,409 - trading_bot - INFO - ============================================================
+2025-11-23 15:27:14,409 - trading_bot - INFO - Total candidates: 503
+2025-11-23 15:27:14,409 - trading_bot - INFO - Mean probability: 0.440
+2025-11-23 15:27:14,409 - trading_bot - INFO - Median probability: 0.381
+2025-11-23 15:27:14,409 - trading_bot - INFO - Std probability: 0.264
+2025-11-23 15:27:14,409 - trading_bot - INFO - Min probability: 0.028
+2025-11-23 15:27:14,409 - trading_bot - INFO - Max probability: 0.984
+2025-11-23 15:27:14,409 - trading_bot - INFO - 
+Probability distribution:
+2025-11-23 15:27:14,409 - trading_bot - INFO -   < 0.3: 195 (38.8%)
+2025-11-23 15:27:14,409 - trading_bot - INFO -   0.3-0.4: 70 (13.9%)
+2025-11-23 15:27:14,409 - trading_bot - INFO -   0.4-0.5: 62 (12.3%)
+2025-11-23 15:27:14,409 - trading_bot - INFO -   0.5-0.6: 45 (8.9%)
+2025-11-23 15:27:14,410 - trading_bot - INFO -   >= 0.6: 131 (26.0%)
+2025-11-23 15:27:14,410 - trading_bot - INFO - 
+Using threshold: 0.62
+2025-11-23 15:27:14,410 - trading_bot - INFO - Candidates above threshold: 125 (24.9%)
+2025-11-23 15:27:14,412 - trading_bot - INFO - After cooldown filter: 63 trades (removed 62 clustered trades)
+2025-11-23 15:27:14,412 - trading_bot - INFO - Backtesting 63 trades out of 503 candidates...
+2025-11-23 15:27:14,412 - trading_bot - INFO - Initial capital: $6000.00, Risk per trade: 0.60%
+2025-11-23 15:27:14,414 - trading_bot - INFO - Backtest complete! Final Equity: $6344.20 | Total PnL: $344.20 | Win Rate: 61.9% (39W/24L)
+2025-11-23 15:27:14,415 - trading_bot - INFO - 
+============================================================
+2025-11-23 15:27:14,415 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-23 15:27:14,415 - trading_bot - INFO - ============================================================
+2025-11-23 15:27:14,415 - trading_bot - INFO - Total candidates: 503
+2025-11-23 15:27:14,415 - trading_bot - INFO - Mean probability: 0.440
+2025-11-23 15:27:14,415 - trading_bot - INFO - Median probability: 0.381
+2025-11-23 15:27:14,415 - trading_bot - INFO - Std probability: 0.264
+2025-11-23 15:27:14,415 - trading_bot - INFO - Min probability: 0.028
+2025-11-23 15:27:14,415 - trading_bot - INFO - Max probability: 0.984
+2025-11-23 15:27:14,415 - trading_bot - INFO - 
+Probability distribution:
+2025-11-23 15:27:14,415 - trading_bot - INFO -   < 0.3: 195 (38.8%)
+2025-11-23 15:27:14,415 - trading_bot - INFO -   0.3-0.4: 70 (13.9%)
+2025-11-23 15:27:14,415 - trading_bot - INFO -   0.4-0.5: 62 (12.3%)
+2025-11-23 15:27:14,415 - trading_bot - INFO -   0.5-0.6: 45 (8.9%)
+2025-11-23 15:27:14,415 - trading_bot - INFO -   >= 0.6: 131 (26.0%)
+2025-11-23 15:27:14,416 - trading_bot - INFO - 
+Using threshold: 0.65
+2025-11-23 15:27:14,416 - trading_bot - INFO - Candidates above threshold: 118 (23.5%)
+2025-11-23 15:27:14,418 - trading_bot - INFO - After cooldown filter: 60 trades (removed 58 clustered trades)
+2025-11-23 15:27:14,418 - trading_bot - INFO - Backtesting 60 trades out of 503 candidates...
+2025-11-23 15:27:14,418 - trading_bot - INFO - Initial capital: $6000.00, Risk per trade: 0.60%
+2025-11-23 15:27:14,419 - trading_bot - INFO - Backtest complete! Final Equity: $6343.44 | Total PnL: $343.44 | Win Rate: 61.7% (37W/23L)
+2025-11-23 15:27:14,420 - trading_bot - INFO - 
+============================================================
+2025-11-23 15:27:14,420 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-23 15:27:14,420 - trading_bot - INFO - ============================================================
+2025-11-23 15:27:14,420 - trading_bot - INFO - Total candidates: 503
+2025-11-23 15:27:14,420 - trading_bot - INFO - Mean probability: 0.440
+2025-11-23 15:27:14,420 - trading_bot - INFO - Median probability: 0.381
+2025-11-23 15:27:14,421 - trading_bot - INFO - Std probability: 0.264
+2025-11-23 15:27:14,421 - trading_bot - INFO - Min probability: 0.028
+2025-11-23 15:27:14,421 - trading_bot - INFO - Max probability: 0.984
+2025-11-23 15:27:14,421 - trading_bot - INFO - 
+Probability distribution:
+2025-11-23 15:27:14,421 - trading_bot - INFO -   < 0.3: 195 (38.8%)
+2025-11-23 15:27:14,421 - trading_bot - INFO -   0.3-0.4: 70 (13.9%)
+2025-11-23 15:27:14,421 - trading_bot - INFO -   0.4-0.5: 62 (12.3%)
+2025-11-23 15:27:14,421 - trading_bot - INFO -   0.5-0.6: 45 (8.9%)
+2025-11-23 15:27:14,421 - trading_bot - INFO -   >= 0.6: 131 (26.0%)
+2025-11-23 15:27:14,421 - trading_bot - INFO - 
+Using threshold: 0.68
+2025-11-23 15:27:14,421 - trading_bot - INFO - Candidates above threshold: 110 (21.9%)
+2025-11-23 15:27:14,423 - trading_bot - INFO - After cooldown filter: 56 trades (removed 54 clustered trades)
+2025-11-23 15:27:14,423 - trading_bot - INFO - Backtesting 56 trades out of 503 candidates...
+2025-11-23 15:27:14,423 - trading_bot - INFO - Initial capital: $6000.00, Risk per trade: 0.60%
+2025-11-23 15:27:14,425 - trading_bot - INFO - Backtest complete! Final Equity: $6274.91 | Total PnL: $274.91 | Win Rate: 60.7% (34W/22L)
+2025-11-23 15:27:14,426 - trading_bot - INFO - 
+============================================================
+2025-11-23 15:27:14,426 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-23 15:27:14,426 - trading_bot - INFO - ============================================================
+2025-11-23 15:27:14,426 - trading_bot - INFO - Total candidates: 503
+2025-11-23 15:27:14,427 - trading_bot - INFO - Mean probability: 0.440
+2025-11-23 15:27:14,427 - trading_bot - INFO - Median probability: 0.381
+2025-11-23 15:27:14,427 - trading_bot - INFO - Std probability: 0.264
+2025-11-23 15:27:14,427 - trading_bot - INFO - Min probability: 0.028
+2025-11-23 15:27:14,427 - trading_bot - INFO - Max probability: 0.984
+2025-11-23 15:27:14,427 - trading_bot - INFO - 
+Probability distribution:
+2025-11-23 15:27:14,427 - trading_bot - INFO -   < 0.3: 195 (38.8%)
+2025-11-23 15:27:14,427 - trading_bot - INFO -   0.3-0.4: 70 (13.9%)
+2025-11-23 15:27:14,427 - trading_bot - INFO -   0.4-0.5: 62 (12.3%)
+2025-11-23 15:27:14,427 - trading_bot - INFO -   0.5-0.6: 45 (8.9%)
+2025-11-23 15:27:14,427 - trading_bot - INFO -   >= 0.6: 131 (26.0%)
+2025-11-23 15:27:14,427 - trading_bot - INFO - 
+Using threshold: 0.7
+2025-11-23 15:27:14,427 - trading_bot - INFO - Candidates above threshold: 108 (21.5%)
+2025-11-23 15:27:14,429 - trading_bot - INFO - After cooldown filter: 54 trades (removed 54 clustered trades)
+2025-11-23 15:27:14,429 - trading_bot - INFO - Backtesting 54 trades out of 503 candidates...
+2025-11-23 15:27:14,429 - trading_bot - INFO - Initial capital: $6000.00, Risk per trade: 0.60%
+2025-11-23 15:27:14,431 - trading_bot - INFO - Backtest complete! Final Equity: $6208.44 | Total PnL: $208.44 | Win Rate: 59.3% (32W/22L)
+2025-11-23 15:27:14,433 - trading_bot - INFO - [WFA] Fold 9: training on 2670 samples (2021-09-01 -> 2025-09-01), scoring 457 trades.
+2025-11-23 15:27:14,433 - trading_bot - INFO - Training LGBM with 2670 samples...
+2025-11-23 15:27:17,381 - trading_bot - INFO - 
+============================================================
+2025-11-23 15:27:17,381 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-23 15:27:17,381 - trading_bot - INFO - ============================================================
+2025-11-23 15:27:17,381 - trading_bot - INFO - Total candidates: 457
+2025-11-23 15:27:17,381 - trading_bot - INFO - Mean probability: 0.534
+2025-11-23 15:27:17,382 - trading_bot - INFO - Median probability: 0.542
+2025-11-23 15:27:17,382 - trading_bot - INFO - Std probability: 0.228
+2025-11-23 15:27:17,382 - trading_bot - INFO - Min probability: 0.027
+2025-11-23 15:27:17,382 - trading_bot - INFO - Max probability: 0.983
+2025-11-23 15:27:17,382 - trading_bot - INFO - 
+Probability distribution:
+2025-11-23 15:27:17,382 - trading_bot - INFO -   < 0.3: 84 (18.4%)
+2025-11-23 15:27:17,382 - trading_bot - INFO -   0.3-0.4: 55 (12.0%)
+2025-11-23 15:27:17,382 - trading_bot - INFO -   0.4-0.5: 59 (12.9%)
+2025-11-23 15:27:17,382 - trading_bot - INFO -   0.5-0.6: 62 (13.6%)
+2025-11-23 15:27:17,382 - trading_bot - INFO -   >= 0.6: 197 (43.1%)
+2025-11-23 15:27:17,382 - trading_bot - INFO - 
+Using threshold: 0.58
+2025-11-23 15:27:17,383 - trading_bot - INFO - Candidates above threshold: 210 (46.0%)
+2025-11-23 15:27:17,386 - trading_bot - INFO - After cooldown filter: 108 trades (removed 102 clustered trades)
+2025-11-23 15:27:17,386 - trading_bot - INFO - Backtesting 108 trades out of 457 candidates...
+2025-11-23 15:27:17,386 - trading_bot - INFO - Initial capital: $6000.00, Risk per trade: 0.60%
+2025-11-23 15:27:17,389 - trading_bot - INFO - Backtest complete! Final Equity: $7126.76 | Total PnL: $1126.76 | Win Rate: 68.5% (74W/34L)
+2025-11-23 15:27:17,390 - trading_bot - INFO - 
+============================================================
+2025-11-23 15:27:17,390 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-23 15:27:17,390 - trading_bot - INFO - ============================================================
+2025-11-23 15:27:17,390 - trading_bot - INFO - Total candidates: 457
+2025-11-23 15:27:17,390 - trading_bot - INFO - Mean probability: 0.534
+2025-11-23 15:27:17,390 - trading_bot - INFO - Median probability: 0.542
+2025-11-23 15:27:17,390 - trading_bot - INFO - Std probability: 0.228
+2025-11-23 15:27:17,390 - trading_bot - INFO - Min probability: 0.027
+2025-11-23 15:27:17,390 - trading_bot - INFO - Max probability: 0.983
+2025-11-23 15:27:17,390 - trading_bot - INFO - 
+Probability distribution:
+2025-11-23 15:27:17,390 - trading_bot - INFO -   < 0.3: 84 (18.4%)
+2025-11-23 15:27:17,391 - trading_bot - INFO -   0.3-0.4: 55 (12.0%)
+2025-11-23 15:27:17,391 - trading_bot - INFO -   0.4-0.5: 59 (12.9%)
+2025-11-23 15:27:17,391 - trading_bot - INFO -   0.5-0.6: 62 (13.6%)
+2025-11-23 15:27:17,391 - trading_bot - INFO -   >= 0.6: 197 (43.1%)
+2025-11-23 15:27:17,391 - trading_bot - INFO - 
+Using threshold: 0.6
+2025-11-23 15:27:17,391 - trading_bot - INFO - Candidates above threshold: 197 (43.1%)
+2025-11-23 15:27:17,394 - trading_bot - INFO - After cooldown filter: 103 trades (removed 94 clustered trades)
+2025-11-23 15:27:17,394 - trading_bot - INFO - Backtesting 103 trades out of 457 candidates...
+2025-11-23 15:27:17,394 - trading_bot - INFO - Initial capital: $6000.00, Risk per trade: 0.60%
+2025-11-23 15:27:17,397 - trading_bot - INFO - Backtest complete! Final Equity: $6980.29 | Total PnL: $980.29 | Win Rate: 67.0% (69W/34L)
+2025-11-23 15:27:17,398 - trading_bot - INFO - 
+============================================================
+2025-11-23 15:27:17,398 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-23 15:27:17,398 - trading_bot - INFO - ============================================================
+2025-11-23 15:27:17,398 - trading_bot - INFO - Total candidates: 457
+2025-11-23 15:27:17,398 - trading_bot - INFO - Mean probability: 0.534
+2025-11-23 15:27:17,398 - trading_bot - INFO - Median probability: 0.542
+2025-11-23 15:27:17,398 - trading_bot - INFO - Std probability: 0.228
+2025-11-23 15:27:17,398 - trading_bot - INFO - Min probability: 0.027
+2025-11-23 15:27:17,398 - trading_bot - INFO - Max probability: 0.983
+2025-11-23 15:27:17,398 - trading_bot - INFO - 
+Probability distribution:
+2025-11-23 15:27:17,398 - trading_bot - INFO -   < 0.3: 84 (18.4%)
+2025-11-23 15:27:17,398 - trading_bot - INFO -   0.3-0.4: 55 (12.0%)
+2025-11-23 15:27:17,399 - trading_bot - INFO -   0.4-0.5: 59 (12.9%)
+2025-11-23 15:27:17,399 - trading_bot - INFO -   0.5-0.6: 62 (13.6%)
+2025-11-23 15:27:17,399 - trading_bot - INFO -   >= 0.6: 197 (43.1%)
+2025-11-23 15:27:17,399 - trading_bot - INFO - 
+Using threshold: 0.62
+2025-11-23 15:27:17,399 - trading_bot - INFO - Candidates above threshold: 176 (38.5%)
+2025-11-23 15:27:17,402 - trading_bot - INFO - After cooldown filter: 90 trades (removed 86 clustered trades)
+2025-11-23 15:27:17,402 - trading_bot - INFO - Backtesting 90 trades out of 457 candidates...
+2025-11-23 15:27:17,402 - trading_bot - INFO - Initial capital: $6000.00, Risk per trade: 0.60%
+2025-11-23 15:27:17,404 - trading_bot - INFO - Backtest complete! Final Equity: $7182.61 | Total PnL: $1182.61 | Win Rate: 72.2% (65W/25L)
+2025-11-23 15:27:17,405 - trading_bot - INFO - 
+============================================================
+2025-11-23 15:27:17,405 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-23 15:27:17,405 - trading_bot - INFO - ============================================================
+2025-11-23 15:27:17,405 - trading_bot - INFO - Total candidates: 457
+2025-11-23 15:27:17,405 - trading_bot - INFO - Mean probability: 0.534
+2025-11-23 15:27:17,405 - trading_bot - INFO - Median probability: 0.542
+2025-11-23 15:27:17,405 - trading_bot - INFO - Std probability: 0.228
+2025-11-23 15:27:17,405 - trading_bot - INFO - Min probability: 0.027
+2025-11-23 15:27:17,405 - trading_bot - INFO - Max probability: 0.983
+2025-11-23 15:27:17,405 - trading_bot - INFO - 
+Probability distribution:
+2025-11-23 15:27:17,405 - trading_bot - INFO -   < 0.3: 84 (18.4%)
+2025-11-23 15:27:17,406 - trading_bot - INFO -   0.3-0.4: 55 (12.0%)
+2025-11-23 15:27:17,406 - trading_bot - INFO -   0.4-0.5: 59 (12.9%)
+2025-11-23 15:27:17,406 - trading_bot - INFO -   0.5-0.6: 62 (13.6%)
+2025-11-23 15:27:17,406 - trading_bot - INFO -   >= 0.6: 197 (43.1%)
+2025-11-23 15:27:17,406 - trading_bot - INFO - 
+Using threshold: 0.65
+2025-11-23 15:27:17,406 - trading_bot - INFO - Candidates above threshold: 158 (34.6%)
+2025-11-23 15:27:17,409 - trading_bot - INFO - After cooldown filter: 81 trades (removed 77 clustered trades)
+2025-11-23 15:27:17,409 - trading_bot - INFO - Backtesting 81 trades out of 457 candidates...
+2025-11-23 15:27:17,409 - trading_bot - INFO - Initial capital: $6000.00, Risk per trade: 0.60%
+2025-11-23 15:27:17,411 - trading_bot - INFO - Backtest complete! Final Equity: $7135.70 | Total PnL: $1135.70 | Win Rate: 74.1% (60W/21L)
+2025-11-23 15:27:17,412 - trading_bot - INFO - 
+============================================================
+2025-11-23 15:27:17,412 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-23 15:27:17,412 - trading_bot - INFO - ============================================================
+2025-11-23 15:27:17,412 - trading_bot - INFO - Total candidates: 457
+2025-11-23 15:27:17,412 - trading_bot - INFO - Mean probability: 0.534
+2025-11-23 15:27:17,412 - trading_bot - INFO - Median probability: 0.542
+2025-11-23 15:27:17,412 - trading_bot - INFO - Std probability: 0.228
+2025-11-23 15:27:17,412 - trading_bot - INFO - Min probability: 0.027
+2025-11-23 15:27:17,412 - trading_bot - INFO - Max probability: 0.983
+2025-11-23 15:27:17,412 - trading_bot - INFO - 
+Probability distribution:
+2025-11-23 15:27:17,412 - trading_bot - INFO -   < 0.3: 84 (18.4%)
+2025-11-23 15:27:17,413 - trading_bot - INFO -   0.3-0.4: 55 (12.0%)
+2025-11-23 15:27:17,413 - trading_bot - INFO -   0.4-0.5: 59 (12.9%)
+2025-11-23 15:27:17,413 - trading_bot - INFO -   0.5-0.6: 62 (13.6%)
+2025-11-23 15:27:17,413 - trading_bot - INFO -   >= 0.6: 197 (43.1%)
+2025-11-23 15:27:17,413 - trading_bot - INFO - 
+Using threshold: 0.68
+2025-11-23 15:27:17,413 - trading_bot - INFO - Candidates above threshold: 140 (30.6%)
+2025-11-23 15:27:17,415 - trading_bot - INFO - After cooldown filter: 72 trades (removed 68 clustered trades)
+2025-11-23 15:27:17,415 - trading_bot - INFO - Backtesting 72 trades out of 457 candidates...
+2025-11-23 15:27:17,415 - trading_bot - INFO - Initial capital: $6000.00, Risk per trade: 0.60%
+2025-11-23 15:27:17,417 - trading_bot - INFO - Backtest complete! Final Equity: $7135.97 | Total PnL: $1135.97 | Win Rate: 76.4% (55W/17L)
+2025-11-23 15:27:17,418 - trading_bot - INFO - 
+============================================================
+2025-11-23 15:27:17,418 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-23 15:27:17,418 - trading_bot - INFO - ============================================================
+2025-11-23 15:27:17,418 - trading_bot - INFO - Total candidates: 457
+2025-11-23 15:27:17,418 - trading_bot - INFO - Mean probability: 0.534
+2025-11-23 15:27:17,418 - trading_bot - INFO - Median probability: 0.542
+2025-11-23 15:27:17,418 - trading_bot - INFO - Std probability: 0.228
+2025-11-23 15:27:17,419 - trading_bot - INFO - Min probability: 0.027
+2025-11-23 15:27:17,419 - trading_bot - INFO - Max probability: 0.983
+2025-11-23 15:27:17,419 - trading_bot - INFO - 
+Probability distribution:
+2025-11-23 15:27:17,419 - trading_bot - INFO -   < 0.3: 84 (18.4%)
+2025-11-23 15:27:17,419 - trading_bot - INFO -   0.3-0.4: 55 (12.0%)
+2025-11-23 15:27:17,419 - trading_bot - INFO -   0.4-0.5: 59 (12.9%)
+2025-11-23 15:27:17,419 - trading_bot - INFO -   0.5-0.6: 62 (13.6%)
+2025-11-23 15:27:17,419 - trading_bot - INFO -   >= 0.6: 197 (43.1%)
+2025-11-23 15:27:17,419 - trading_bot - INFO - 
+Using threshold: 0.7
+2025-11-23 15:27:17,419 - trading_bot - INFO - Candidates above threshold: 126 (27.6%)
+2025-11-23 15:27:17,421 - trading_bot - INFO - After cooldown filter: 64 trades (removed 62 clustered trades)
+2025-11-23 15:27:17,421 - trading_bot - INFO - Backtesting 64 trades out of 457 candidates...
+2025-11-23 15:27:17,421 - trading_bot - INFO - Initial capital: $6000.00, Risk per trade: 0.60%
+2025-11-23 15:27:17,423 - trading_bot - INFO - Backtest complete! Final Equity: $6937.36 | Total PnL: $937.36 | Win Rate: 75.0% (48W/16L)
+2025-11-23 15:27:17,425 - trading_bot - INFO - Sequential WFA produced 827 filtered trades across 9 folds (from 2526 raw).
+2025-11-23 15:27:17,427 - trading_bot - INFO - 
+============================================================
+2025-11-23 15:27:17,427 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-23 15:27:17,427 - trading_bot - INFO - ============================================================
+2025-11-23 15:27:17,427 - trading_bot - INFO - Total candidates: 827
+2025-11-23 15:27:17,427 - trading_bot - INFO - Mean probability: 0.787
+2025-11-23 15:27:17,427 - trading_bot - INFO - Median probability: 0.777
+2025-11-23 15:27:17,427 - trading_bot - INFO - Std probability: 0.103
+2025-11-23 15:27:17,427 - trading_bot - INFO - Min probability: 0.581
+2025-11-23 15:27:17,427 - trading_bot - INFO - Max probability: 0.992
+2025-11-23 15:27:17,427 - trading_bot - INFO - 
+Probability distribution:
+2025-11-23 15:27:17,427 - trading_bot - INFO -   < 0.3: 0 (0.0%)
+2025-11-23 15:27:17,427 - trading_bot - INFO -   0.3-0.4: 0 (0.0%)
+2025-11-23 15:27:17,427 - trading_bot - INFO -   0.4-0.5: 0 (0.0%)
+2025-11-23 15:27:17,427 - trading_bot - INFO -   0.5-0.6: 18 (2.2%)
+2025-11-23 15:27:17,427 - trading_bot - INFO -   >= 0.6: 809 (97.8%)
+2025-11-23 15:27:17,427 - trading_bot - INFO - 
+Using threshold: 0.644
+2025-11-23 15:27:17,428 - trading_bot - INFO - Candidates above threshold: 761 (92.0%)
+2025-11-23 15:27:17,438 - trading_bot - INFO - After cooldown filter: 413 trades (removed 348 clustered trades)
+2025-11-23 15:27:17,438 - trading_bot - INFO - Backtesting 413 trades out of 827 candidates...
+2025-11-23 15:27:17,438 - trading_bot - INFO - Initial capital: $6000.00, Risk per trade: 0.60%
+2025-11-23 15:27:17,448 - trading_bot - INFO - Backtest complete! Final Equity: $9211.76 | Total PnL: $3211.76 | Win Rate: 65.6% (271W/142L)
+2025-11-23 15:27:17,760 - trading_bot - INFO - Reports saved to reports/20251123_152717

@@ -1,0 +1,159 @@
+data:
+  source: alpaca
+  folder: Data
+  symbol: SPY
+  timeframe_base: 5m
+  alpaca:
+    start: "2019-01-01"
+    end: null
+
+timeframes:
+  h4: 240
+  h1: 60
+  m30: 30
+
+strategy:
+  strategy_type: smc
+
+  # regular U.S. session focus
+  use_daily_trend_filter: true
+  allow_daily_range_trades: true
+  daily_trend_fast: 20
+  daily_trend_slow: 80
+  daily_trend_range_threshold: 0.05
+
+  session_filter:
+    - regular
+  killzones:
+    regular:
+      start: "09:30"
+      end: "15:55"
+  require_killzone_filter: false
+
+  orb_bars: 9
+  orb_start_hour: 14 # 9:30 ET = 14:30 UTC (rounded)
+  orb_start_minute: 30
+  orb_end_hour: 15
+  orb_end_minute: 0
+  only_trade_after_14utc: true
+  require_atr_expansion: true
+  momentum_period: 9
+  min_momentum: 0.1
+  max_trades_per_day: 3
+
+  risk_percent: 0.4
+  risk_percent_low_vol: 0.2
+
+  atr_period: 14
+  tp_atr_mult: 1.8
+  sl_atr_mult: 1.6
+  label_total_rr: 2.0
+  label_window: 120
+
+  use_trailing_stop: true
+  trailing_stop_atr: 0.8
+  trailing_start_profit: 1.0
+  breakeven_trigger_r: 1.0
+  partial_close_15r: 0.25
+  partial_close_2r: 0.25
+
+  entry_type_filter: both
+  model_threshold: 0.6
+  require_liquidity_sweep: false
+  liquidity_sweep_lookback: 12
+  liquidity_sweep_tolerance: 0.001
+  require_displacement: true
+  displacement_min_atr: 0.7
+  low_vol_ratio: 0.65
+  h4_swing_lookback: 40
+  inducement_lookback: 10
+  fvg_lookback: 8
+  ob_lookback: 15
+  require_discount_premium: false
+  require_inducement: true
+  require_rsi_filter: false
+  require_adx_filter: false
+  require_bull_only: false
+  min_volume_zscore: -1.0
+
+ml:
+  model_path: models/spy_lgbm.pkl
+  metadata_path: models/spy_metadata.json
+  features_path: data/spy_features.parquet
+  lgbm:
+    objective: binary
+    boosting_type: gbdt
+    n_estimators: 1200
+    learning_rate: 0.03
+    num_leaves: 31
+    max_depth: 7
+    min_child_samples: 80
+    subsample: 0.8
+    colsample_bytree: 0.7
+    reg_alpha: 1.0
+    reg_lambda: 3.0
+    min_split_gain: 0.01
+
+backtest:
+  commission: 0.0035   # $0.35 per share per 100 shares (approx)
+  slippage: 0.01
+  initial_capital: 6000
+  mode: normal
+  propfirm:
+    initial_capital: 6000
+    max_drawdown_pct: 0.1
+    per_trade_risk_pct: 0.004
+    payout_cycle_days: 30
+
+adaptive:
+  enabled: true
+  threshold_grid: [0.55, 0.60, 0.65, 0.70]
+  min_trades_per_fold: 20
+  min_fold_win_rate: 0.55
+  skip_negative_months: true
+  risk_step: 0.0003
+  risk_bounds:
+    min: 0.002
+    max: 0.005
+  state_path: spy_adaptive_state.json
+  filter_profiles:
+    baseline:
+      description: "US RTH focus with moderate displacement"
+      session_labels: [us_open, us_close]
+      require_killzone: true
+      min_displacement: 0.9
+    breakout:
+      description: "Stronger momentum breakouts late session"
+      session_labels: [us_close]
+      require_killzone: true
+      min_displacement: 1.2
+    pullback:
+      description: "Early pullback entries after open"
+      session_labels: [us_open]
+      require_killzone: true
+      require_liquidity_sweep: true
+
+wfa:
+  train_years: 3
+  test_months: 3
+  slide_months: 1
+  min_train_samples: 500
+  refresh_months: 1
+
+live_trading:
+  enabled: false
+  broker: alpaca
+  account_type: paper
+  symbol: "SPY"
+  qty: 5
+  order_type: "market"
+  time_in_force: "day"
+  probability_threshold: 0.6
+  poll_interval_seconds: 60
+  catchup_bars: 50
+  history_days: 120
+  max_history_bars: 2000
+  min_history_bars: 300
+  take_profit_multiple: 1.8
+  stop_multiple: 1.6
+

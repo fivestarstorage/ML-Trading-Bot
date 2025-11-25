@@ -1,0 +1,4 @@
+2025-11-19 21:21:57,053 - trading_bot - INFO - Loading data from Data/XAUUSD_M1.csv
+2025-11-19 21:21:57,499 - trading_bot - INFO - Loaded data with auto-detected separator
+2025-11-19 21:21:57,544 - trading_bot - INFO - Data loaded: 200000 rows M1
+2025-11-19 21:21:57,565 - trading_bot - INFO - Resampled: H4=1, H1=1

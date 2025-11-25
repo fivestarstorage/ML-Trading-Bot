@@ -1,0 +1,57 @@
+2025-11-25 12:28:08,565 - trading_bot - INFO - Auto training window selected: 2020-11-25 -> 2025-11-25
+2025-11-25 12:28:08,566 - trading_bot - INFO - Training window: 2020-11-25 -> 2025-11-25
+2025-11-25 12:28:08,569 - trading_bot - INFO - Fetching SPY bars from Alpaca (5Min)...
+2025-11-25 12:29:44,177 - trading_bot - INFO - Loaded H4 data directly: 5417 bars
+2025-11-25 12:29:44,188 - trading_bot - INFO - Loaded Daily data directly: 1303 bars
+2025-11-25 12:29:55,846 - trading_bot - INFO - Generating candidates...
+2025-11-25 12:30:00,041 - trading_bot - INFO - Scanning... 2.1% (5000/234326)
+2025-11-25 12:30:04,674 - trading_bot - INFO - Scanning... 4.3% (10000/234326)
+2025-11-25 12:30:08,794 - trading_bot - INFO - Scanning... 6.4% (15000/234326)
+2025-11-25 12:30:13,661 - trading_bot - INFO - Scanning... 8.5% (20000/234326)
+2025-11-25 12:30:17,994 - trading_bot - INFO - Scanning... 10.7% (25000/234326)
+2025-11-25 12:30:22,297 - trading_bot - INFO - Scanning... 12.8% (30000/234326)
+2025-11-25 12:30:26,550 - trading_bot - INFO - Scanning... 14.9% (35000/234326)
+2025-11-25 12:30:30,261 - trading_bot - INFO - Scanning... 17.1% (40000/234326)
+2025-11-25 12:30:34,385 - trading_bot - INFO - Scanning... 19.2% (45000/234326)
+2025-11-25 12:30:39,265 - trading_bot - INFO - Scanning... 21.3% (50000/234326)
+2025-11-25 12:30:43,512 - trading_bot - INFO - Scanning... 23.5% (55000/234326)
+2025-11-25 12:30:46,437 - trading_bot - INFO - Scanning... 25.6% (60000/234326)
+2025-11-25 12:30:51,117 - trading_bot - INFO - Scanning... 27.7% (65000/234326)
+2025-11-25 12:30:54,402 - trading_bot - INFO - Scanning... 29.9% (70000/234326)
+2025-11-25 12:30:58,609 - trading_bot - INFO - Scanning... 32.0% (75000/234326)
+2025-11-25 12:31:03,083 - trading_bot - INFO - Scanning... 34.1% (80000/234326)
+2025-11-25 12:31:07,514 - trading_bot - INFO - Scanning... 36.3% (85000/234326)
+2025-11-25 12:31:10,867 - trading_bot - INFO - Scanning... 38.4% (90000/234326)
+2025-11-25 12:31:15,486 - trading_bot - INFO - Scanning... 40.5% (95000/234326)
+2025-11-25 12:31:20,236 - trading_bot - INFO - Scanning... 42.7% (100000/234326)
+2025-11-25 12:31:23,690 - trading_bot - INFO - Scanning... 44.8% (105000/234326)
+2025-11-25 12:31:27,361 - trading_bot - INFO - Scanning... 46.9% (110000/234326)
+2025-11-25 12:31:31,543 - trading_bot - INFO - Scanning... 49.1% (115000/234326)
+2025-11-25 12:31:36,715 - trading_bot - INFO - Scanning... 51.2% (120000/234326)
+2025-11-25 12:31:40,687 - trading_bot - INFO - Scanning... 53.3% (125000/234326)
+2025-11-25 12:31:44,509 - trading_bot - INFO - Scanning... 55.5% (130000/234326)
+2025-11-25 12:31:50,114 - trading_bot - INFO - Scanning... 57.6% (135000/234326)
+2025-11-25 12:31:54,921 - trading_bot - INFO - Scanning... 59.7% (140000/234326)
+2025-11-25 12:31:59,499 - trading_bot - INFO - Scanning... 61.9% (145000/234326)
+2025-11-25 12:32:04,924 - trading_bot - INFO - Scanning... 64.0% (150000/234326)
+2025-11-25 12:32:09,837 - trading_bot - INFO - Scanning... 66.1% (155000/234326)
+2025-11-25 12:32:15,154 - trading_bot - INFO - Scanning... 68.3% (160000/234326)
+2025-11-25 12:32:20,464 - trading_bot - INFO - Scanning... 70.4% (165000/234326)
+2025-11-25 12:32:26,006 - trading_bot - INFO - Scanning... 72.5% (170000/234326)
+2025-11-25 12:32:29,743 - trading_bot - INFO - Scanning... 74.7% (175000/234326)
+2025-11-25 12:32:34,851 - trading_bot - INFO - Scanning... 76.8% (180000/234326)
+2025-11-25 12:32:39,499 - trading_bot - INFO - Scanning... 78.9% (185000/234326)
+2025-11-25 12:32:44,934 - trading_bot - INFO - Scanning... 81.1% (190000/234326)
+2025-11-25 12:32:50,150 - trading_bot - INFO - Scanning... 83.2% (195000/234326)
+2025-11-25 12:32:55,712 - trading_bot - INFO - Scanning... 85.4% (200000/234326)
+2025-11-25 12:33:00,710 - trading_bot - INFO - Scanning... 87.5% (205000/234326)
+2025-11-25 12:33:05,389 - trading_bot - INFO - Scanning... 89.6% (210000/234326)
+2025-11-25 12:33:10,460 - trading_bot - INFO - Scanning... 91.8% (215000/234326)
+2025-11-25 12:33:17,823 - trading_bot - INFO - Scanning... 93.9% (220000/234326)
+2025-11-25 12:33:24,731 - trading_bot - INFO - Scanning... 96.0% (225000/234326)
+2025-11-25 12:33:31,087 - trading_bot - INFO - Scanning... 98.2% (230000/234326)
+2025-11-25 12:33:34,607 - trading_bot - INFO - Applied filter profile 'baseline' during training: 27717 -> 27717 candidates
+2025-11-25 12:33:34,614 - trading_bot - INFO - Training LGBM with 27717 samples...
+2025-11-25 12:33:42,523 - trading_bot - INFO - Model saved to models/spy_lgbm.pkl
+2025-11-25 12:33:42,523 - trading_bot - INFO - Model saved to models/spy_lgbm.pkl
+2025-11-25 12:33:42,530 - trading_bot - INFO - Training metadata updated at /Users/rileymartin/ML-Trading-Bot/models/spy_metadata.json

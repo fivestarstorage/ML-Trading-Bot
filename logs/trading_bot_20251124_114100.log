@@ -1,0 +1,28 @@
+2025-11-24 11:41:00,785 - trading_bot - INFO - Loading data from Data/XAU_5m_data.csv
+2025-11-24 11:41:03,751 - trading_bot - INFO - Data loaded: 70222 rows (Base Timeframe 5m)
+2025-11-24 11:41:03,751 - trading_bot - INFO - Loading data from Data/XAU_4h_data.csv
+2025-11-24 11:41:03,802 - trading_bot - INFO - Loaded H4 data directly: 1542 bars
+2025-11-24 11:41:03,802 - trading_bot - INFO - Loading data from Data/XAU_1d_data.csv
+2025-11-24 11:41:03,812 - trading_bot - INFO - Loaded Daily data directly: 258 bars
+2025-11-24 11:41:03,818 - trading_bot - INFO - H4=1542, H1=5900
+2025-11-24 11:41:04,229 - trading_bot - INFO - Using SMC (Smart Money Concepts) strategy
+2025-11-24 11:41:06,579 - trading_bot - INFO - Detected 12177 FVGs and 4500 OBs on Base Timeframe
+2025-11-24 11:41:06,579 - trading_bot - INFO - Generating candidates...
+2025-11-24 11:41:08,006 - trading_bot - INFO - Scanning... 7.1% (5000/70222)
+2025-11-24 11:41:09,617 - trading_bot - INFO - Scanning... 14.2% (10000/70222)
+2025-11-24 11:41:11,256 - trading_bot - INFO - Scanning... 21.4% (15000/70222)
+2025-11-24 11:41:12,822 - trading_bot - INFO - Scanning... 28.5% (20000/70222)
+2025-11-24 11:41:14,176 - trading_bot - INFO - Scanning... 35.6% (25000/70222)
+2025-11-24 11:41:16,142 - trading_bot - INFO - Scanning... 42.7% (30000/70222)
+2025-11-24 11:41:17,825 - trading_bot - INFO - Scanning... 49.8% (35000/70222)
+2025-11-24 11:41:19,284 - trading_bot - INFO - Scanning... 57.0% (40000/70222)
+2025-11-24 11:41:20,820 - trading_bot - INFO - Scanning... 64.1% (45000/70222)
+2025-11-24 11:41:22,421 - trading_bot - INFO - Scanning... 71.2% (50000/70222)
+2025-11-24 11:41:24,002 - trading_bot - INFO - Scanning... 78.3% (55000/70222)
+2025-11-24 11:41:25,474 - trading_bot - INFO - Scanning... 85.4% (60000/70222)
+2025-11-24 11:41:27,224 - trading_bot - INFO - Scanning... 92.6% (65000/70222)
+2025-11-24 11:41:28,712 - trading_bot - INFO - Scanning... 99.7% (70000/70222)
+2025-11-24 11:41:28,736 - trading_bot - INFO - Generated 3880 candidates
+2025-11-24 11:41:28,736 - trading_bot - INFO - Applied adaptive filter profile 'baseline': 3880 / 3880 candidates retained.
+2025-11-24 11:41:28,739 - trading_bot - WARNING - [WFA] Fold 1: insufficient training samples (0) for window ending 2021-01-01 00:00:00. Skipping month.
+2025-11-24 11:41:28,740 - trading_bot - INFO - [WFA] Fold 2: base train 260 samples (2017-02-01 -> 2021-02-01), scoring 309 trades.

@@ -1,0 +1,9 @@
+2025-11-20 08:49:48,788 - trading_bot - INFO - Loading data from Data/XAU_1m_data.csv
+2025-11-20 08:50:03,478 - trading_bot - INFO - Data loaded: 6631694 rows M1
+2025-11-20 08:50:04,006 - trading_bot - INFO - Resampled: H4=32268, H1=122564
+2025-11-20 08:50:10,621 - trading_bot - INFO - Detected 18292 FVGs and 10347 OBs
+2025-11-20 08:50:10,621 - trading_bot - INFO - Generating candidates...
+2025-11-20 08:50:59,627 - trading_bot - INFO - Generated 25333 candidates
+2025-11-20 08:50:59,640 - trading_bot - INFO - Model loaded from models/lgbm_model.pkl
+2025-11-20 08:50:59,759 - trading_bot - INFO - Backtesting 7386 trades out of 25333 candidates...
+2025-11-20 08:51:00,367 - trading_bot - INFO - Reports saved to reports/20251120_085100

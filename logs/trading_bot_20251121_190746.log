@@ -1,0 +1,3 @@
+2025-11-21 19:07:46,412 - trading_bot - INFO - Loading data from Data/XAU_5m_data.csv
+2025-11-21 19:07:52,392 - trading_bot - INFO - Data loaded: 121011 rows (Base Timeframe 5m)
+2025-11-21 19:07:52,410 - trading_bot - INFO - Resampled: H4=2643, H1=10097

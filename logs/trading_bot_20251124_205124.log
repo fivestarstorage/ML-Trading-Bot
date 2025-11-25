@@ -1,0 +1,51 @@
+2025-11-24 20:51:24,884 - trading_bot - INFO - Fetching SPY bars from Alpaca (5Min)...
+2025-11-24 20:52:00,127 - trading_bot - INFO - Data loaded: 82404 rows (Base Timeframe 5m)
+2025-11-24 20:52:00,137 - trading_bot - INFO - Loaded H4 data directly: 1893 bars
+2025-11-24 20:52:00,143 - trading_bot - INFO - Loaded Daily data directly: 469 bars
+2025-11-24 20:52:00,151 - trading_bot - INFO - H4=1893, H1=7010
+2025-11-24 20:52:00,778 - trading_bot - INFO - Using SMC (Smart Money Concepts) strategy
+2025-11-24 20:52:04,630 - trading_bot - INFO - Detected 14862 FVGs and 5448 OBs on Base Timeframe
+2025-11-24 20:52:04,630 - trading_bot - INFO - Generating candidates...
+2025-11-24 20:52:08,534 - trading_bot - INFO - Scanning... 6.1% (5000/82404)
+2025-11-24 20:52:12,340 - trading_bot - INFO - Scanning... 12.1% (10000/82404)
+2025-11-24 20:52:16,566 - trading_bot - INFO - Scanning... 18.2% (15000/82404)
+2025-11-24 20:52:20,662 - trading_bot - INFO - Scanning... 24.3% (20000/82404)
+2025-11-24 20:52:24,771 - trading_bot - INFO - Scanning... 30.3% (25000/82404)
+2025-11-24 20:52:27,807 - trading_bot - INFO - Scanning... 36.4% (30000/82404)
+2025-11-24 20:52:31,944 - trading_bot - INFO - Scanning... 42.5% (35000/82404)
+2025-11-24 20:52:36,024 - trading_bot - INFO - Scanning... 48.5% (40000/82404)
+2025-11-24 20:52:40,072 - trading_bot - INFO - Scanning... 54.6% (45000/82404)
+2025-11-24 20:52:43,843 - trading_bot - INFO - Scanning... 60.7% (50000/82404)
+2025-11-24 20:52:48,184 - trading_bot - INFO - Scanning... 66.7% (55000/82404)
+2025-11-24 20:52:52,264 - trading_bot - INFO - Scanning... 72.8% (60000/82404)
+2025-11-24 20:52:55,579 - trading_bot - INFO - Scanning... 78.9% (65000/82404)
+2025-11-24 20:52:59,699 - trading_bot - INFO - Scanning... 84.9% (70000/82404)
+2025-11-24 20:53:05,194 - trading_bot - INFO - Scanning... 91.0% (75000/82404)
+2025-11-24 20:53:10,616 - trading_bot - INFO - Scanning... 97.1% (80000/82404)
+2025-11-24 20:53:13,386 - trading_bot - INFO - Generated 9864 candidates
+2025-11-24 20:53:13,403 - trading_bot - INFO - Model loaded from models/spy_lgbm.pkl
+2025-11-24 20:53:13,529 - trading_bot - INFO - 
+============================================================
+2025-11-24 20:53:13,529 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-24 20:53:13,529 - trading_bot - INFO - ============================================================
+2025-11-24 20:53:13,529 - trading_bot - INFO - Total candidates: 9864
+2025-11-24 20:53:13,529 - trading_bot - INFO - Mean probability: 0.434
+2025-11-24 20:53:13,529 - trading_bot - INFO - Median probability: 0.424
+2025-11-24 20:53:13,529 - trading_bot - INFO - Std probability: 0.196
+2025-11-24 20:53:13,529 - trading_bot - INFO - Min probability: 0.006
+2025-11-24 20:53:13,529 - trading_bot - INFO - Max probability: 0.981
+2025-11-24 20:53:13,529 - trading_bot - INFO - 
+Probability distribution:
+2025-11-24 20:53:13,530 - trading_bot - INFO -   < 0.3: 2680 (27.2%)
+2025-11-24 20:53:13,530 - trading_bot - INFO -   0.3-0.4: 1783 (18.1%)
+2025-11-24 20:53:13,530 - trading_bot - INFO -   0.4-0.5: 1879 (19.0%)
+2025-11-24 20:53:13,530 - trading_bot - INFO -   0.5-0.6: 1453 (14.7%)
+2025-11-24 20:53:13,530 - trading_bot - INFO -   >= 0.6: 2069 (21.0%)
+2025-11-24 20:53:13,530 - trading_bot - INFO - 
+Using threshold: 0.6
+2025-11-24 20:53:13,531 - trading_bot - INFO - Candidates above threshold: 2069 (21.0%)
+2025-11-24 20:53:13,563 - trading_bot - INFO - After cooldown filter: 991 trades (removed 1078 clustered trades)
+2025-11-24 20:53:13,563 - trading_bot - INFO - Backtesting 991 trades out of 9864 candidates...
+2025-11-24 20:53:13,563 - trading_bot - INFO - Initial capital: $6000.00, Risk per trade: 0.40%
+2025-11-24 20:53:13,591 - trading_bot - INFO - Backtest complete! Final Equity: $13881.21 | Total PnL: $7881.21 | Win Rate: 66.1% (655W/336L)
+2025-11-24 20:53:14,114 - trading_bot - INFO - Reports saved to reports/20251124_205313

@@ -1,0 +1,117 @@
+2025-11-22 17:03:37,508 - trading_bot - INFO - ================================================================================
+2025-11-22 17:03:37,508 - trading_bot - INFO - WIN RATE ANALYSIS
+2025-11-22 17:03:37,508 - trading_bot - INFO - ================================================================================
+2025-11-22 17:03:37,508 - trading_bot - INFO - Loading data...
+2025-11-22 17:03:37,508 - trading_bot - INFO - Loading data from Data/XAU_5M_data.csv
+2025-11-22 17:03:40,584 - trading_bot - INFO - Loading data from Data/XAU_4h_data.csv
+2025-11-22 17:03:40,640 - trading_bot - INFO - Loaded H4 data directly: 954 bars
+2025-11-22 17:03:42,524 - trading_bot - INFO - Generating candidates...
+2025-11-22 17:03:44,382 - trading_bot - INFO - Scanning... 10.1% (5000/49528)
+2025-11-22 17:03:46,915 - trading_bot - INFO - Scanning... 20.2% (10000/49528)
+2025-11-22 17:03:49,703 - trading_bot - INFO - Scanning... 30.3% (15000/49528)
+2025-11-22 17:03:52,183 - trading_bot - INFO - Scanning... 40.4% (20000/49528)
+2025-11-22 17:03:54,751 - trading_bot - INFO - Scanning... 50.5% (25000/49528)
+2025-11-22 17:03:57,736 - trading_bot - INFO - Scanning... 60.6% (30000/49528)
+2025-11-22 17:04:00,968 - trading_bot - INFO - Scanning... 70.7% (35000/49528)
+2025-11-22 17:04:04,778 - trading_bot - INFO - Scanning... 80.8% (40000/49528)
+2025-11-22 17:04:08,226 - trading_bot - INFO - Scanning... 90.9% (45000/49528)
+2025-11-22 17:04:12,093 - trading_bot - INFO - Generated 20511 candidates
+2025-11-22 17:04:12,102 - trading_bot - INFO - Model loaded from models/lgbm_model.pkl
+2025-11-22 17:04:12,176 - trading_bot - INFO - After filtering: 555 candidates
+2025-11-22 17:04:12,176 - trading_bot - INFO - 
+================================================================================
+2025-11-22 17:04:12,176 - trading_bot - INFO - CANDIDATE ANALYSIS (Before Backtest)
+2025-11-22 17:04:12,176 - trading_bot - INFO - ================================================================================
+2025-11-22 17:04:12,176 - trading_bot - INFO - Total candidates: 555
+2025-11-22 17:04:12,176 - trading_bot - INFO - Win rate (from labels): 26.8%
+2025-11-22 17:04:12,176 - trading_bot - INFO - Mean ML probability: 0.603
+2025-11-22 17:04:12,178 - trading_bot - INFO - Median ML probability: 0.587
+2025-11-22 17:04:12,178 - trading_bot - INFO - 
+=== BY RSI ===
+2025-11-22 17:04:12,181 - trading_bot - INFO -            target          
+            count      mean
+rsi_bucket                 
+<30            25  0.240000
+30-40          72  0.222222
+40-50         129  0.217054
+50-60         179  0.273743
+60-70         150  0.333333
+>70             0       NaN
+2025-11-22 17:04:12,184 - trading_bot - INFO - 
+=== BY ADX ===
+2025-11-22 17:04:12,185 - trading_bot - INFO -            target          
+            count      mean
+adx_bucket                 
+<20             0       NaN
+20-25         182  0.274725
+25-30         140  0.214286
+30-40         156  0.282051
+>40            77  0.324675
+2025-11-22 17:04:12,187 - trading_bot - INFO - 
+=== BY BIAS ===
+2025-11-22 17:04:12,188 - trading_bot - INFO -      target          
+      count      mean
+bias                 
+bear     50  0.160000
+bull    505  0.279208
+2025-11-22 17:04:12,189 - trading_bot - INFO - 
+=== BY ML PROBABILITY ===
+2025-11-22 17:04:12,190 - trading_bot - INFO -             target          
+             count      mean
+prob_bucket                 
+<0.3             0       NaN
+0.3-0.4        115  0.286957
+0.4-0.5         98  0.367347
+0.5-0.6         73  0.273973
+0.6-0.7         68  0.279412
+>0.7           201  0.203980
+2025-11-22 17:04:12,192 - trading_bot - INFO - 
+================================================================================
+2025-11-22 17:04:12,192 - trading_bot - INFO - RUNNING BACKTEST
+2025-11-22 17:04:12,192 - trading_bot - INFO - ================================================================================
+2025-11-22 17:04:12,192 - trading_bot - INFO - 
+============================================================
+2025-11-22 17:04:12,192 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-22 17:04:12,192 - trading_bot - INFO - ============================================================
+2025-11-22 17:04:12,192 - trading_bot - INFO - Total candidates: 555
+2025-11-22 17:04:12,192 - trading_bot - INFO - Mean probability: 0.603
+2025-11-22 17:04:12,192 - trading_bot - INFO - Median probability: 0.587
+2025-11-22 17:04:12,192 - trading_bot - INFO - Std probability: 0.185
+2025-11-22 17:04:12,192 - trading_bot - INFO - Min probability: 0.351
+2025-11-22 17:04:12,192 - trading_bot - INFO - Max probability: 0.962
+2025-11-22 17:04:12,192 - trading_bot - INFO - 
+Probability distribution:
+2025-11-22 17:04:12,193 - trading_bot - INFO -   < 0.3: 0 (0.0%)
+2025-11-22 17:04:12,193 - trading_bot - INFO -   0.3-0.4: 115 (20.7%)
+2025-11-22 17:04:12,193 - trading_bot - INFO -   0.4-0.5: 98 (17.7%)
+2025-11-22 17:04:12,193 - trading_bot - INFO -   0.5-0.6: 73 (13.2%)
+2025-11-22 17:04:12,193 - trading_bot - INFO -   >= 0.6: 269 (48.5%)
+2025-11-22 17:04:12,193 - trading_bot - INFO - 
+Using threshold: 0.35
+2025-11-22 17:04:12,193 - trading_bot - INFO - Candidates above threshold: 555 (100.0%)
+2025-11-22 17:04:12,193 - trading_bot - INFO - After OB-only filter: 555 candidates (removed 0 FVG)
+2025-11-22 17:04:12,201 - trading_bot - INFO - After cooldown filter: 216 trades (removed 339 clustered trades)
+2025-11-22 17:04:12,202 - trading_bot - INFO - Backtesting 216 trades out of 555 candidates...
+2025-11-22 17:04:12,202 - trading_bot - INFO - Initial capital: $6000.00, Risk per trade: 7.00%
+2025-11-22 17:04:12,207 - trading_bot - INFO - Backtest complete! Final Equity: $2563.93 | Total PnL: $-3436.07 | Win Rate: 26.9% (58W/158L)
+2025-11-22 17:04:12,208 - trading_bot - INFO - 
+=== BACKTEST RESULTS ===
+2025-11-22 17:04:12,208 - trading_bot - INFO - Total trades: 216
+2025-11-22 17:04:12,208 - trading_bot - INFO - Win rate: 26.9% (58W/158L)
+2025-11-22 17:04:12,208 - trading_bot - INFO - Net profit: $-3436.07
+2025-11-22 17:04:12,208 - trading_bot - INFO - 
+=== WINNING TRADES CHARACTERISTICS ===
+2025-11-22 17:04:12,208 - trading_bot - INFO - Mean RSI: 53.1
+2025-11-22 17:04:12,208 - trading_bot - INFO - Mean ADX: 29.1
+2025-11-22 17:04:12,208 - trading_bot - INFO - Mean ML Prob: 0.563
+2025-11-22 17:04:12,208 - trading_bot - INFO - 
+=== LOSING TRADES CHARACTERISTICS ===
+2025-11-22 17:04:12,208 - trading_bot - INFO - Mean RSI: 51.4
+2025-11-22 17:04:12,208 - trading_bot - INFO - Mean ADX: 30.0
+2025-11-22 17:04:12,208 - trading_bot - INFO - Mean ML Prob: 0.589
+2025-11-22 17:04:12,208 - trading_bot - INFO - 
+================================================================================
+2025-11-22 17:04:12,208 - trading_bot - INFO - RECOMMENDATIONS
+2025-11-22 17:04:12,208 - trading_bot - INFO - ================================================================================
+2025-11-22 17:04:12,208 - trading_bot - INFO - 
+Analysis complete!

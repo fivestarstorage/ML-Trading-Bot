@@ -1,0 +1,4 @@
+2025-11-25 14:29:19,015 - trading_bot - ERROR - Model is not trained on the last 5 years. Run 'train_latest' or the menu action before starting live trading.
+2025-11-25 14:29:42,018 - trading_bot - INFO - Auto training window selected: 2020-11-25 -> 2025-11-25
+2025-11-25 14:29:42,018 - trading_bot - INFO - Training window: 2020-11-25 -> 2025-11-25
+2025-11-25 14:29:42,027 - trading_bot - INFO - Fetching XAU bars from Alpaca (5Min)...

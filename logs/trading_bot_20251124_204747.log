@@ -1,0 +1,26 @@
+2025-11-24 20:47:47,113 - trading_bot - INFO - Fetching SPY bars from Alpaca (5Min)...
+2025-11-24 20:48:18,627 - trading_bot - INFO - Data loaded: 82404 rows (Base Timeframe 5m)
+2025-11-24 20:48:18,633 - trading_bot - INFO - Loaded H4 data directly: 1893 bars
+2025-11-24 20:48:18,638 - trading_bot - INFO - Loaded Daily data directly: 469 bars
+2025-11-24 20:48:18,643 - trading_bot - INFO - H4=1893, H1=7010
+2025-11-24 20:48:19,235 - trading_bot - INFO - Using SMC (Smart Money Concepts) strategy
+2025-11-24 20:48:22,874 - trading_bot - INFO - Detected 14862 FVGs and 5448 OBs on Base Timeframe
+2025-11-24 20:48:22,874 - trading_bot - INFO - Generating candidates...
+2025-11-24 20:48:26,193 - trading_bot - INFO - Scanning... 6.1% (5000/82404)
+2025-11-24 20:48:29,708 - trading_bot - INFO - Scanning... 12.1% (10000/82404)
+2025-11-24 20:48:33,213 - trading_bot - INFO - Scanning... 18.2% (15000/82404)
+2025-11-24 20:48:36,912 - trading_bot - INFO - Scanning... 24.3% (20000/82404)
+2025-11-24 20:48:40,369 - trading_bot - INFO - Scanning... 30.3% (25000/82404)
+2025-11-24 20:48:43,231 - trading_bot - INFO - Scanning... 36.4% (30000/82404)
+2025-11-24 20:48:46,857 - trading_bot - INFO - Scanning... 42.5% (35000/82404)
+2025-11-24 20:48:50,223 - trading_bot - INFO - Scanning... 48.5% (40000/82404)
+2025-11-24 20:48:53,616 - trading_bot - INFO - Scanning... 54.6% (45000/82404)
+2025-11-24 20:48:57,064 - trading_bot - INFO - Scanning... 60.7% (50000/82404)
+2025-11-24 20:49:00,968 - trading_bot - INFO - Scanning... 66.7% (55000/82404)
+2025-11-24 20:49:04,611 - trading_bot - INFO - Scanning... 72.8% (60000/82404)
+2025-11-24 20:49:07,653 - trading_bot - INFO - Scanning... 78.9% (65000/82404)
+2025-11-24 20:49:11,549 - trading_bot - INFO - Scanning... 84.9% (70000/82404)
+2025-11-24 20:49:16,393 - trading_bot - INFO - Scanning... 91.0% (75000/82404)
+2025-11-24 20:49:21,337 - trading_bot - INFO - Scanning... 97.1% (80000/82404)
+2025-11-24 20:49:24,228 - trading_bot - INFO - Generated 9864 candidates
+2025-11-24 20:49:24,252 - trading_bot - INFO - Model loaded from models/spy_lgbm.pkl

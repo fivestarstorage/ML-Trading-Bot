@@ -1,0 +1,7 @@
+2025-11-23 18:29:29,851 - trading_bot - INFO - Loading data from Data/XAU_5m_data.csv
+2025-11-23 18:29:34,893 - trading_bot - INFO - Data loaded: 1425019 rows (Base Timeframe 5m)
+2025-11-23 18:29:34,893 - trading_bot - INFO - Loading data from Data/XAU_4h_data.csv
+2025-11-23 18:29:34,968 - trading_bot - INFO - Loaded H4 data directly: 32418 bars
+2025-11-23 18:29:34,969 - trading_bot - INFO - Loading data from Data/XAU_1d_data.csv
+2025-11-23 18:29:34,983 - trading_bot - INFO - Loaded Daily data directly: 5440 bars
+2025-11-23 18:29:35,050 - trading_bot - INFO - H4=32418, H1=123660

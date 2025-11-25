@@ -1,0 +1,63 @@
+# ML Trading Bot - Quick Command Reference
+
+## TRAINING
+
+# Train model on specific date range (recommended to avoid overfitting)
+python scripts/run_backtest.py --action train_model --symbol XAU --from 2020-01-01 --to 2024-12-31
+
+# Train model on all available data (WARNING: may include future data)
+python scripts/run_backtest.py --action train_model --symbol XAU --from 2020-01-01
+
+
+## BACKTESTING
+
+# Run backtest on specific date range (uses existing trained model)
+python scripts/run_backtest.py --action backtest --symbol XAU --from 2025-01-01 --to 2025-10-31
+
+# Run backtest with custom capital and max drawdown
+python scripts/run_backtest.py --action backtest --symbol XAU --from 2025-01-01 --to 2025-10-31 --initial-capital 1000 --max-drawdown 10
+
+
+## OPTIMIZATION
+
+# Find optimal variable combinations (requires --from and --to dates)
+python scripts/run_backtest.py --action backtest --symbol XAU --from 2025-01-01 --to 2025-10-31 --find-optimised-variables
+
+# Optimization with custom capital and max drawdown
+python scripts/run_backtest.py --action backtest --symbol XAU --from 2025-01-01 --to 2025-10-31 --find-optimised-variables --initial-capital 1000 --max-drawdown 10
+
+
+## WALK-FORWARD ANALYSIS
+
+# Run walk-forward analysis (rolling window training/testing)
+python scripts/run_backtest.py --wfa --symbol XAU --from 2020-01-01 --to 2025-10-31
+
+
+## QUICK SCRIPTS
+
+# Train and backtest in one go (2020-2024 train, 2025 test)
+python scripts/train_and_backtest.py
+
+# Backtest only (uses existing model)
+python scripts/backtest_only.py --from 2025-01-01 --to 2025-10-31
+
+
+## FIND STRATEGY (NEW - Tests until criteria met)
+
+# Find strategy meeting specific criteria (keeps testing until found)
+python scripts/find_strategy.py --win-rate 80 --profit-target 500 --min-trades 50 --from 2025-01-01 --to 2025-10-31 --initial-capital 1000 --max-drawdown 15
+
+# Example: Find strategy with 75% win rate, $1000 profit, 100+ trades
+python scripts/find_strategy.py --win-rate 75 --profit-target 1000 --min-trades 100 --from 2025-01-01 --to 2025-10-31 --initial-capital 1000
+
+
+## NOTES
+
+- Model is saved to: models/lgbm_model.pkl
+- Reports are saved to: reports/TIMESTAMP/
+- Uses 4H data directly from Data/XAU_4h_data.csv (if available)
+- Falls back to resampling 5m data if 4H file not found
+- ML model filters candidates by probability threshold (default: 0.48)
+- Only Order Block entries are used (FVG filtered out by default)
+- find_strategy.py shows live progress and keeps testing until criteria are met
+

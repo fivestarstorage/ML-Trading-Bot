@@ -1,0 +1,2 @@
+tp_atr_mult,sl_atr_mult,model_threshold,entry_type_filter,cooldown_minutes,per_trade_risk_pct,require_discount_premium,require_inducement,require_rsi_filter,require_adx_filter,min_adx
+3.0,1.0,0.35,ob_only,15,0.07,False,False,True,True,20

@@ -1,0 +1,53 @@
+2025-11-23 09:28:25,689 - trading_bot - INFO - Loading data from Data/XAU_5m_data.csv
+2025-11-23 09:28:29,168 - trading_bot - INFO - Data loaded: 25508 rows (Base Timeframe 5m)
+2025-11-23 09:28:29,168 - trading_bot - INFO - Loading data from Data/XAU_4h_data.csv
+2025-11-23 09:28:29,227 - trading_bot - INFO - Loaded H4 data directly: 558 bars
+2025-11-23 09:28:29,227 - trading_bot - INFO - Loading data from Data/XAU_1d_data.csv
+2025-11-23 09:28:29,238 - trading_bot - INFO - Loaded Daily data directly: 93 bars
+2025-11-23 09:28:29,241 - trading_bot - INFO - H4=558, H1=2131
+2025-11-23 09:28:29,406 - trading_bot - INFO - Using SMC (Smart Money Concepts) strategy
+2025-11-23 09:28:30,592 - trading_bot - INFO - Detected 4529 FVGs and 2574 OBs on Base Timeframe
+2025-11-23 09:28:30,592 - trading_bot - INFO - Generating candidates...
+2025-11-23 09:28:32,650 - trading_bot - INFO - Scanning... 19.6% (5000/25508)
+2025-11-23 09:28:34,613 - trading_bot - INFO - Scanning... 39.2% (10000/25508)
+2025-11-23 09:28:36,692 - trading_bot - INFO - Scanning... 58.8% (15000/25508)
+2025-11-23 09:28:38,681 - trading_bot - INFO - Scanning... 78.4% (20000/25508)
+2025-11-23 09:28:40,742 - trading_bot - INFO - Scanning... 98.0% (25000/25508)
+2025-11-23 09:28:40,884 - trading_bot - INFO - Generated 1665 candidates
+2025-11-23 09:28:40,887 - trading_bot - WARNING - [WFA] Fold 1: insufficient training samples (0) for window ending 2025-01-01 00:00:00. Skipping month.
+2025-11-23 09:28:40,887 - trading_bot - INFO - [WFA] Fold 2: training on 244 samples (2021-02-01 -> 2025-02-01), scoring 507 trades.
+2025-11-23 09:28:40,888 - trading_bot - INFO - Training LGBM with 244 samples...
+2025-11-23 09:28:43,604 - trading_bot - INFO - [WFA] Fold 3: training on 751 samples (2021-03-01 -> 2025-03-01), scoring 313 trades.
+2025-11-23 09:28:43,605 - trading_bot - INFO - Training LGBM with 751 samples...
+2025-11-23 09:28:49,248 - trading_bot - INFO - [WFA] Fold 4: training on 1064 samples (2021-04-01 -> 2025-04-01), scoring 134 trades.
+2025-11-23 09:28:49,249 - trading_bot - INFO - Training LGBM with 1064 samples...
+2025-11-23 09:28:55,454 - trading_bot - INFO - [WFA] Fold 5: training on 1198 samples (2021-05-01 -> 2025-05-01), scoring 223 trades.
+2025-11-23 09:28:55,454 - trading_bot - INFO - Training LGBM with 1198 samples...
+2025-11-23 09:29:01,987 - trading_bot - INFO - [WFA] Fold 6: training on 1421 samples (2021-06-01 -> 2025-06-01), scoring 244 trades.
+2025-11-23 09:29:01,987 - trading_bot - INFO - Training LGBM with 1421 samples...
+2025-11-23 09:29:09,346 - trading_bot - INFO - Sequential WFA produced 1421 scored candidates across 6 folds.
+2025-11-23 09:29:09,347 - trading_bot - INFO - 
+============================================================
+2025-11-23 09:29:09,348 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-23 09:29:09,348 - trading_bot - INFO - ============================================================
+2025-11-23 09:29:09,348 - trading_bot - INFO - Total candidates: 1421
+2025-11-23 09:29:09,348 - trading_bot - INFO - Mean probability: 0.522
+2025-11-23 09:29:09,348 - trading_bot - INFO - Median probability: 0.514
+2025-11-23 09:29:09,348 - trading_bot - INFO - Std probability: 0.252
+2025-11-23 09:29:09,348 - trading_bot - INFO - Min probability: 0.008
+2025-11-23 09:29:09,348 - trading_bot - INFO - Max probability: 0.992
+2025-11-23 09:29:09,348 - trading_bot - INFO - 
+Probability distribution:
+2025-11-23 09:29:09,348 - trading_bot - INFO -   < 0.3: 322 (22.7%)
+2025-11-23 09:29:09,348 - trading_bot - INFO -   0.3-0.4: 166 (11.7%)
+2025-11-23 09:29:09,348 - trading_bot - INFO -   0.4-0.5: 192 (13.5%)
+2025-11-23 09:29:09,348 - trading_bot - INFO -   0.5-0.6: 170 (12.0%)
+2025-11-23 09:29:09,349 - trading_bot - INFO -   >= 0.6: 571 (40.2%)
+2025-11-23 09:29:09,349 - trading_bot - INFO - 
+Using threshold: 0.58
+2025-11-23 09:29:09,349 - trading_bot - INFO - Candidates above threshold: 605 (42.6%)
+2025-11-23 09:29:09,359 - trading_bot - INFO - After cooldown filter: 299 trades (removed 306 clustered trades)
+2025-11-23 09:29:09,359 - trading_bot - INFO - Backtesting 299 trades out of 1421 candidates...
+2025-11-23 09:29:09,359 - trading_bot - INFO - Initial capital: $6000.00, Risk per trade: 0.45%
+2025-11-23 09:29:09,368 - trading_bot - INFO - Backtest complete! Final Equity: $7494.15 | Total PnL: $1494.15 | Win Rate: 58.9% (176W/123L)
+2025-11-23 09:29:09,746 - trading_bot - INFO - Reports saved to reports/20251123_092909

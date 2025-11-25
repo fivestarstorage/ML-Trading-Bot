@@ -1,0 +1,135 @@
+Metadata-Version: 2.4
+Name: ml-trading-bot
+Version: 0.1.0
+Summary: ML Trading Bot
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: pandas>=2.0.0
+Requires-Dist: numpy>=1.24.0
+Requires-Dist: lightgbm>=4.0.0
+Requires-Dist: scikit-learn>=1.3.0
+Requires-Dist: matplotlib>=3.7.0
+Requires-Dist: ta>=0.10.2
+Requires-Dist: joblib>=1.3.0
+Requires-Dist: pyyaml>=6.0
+Requires-Dist: pytest>=7.0.0
+Requires-Dist: jupyter>=1.0.0
+Requires-Dist: inquirer>=3.2.1
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: jupyter>=1.0.0; extra == "dev"
+
+# ML Trading Bot
+
+Automated rule-based trading strategy with ML gatekeeper, designed for prop firm simulation and walk-forward analysis.
+
+## Features
+
+- **Structure Analysis**: H4 Breaks of Structure (BoS), CHoCH, and Inducement detection.
+- **Institutional Flow**: Daily EMA (50/200) trend filter, liquidity sweep confirmation, displacement + mitigation checks, killzone/time-of-day gating, and premium/discount zoning.
+- **Entry Logic**: M30/H1 Fair Value Gaps (FVG) and Order Blocks (OB).
+- **ML Gatekeeper**: LightGBM classifier to filter entries (probability >= 55%).
+- **Walk-Forward Analysis**: 5-year train -> 6-month test sliding window.
+- **Prop Firm Mode**: Simulation with $6,000 capital, 8% max drawdown, and bi-weekly payouts.
+
+## Installation
+
+1. Clone the repository.
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Prepare Data:
+   - Place your OHLCV CSV files in `Data/`.
+   - Naming convention: `SYMBOL_TF.csv` (e.g., `XAUUSD_M1.csv`).
+   - Columns: `timestamp, open, high, low, close, volume`.
+
+## Usage
+
+### Command Line Interface
+
+#### Quick Menu (recommended)
+
+Install the project (e.g., `pip install -e .`) and launch the unified CLI menu:
+
+```bash
+trading-bot
+```
+
+From here you can trigger normal/prop backtests, walk-forward analysis, ML retraining, or optimisation runs without memorising arguments.
+
+#### Script Mode
+
+You can still run the legacy script directly if you prefer raw arguments.
+
+**1. Interactive Mode (Recommended)**
+Simply run the script without arguments to see a menu:
+```bash
+python scripts/run_backtest.py
+```
+
+**2. Run Backtest (Prop Firm Mode)**
+Run a simulation with prop firm rules (drawdown limits, profit withdrawals):
+```bash
+python scripts/run_backtest.py --symbol XAUUSD --mode propfirm --config config.yml
+```
+
+**3. Run Backtest for Specific Dates**
+Filter the data to a specific range (ensure your CSV covers these dates):
+```bash
+python scripts/run_backtest.py --symbol XAUUSD --from 2024-01-01 --to 2024-06-01 --mode propfirm --config config.yml
+```
+
+**4. Train Model (on all data)**
+Create a production model using all available history:
+```bash
+python scripts/run_backtest.py --action train_model --config config.yml
+```
+
+**5. Walk-Forward Analysis**
+Run a robust validation using rolling windows (e.g., Train 4 Years -> Test 6 Months):
+```bash
+python scripts/run_backtest.py --wfa --config config.yml
+```
+
+### Configuration
+
+Edit `config.yml` to adjust strategy parameters, risk settings, and file paths.
+
+```yaml
+strategy:
+  strategy_type: smc
+  use_daily_trend_filter: true
+  require_liquidity_sweep: true
+  require_displacement: true
+  killzones:
+    london:
+      start: "07:00"
+      end: "11:00"
+    new_york:
+      start: "13:00"
+      end: "17:00"
+  model_threshold: 0.55
+  risk_reward_min: 2.0
+
+backtest:
+  propfirm:
+    initial_capital: 6000
+    max_drawdown_pct: 0.08
+```
+
+## Project Structure
+
+- `src/`: Core logic (structure, features, entries, ml, backtest).
+- `scripts/`: CLI entry points.
+- `tests/`: Unit tests.
+- `reports/`: Generated backtest reports and plots.
+- `models/`: Saved ML models.
+
+## Testing
+
+Run unit tests:
+```bash
+pytest tests/
+```
+

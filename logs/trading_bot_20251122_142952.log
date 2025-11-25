@@ -1,0 +1,20 @@
+2025-11-22 14:29:52,913 - trading_bot - INFO - Loading data from Data/XAU_5m_data.csv
+2025-11-22 14:29:56,088 - trading_bot - INFO - Data loaded: 5721 rows (Base Timeframe 5m)
+2025-11-22 14:29:56,088 - trading_bot - INFO - Loading data from Data/XAU_4h_data.csv
+2025-11-22 14:29:56,143 - trading_bot - INFO - Loaded H4 data directly: 127 bars
+2025-11-22 14:29:56,148 - trading_bot - INFO - H4=127, H1=479
+2025-11-22 14:29:56,478 - trading_bot - INFO - Detected 918 FVGs and 592 OBs on Base Timeframe
+2025-11-22 14:29:56,479 - trading_bot - INFO - Generating candidates...
+2025-11-22 14:29:57,992 - trading_bot - INFO - Scanning... 87.4% (5000/5721)
+2025-11-22 14:29:58,169 - trading_bot - INFO - Generated 711 candidates
+2025-11-22 14:29:58,169 - trading_bot - INFO - ======================================================================
+2025-11-22 14:29:58,169 - trading_bot - INFO - VARIABLE OPTIMIZATION
+2025-11-22 14:29:58,169 - trading_bot - INFO - ======================================================================
+2025-11-22 14:29:58,169 - trading_bot - INFO - Testing period: 2025-01-01 to 2025-01-31
+2025-11-22 14:29:58,169 - trading_bot - INFO - Loading data from Data/XAU_5m_data.csv
+2025-11-22 14:30:01,473 - trading_bot - INFO - Loading data from Data/XAU_4h_data.csv
+2025-11-22 14:30:01,528 - trading_bot - INFO - Loaded H4 data directly: 127 bars
+2025-11-22 14:30:01,743 - trading_bot - INFO - Generating candidates...
+2025-11-22 14:30:02,712 - trading_bot - INFO - Scanning... 87.4% (5000/5721)
+2025-11-22 14:30:02,877 - trading_bot - INFO - Generated 711 candidates with default config
+2025-11-22 14:30:02,888 - trading_bot - INFO - Model loaded from models/lgbm_model.pkl

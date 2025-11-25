@@ -1,0 +1,120 @@
+2025-11-22 11:29:12,220 - trading_bot - INFO - ============================================================
+2025-11-22 11:29:12,228 - trading_bot - INFO - BACKTEST ONLY (Using Existing Model)
+2025-11-22 11:29:12,228 - trading_bot - INFO - ============================================================
+2025-11-22 11:29:12,228 - trading_bot - INFO - Using model: models/lgbm_model.pkl
+2025-11-22 11:29:12,228 - trading_bot - INFO - 
+Loading backtest data (2025-01-01 to 2025-10-31)...
+2025-11-22 11:29:12,228 - trading_bot - INFO - Loading data from Data/XAU_5m_data.csv
+2025-11-22 11:29:16,214 - trading_bot - INFO - Backtest data loaded: 49528 rows
+2025-11-22 11:29:16,214 - trading_bot - INFO -   Date range: 2025-01-02 01:00:00 to 2025-10-31 00:00:00
+2025-11-22 11:29:16,215 - trading_bot - INFO -   Price range: $2618.80 - $4378.13
+2025-11-22 11:29:16,215 - trading_bot - INFO - Resampling to H4 (240min) and H1 (60min)...
+2025-11-22 11:29:16,223 - trading_bot - INFO - Resampled: H4=1084 bars, H1=4137 bars
+2025-11-22 11:29:16,223 - trading_bot - INFO - Analyzing market structure...
+2025-11-22 11:29:16,361 - trading_bot - INFO - Calculating technical indicators...
+2025-11-22 11:29:16,758 - trading_bot - INFO -   RSI range: 4.7 - 98.0
+2025-11-22 11:29:16,759 - trading_bot - INFO -   ADX range: 0.0 - 84.2
+2025-11-22 11:29:16,759 - trading_bot - INFO - Detecting FVGs and Order Blocks...
+2025-11-22 11:29:19,328 - trading_bot - INFO -   Detected 8762 FVGs and 5248 OBs
+2025-11-22 11:29:19,328 - trading_bot - INFO - Generating backtest candidates...
+2025-11-22 11:29:19,328 - trading_bot - INFO - Generating candidates...
+2025-11-22 11:29:21,135 - trading_bot - INFO - Scanning... 10.1% (5000/49528)
+2025-11-22 11:29:22,861 - trading_bot - INFO - Scanning... 20.2% (10000/49528)
+2025-11-22 11:29:24,951 - trading_bot - INFO - Scanning... 30.3% (15000/49528)
+2025-11-22 11:29:26,846 - trading_bot - INFO - Scanning... 40.4% (20000/49528)
+2025-11-22 11:29:28,759 - trading_bot - INFO - Scanning... 50.5% (25000/49528)
+2025-11-22 11:29:31,954 - trading_bot - INFO - Scanning... 60.6% (30000/49528)
+2025-11-22 11:29:34,693 - trading_bot - INFO - Scanning... 70.7% (35000/49528)
+2025-11-22 11:29:36,410 - trading_bot - INFO - Scanning... 80.8% (40000/49528)
+2025-11-22 11:29:37,729 - trading_bot - INFO - Scanning... 90.9% (45000/49528)
+2025-11-22 11:29:39,790 - trading_bot - INFO - Generated 8226 backtest candidates
+2025-11-22 11:29:39,790 - trading_bot - INFO - Candidate statistics:
+2025-11-22 11:29:39,790 - trading_bot - INFO -   Win rate: 22.7%
+2025-11-22 11:29:39,790 - trading_bot - INFO -   Wins: 1870, Losses: 6356
+2025-11-22 11:29:39,790 - trading_bot - INFO -   Average R-multiple: -0.09
+2025-11-22 11:29:39,790 - trading_bot - INFO - 
+Loading model from models/lgbm_model.pkl...
+2025-11-22 11:29:39,803 - trading_bot - INFO - Model loaded from models/lgbm_model.pkl
+2025-11-22 11:29:39,803 - trading_bot - INFO - ✓ Model loaded successfully
+2025-11-22 11:29:39,803 - trading_bot - INFO - Generating predictions (threshold: 0.5)...
+2025-11-22 11:29:39,835 - trading_bot - INFO - Prediction statistics:
+2025-11-22 11:29:39,835 - trading_bot - INFO -   Mean probability: 0.202
+2025-11-22 11:29:39,835 - trading_bot - INFO -   Min probability: 0.005
+2025-11-22 11:29:39,835 - trading_bot - INFO -   Max probability: 0.923
+2025-11-22 11:29:39,835 - trading_bot - INFO -   Candidates above threshold: 250 / 8226 (3.0%)
+2025-11-22 11:29:39,835 - trading_bot - INFO - 
+============================================================
+2025-11-22 11:29:39,835 - trading_bot - INFO - RUNNING BACKTEST SIMULATION
+2025-11-22 11:29:39,835 - trading_bot - INFO - ============================================================
+2025-11-22 11:29:39,835 - trading_bot - INFO - Initial capital: $6000.00
+2025-11-22 11:29:39,835 - trading_bot - INFO - Risk per trade: 0.50%
+2025-11-22 11:29:39,835 - trading_bot - INFO - Commission: $0.10 per oz
+2025-11-22 11:29:39,835 - trading_bot - INFO - Slippage: $0.10 per oz
+2025-11-22 11:29:39,836 - trading_bot - INFO - 
+============================================================
+2025-11-22 11:29:39,836 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-22 11:29:39,836 - trading_bot - INFO - ============================================================
+2025-11-22 11:29:39,836 - trading_bot - INFO - Total candidates: 8226
+2025-11-22 11:29:39,836 - trading_bot - INFO - Mean probability: 0.202
+2025-11-22 11:29:39,836 - trading_bot - INFO - Median probability: 0.178
+2025-11-22 11:29:39,836 - trading_bot - INFO - Std probability: 0.119
+2025-11-22 11:29:39,836 - trading_bot - INFO - Min probability: 0.005
+2025-11-22 11:29:39,836 - trading_bot - INFO - Max probability: 0.923
+2025-11-22 11:29:39,836 - trading_bot - INFO - 
+Probability distribution:
+2025-11-22 11:29:39,837 - trading_bot - INFO -   < 0.3: 7148 (86.9%)
+2025-11-22 11:29:39,837 - trading_bot - INFO -   0.3-0.4: 587 (7.1%)
+2025-11-22 11:29:39,837 - trading_bot - INFO -   0.4-0.5: 241 (2.9%)
+2025-11-22 11:29:39,837 - trading_bot - INFO -   0.5-0.6: 113 (1.4%)
+2025-11-22 11:29:39,837 - trading_bot - INFO -   >= 0.6: 137 (1.7%)
+2025-11-22 11:29:39,837 - trading_bot - INFO - 
+Using threshold: 0.5
+2025-11-22 11:29:39,838 - trading_bot - INFO - Candidates above threshold: 250 (3.0%)
+2025-11-22 11:29:39,843 - trading_bot - INFO - After cooldown filter: 46 trades (removed 204 clustered trades)
+2025-11-22 11:29:39,843 - trading_bot - INFO - Backtesting 46 trades out of 8226 candidates...
+2025-11-22 11:29:39,843 - trading_bot - INFO - Initial capital: $6000.00, Risk per trade: 0.50%
+2025-11-22 11:29:39,843 - trading_bot - INFO - Progress: 2.2% (1/46) | Equity: $5965.00 | Win Rate: 0.0% (0W/0L)
+2025-11-22 11:29:39,843 - trading_bot - INFO - Progress: 6.5% (3/46) | Equity: $5892.99 | Win Rate: 0.0% (0W/2L)
+2025-11-22 11:29:39,843 - trading_bot - INFO - Progress: 10.9% (5/46) | Equity: $5940.46 | Win Rate: 25.0% (1W/3L)
+2025-11-22 11:29:39,843 - trading_bot - INFO - Progress: 15.2% (7/46) | Equity: $5990.04 | Win Rate: 33.3% (2W/4L)
+2025-11-22 11:29:39,843 - trading_bot - INFO - Progress: 19.6% (9/46) | Equity: $5917.50 | Win Rate: 25.0% (2W/6L)
+2025-11-22 11:29:39,844 - trading_bot - INFO - Progress: 23.9% (11/46) | Equity: $5848.08 | Win Rate: 20.0% (2W/8L)
+2025-11-22 11:29:39,844 - trading_bot - INFO - Progress: 28.3% (13/46) | Equity: $5896.50 | Win Rate: 16.7% (2W/10L)
+2025-11-22 11:29:39,844 - trading_bot - INFO - Progress: 32.6% (15/46) | Equity: $5829.83 | Win Rate: 21.4% (3W/11L)
+2025-11-22 11:29:39,844 - trading_bot - INFO - Progress: 37.0% (17/46) | Equity: $5883.67 | Win Rate: 18.8% (3W/13L)
+2025-11-22 11:29:39,844 - trading_bot - INFO - Progress: 41.3% (19/46) | Equity: $5935.47 | Win Rate: 22.2% (4W/14L)
+2025-11-22 11:29:39,844 - trading_bot - INFO - Progress: 45.7% (21/46) | Equity: $6104.48 | Win Rate: 30.0% (6W/14L)
+2025-11-22 11:29:39,844 - trading_bot - INFO - Progress: 50.0% (23/46) | Equity: $6153.52 | Win Rate: 36.4% (8W/14L)
+2025-11-22 11:29:39,844 - trading_bot - INFO - Progress: 54.3% (25/46) | Equity: $6203.98 | Win Rate: 37.5% (9W/15L)
+2025-11-22 11:29:39,844 - trading_bot - INFO - Progress: 58.7% (27/46) | Equity: $6249.73 | Win Rate: 34.6% (9W/17L)
+2025-11-22 11:29:39,844 - trading_bot - INFO - Progress: 63.0% (29/46) | Equity: $6285.67 | Win Rate: 35.7% (10W/18L)
+2025-11-22 11:29:39,845 - trading_bot - INFO - Progress: 67.4% (31/46) | Equity: $6206.86 | Win Rate: 36.7% (11W/19L)
+2025-11-22 11:29:39,845 - trading_bot - INFO - Progress: 71.7% (33/46) | Equity: $6136.00 | Win Rate: 34.4% (11W/21L)
+2025-11-22 11:29:39,845 - trading_bot - INFO - Progress: 76.1% (35/46) | Equity: $6068.71 | Win Rate: 32.4% (11W/23L)
+2025-11-22 11:29:39,845 - trading_bot - INFO - Progress: 80.4% (37/46) | Equity: $6004.71 | Win Rate: 30.6% (11W/25L)
+2025-11-22 11:29:39,845 - trading_bot - INFO - Progress: 84.8% (39/46) | Equity: $5939.48 | Win Rate: 28.9% (11W/27L)
+2025-11-22 11:29:39,845 - trading_bot - INFO - Progress: 89.1% (41/46) | Equity: $5873.02 | Win Rate: 27.5% (11W/29L)
+2025-11-22 11:29:39,845 - trading_bot - INFO - Progress: 93.5% (43/46) | Equity: $5806.38 | Win Rate: 26.2% (11W/31L)
+2025-11-22 11:29:39,845 - trading_bot - INFO - Progress: 97.8% (45/46) | Equity: $5860.62 | Win Rate: 25.0% (11W/33L)
+2025-11-22 11:29:39,845 - trading_bot - INFO - Progress: 100.0% (46/46) | Equity: $5828.75 | Win Rate: 26.7% (12W/33L)
+2025-11-22 11:29:39,845 - trading_bot - INFO - Backtest complete! Final Equity: $5828.75 | Total PnL: $-171.25 | Win Rate: 26.1% (12W/34L)
+2025-11-22 11:29:40,191 - trading_bot - INFO - 
+============================================================
+2025-11-22 11:29:40,191 - trading_bot - INFO - BACKTEST RESULTS
+2025-11-22 11:29:40,191 - trading_bot - INFO - ============================================================
+2025-11-22 11:29:40,191 - trading_bot - INFO - Total Trades: 46
+2025-11-22 11:29:40,191 - trading_bot - INFO -   Wins: 12, Losses: 34
+2025-11-22 11:29:40,191 - trading_bot - INFO - Net Profit: $-171.25
+2025-11-22 11:29:40,191 - trading_bot - INFO -   Return: -2.85%
+2025-11-22 11:29:40,191 - trading_bot - INFO - Win Rate: 26.1%
+2025-11-22 11:29:40,191 - trading_bot - INFO - Profit Factor: 0.86
+2025-11-22 11:29:40,191 - trading_bot - INFO - Average Win: $84.26
+2025-11-22 11:29:40,191 - trading_bot - INFO - Average Loss: $-34.77
+2025-11-22 11:29:40,192 - trading_bot - INFO - Max Drawdown: -8.15%
+2025-11-22 11:29:40,192 - trading_bot - INFO - Total Costs: $231.25 (Comm: $115.62, Slippage: $115.62)
+2025-11-22 11:29:40,192 - trading_bot - INFO - 
+Reports saved to: reports/20251122_112939
+2025-11-22 11:29:40,192 - trading_bot - INFO - 
+============================================================
+2025-11-22 11:29:40,192 - trading_bot - INFO - BACKTEST COMPLETE
+2025-11-22 11:29:40,192 - trading_bot - INFO - ============================================================

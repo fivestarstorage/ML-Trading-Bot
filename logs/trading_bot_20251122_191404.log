@@ -1,0 +1,10 @@
+2025-11-22 19:14:04,534 - trading_bot - INFO - Loading data from Data/XAU_5m_data.csv
+2025-11-22 19:14:09,313 - trading_bot - INFO - Data loaded: 828 rows (Base Timeframe 5m)
+2025-11-22 19:14:09,313 - trading_bot - INFO - Loading data from Data/XAU_4h_data.csv
+2025-11-22 19:14:09,386 - trading_bot - INFO - Loaded H4 data directly: 19 bars
+2025-11-22 19:14:09,388 - trading_bot - INFO - H4=19, H1=69
+2025-11-22 19:14:09,396 - trading_bot - INFO - Using SMC (Smart Money Concepts) strategy
+2025-11-22 19:14:09,434 - trading_bot - INFO - Detected 113 FVGs and 56 OBs on Base Timeframe
+2025-11-22 19:14:09,434 - trading_bot - INFO - Generating candidates...
+2025-11-22 19:14:09,505 - trading_bot - INFO - Generated 0 candidates
+2025-11-22 19:14:09,505 - trading_bot - WARNING - No candidates generated. Exiting.

@@ -1,0 +1,6 @@
+tp_atr_mult,sl_atr_mult,model_threshold,entry_type_filter,cooldown_minutes,per_trade_risk_pct,trades,win_rate,net_profit,profit_factor,max_drawdown,score
+2.0,2.5,0.9,ob_only,120,0.005,1,100.0,3.7726347591401757,inf,0.0,100000.0
+2.0,3.0,0.8,ob_only,120,0.01,4,100.0,24.809530250602293,inf,0.0,100000.0
+2.0,3.0,0.8,ob_only,120,0.005,4,100.0,12.404765125301147,inf,0.0,100000.0
+2.0,3.0,0.75,ob_only,120,0.01,5,100.0,30.90137270306026,inf,0.0,100000.0
+2.0,3.0,0.75,ob_only,120,0.007,5,100.0,21.63096089214218,inf,0.0,100000.0

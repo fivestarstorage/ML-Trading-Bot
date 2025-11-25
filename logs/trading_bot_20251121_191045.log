@@ -1,0 +1,18 @@
+2025-11-21 19:10:45,726 - trading_bot - INFO - Loading data from Data/XAU_5m_data.csv
+2025-11-21 19:10:51,037 - trading_bot - INFO - Data loaded: 121011 rows (Base Timeframe 5m)
+2025-11-21 19:10:51,054 - trading_bot - INFO - Resampled: H4=2643, H1=10097
+2025-11-21 19:10:59,387 - trading_bot - INFO - Detected 21111 FVGs and 11427 OBs on Base Timeframe
+2025-11-21 19:10:59,387 - trading_bot - INFO - Generating candidates...
+2025-11-21 19:11:02,156 - trading_bot - INFO - Scanning... 4.1% (5000/121011)
+2025-11-21 19:11:06,467 - trading_bot - INFO - Scanning... 8.3% (10000/121011)
+2025-11-21 19:11:09,603 - trading_bot - INFO - Scanning... 12.4% (15000/121011)
+2025-11-21 19:11:13,830 - trading_bot - INFO - Scanning... 16.5% (20000/121011)
+2025-11-21 19:11:18,123 - trading_bot - INFO - Scanning... 20.7% (25000/121011)
+2025-11-21 19:11:22,723 - trading_bot - INFO - Scanning... 24.8% (30000/121011)
+2025-11-21 19:11:29,058 - trading_bot - INFO - Scanning... 28.9% (35000/121011)
+2025-11-21 19:11:31,286 - trading_bot - INFO - Scanning... 33.1% (40000/121011)
+2025-11-21 19:11:35,989 - trading_bot - INFO - Scanning... 37.2% (45000/121011)
+2025-11-21 19:11:38,711 - trading_bot - INFO - Scanning... 41.3% (50000/121011)
+2025-11-21 19:11:44,456 - trading_bot - INFO - Scanning... 45.5% (55000/121011)
+2025-11-21 19:11:46,642 - trading_bot - INFO - Scanning... 49.6% (60000/121011)
+2025-11-21 19:11:51,786 - trading_bot - INFO - Scanning... 53.7% (65000/121011)

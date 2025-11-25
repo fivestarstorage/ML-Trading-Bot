@@ -1,0 +1,18 @@
+2025-11-19 21:48:40,247 - trading_bot - INFO - Loading data from Data/XAUUSD_M1.csv
+2025-11-19 21:48:40,247 - trading_bot - INFO - Detected 7 data columns but only 6 headers. Patching headers.
+2025-11-19 21:48:40,813 - trading_bot - INFO - Data loaded: 200000 rows M1
+2025-11-19 21:48:40,835 - trading_bot - INFO - Resampled: H4=902, H1=3336
+2025-11-19 21:48:41,187 - trading_bot - INFO - Detected 556 FVGs and 321 OBs
+2025-11-19 21:48:41,187 - trading_bot - INFO - Generating candidates...
+2025-11-19 21:48:42,109 - trading_bot - INFO - Generated 472 candidates
+2025-11-19 21:48:42,117 - trading_bot - INFO - Model loaded from models/lgbm_model.pkl
+2025-11-19 21:48:42,123 - trading_bot - INFO - Backtesting 124 trades out of 472 candidates...
+2025-11-19 21:48:42,124 - trading_bot - INFO - Cycle payout: $500.00 at 2025-05-28 07:00:00
+2025-11-19 21:48:42,125 - trading_bot - INFO - Cycle payout: $2176.81 at 2025-06-23 14:00:00
+2025-11-19 21:48:42,125 - trading_bot - INFO - Cycle payout: $1673.84 at 2025-07-07 22:00:00
+2025-11-19 21:48:42,126 - trading_bot - INFO - Cycle payout: $1789.92 at 2025-07-24 12:00:00
+2025-11-19 21:48:42,126 - trading_bot - INFO - Cycle payout: $343.63 at 2025-08-12 04:00:00
+2025-11-19 21:48:42,127 - trading_bot - INFO - Cycle payout: $1157.19 at 2025-09-12 03:00:00
+2025-11-19 21:48:42,127 - trading_bot - INFO - Cycle payout: $273.08 at 2025-10-22 10:00:00
+2025-11-19 21:48:42,127 - trading_bot - INFO - Cycle payout: $511.51 at 2025-11-06 08:00:00
+2025-11-19 21:48:42,458 - trading_bot - INFO - Reports saved to reports

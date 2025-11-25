@@ -1,0 +1,195 @@
+data:
+  source: csv  # 'csv', 'ig', or 'alpaca'
+  folder: Data
+  symbol: XAU
+  timeframe_base: 5m  # Base timeframe of input data
+  ig_stream:
+    stream_url: "https://demo-apd.marketdatasystems.com"
+    adapter_set: "DEFAULT"
+    epic: "CS.D.GC.MONTH2.IP"
+    resolution: "5MINUTE"
+    max_bars: 2000
+  alpaca:
+    start: "2020-01-01"
+    end: null
+
+timeframes:
+  h4: 240
+  h1: 60
+  m30: 30
+
+strategy:
+  # ORB Strategy (similar to New_XAU_Bot.mq5)
+  strategy_type: smc  # 'orb' or 'smc' - switch between strategies
+  
+  # Higher Timeframe Filters
+  use_daily_trend_filter: true
+  allow_daily_range_trades: true
+  daily_trend_fast: 50
+  daily_trend_slow: 200
+  daily_trend_range_threshold: 0.15
+  require_killzone_filter: false
+  session_filter:
+    - london
+    - new_york
+    - asia
+  killzones:
+    asia:
+      start: "00:00"
+      end: "03:00"
+    london:
+      start: "07:00"
+      end: "11:00"
+    new_york:
+      start: "13:00"
+      end: "17:00"
+
+  # ORB Parameters
+  orb_bars: 12  # Opening range bars (12 bars = 1 hour on 5m timeframe, equivalent to 4 bars on M15)
+  orb_start_hour: 13
+  orb_start_minute: 30
+  orb_end_hour: 14
+  orb_end_minute: 30
+  only_trade_after_14utc: false  # Set to false initially to allow more trades, can enable later
+  require_atr_expansion: false  # Set to false initially to allow more trades, can enable later
+  momentum_period: 5
+  min_momentum: 0.0  # Minimum momentum required (0 = disabled)
+  max_trades_per_day: 5
+  
+  # Risk Management (from EA)
+  risk_percent: 1.0  # Normal risk %
+  risk_percent_low_vol: 0.35  # Risk % during low volatility
+  
+  # TP/SL
+  atr_period: 14
+  tp_atr_mult: 2.0  # Take profit multiplier (2:1 R:R default)
+  sl_atr_mult: 2.0  # Stop loss multiplier (StopLossATRFactor from EA)
+  label_window: 200
+  
+  # Trailing Stop
+  use_trailing_stop: true
+  trailing_stop_atr: 1.0
+  trailing_start_profit: 1.0  # Start trailing after 1R profit
+  
+  # Break-even
+  breakeven_trigger_r: 1.5  # Move SL to BE at 1.5R
+  
+  # Partial Closes
+  partial_close_15r: 0.2  # Close 20% at 1.5R
+  partial_close_2r: 0.2  # Close 20% at 2R
+  
+  # ML Filter
+  model_threshold: 0.58  # Stricter ML gate
+  entry_type_filter: both
+  
+  # Legacy SMC parameters (kept for compatibility)
+  h4_swing_lookback: 60
+  inducement_lookback: 6
+  fvg_lookback: 10
+  ob_lookback: 20
+  require_discount_premium: false
+  require_inducement: false
+  require_rsi_filter: false
+  require_adx_filter: false
+  require_bull_only: false
+  require_liquidity_sweep: false
+  liquidity_sweep_lookback: 18
+  liquidity_sweep_tolerance: 0.0015
+  require_displacement: true
+  displacement_min_atr: 0.9
+  low_vol_ratio: 0.7
+  min_volume_zscore: -2.0
+
+ml:
+  model_path: models/lgbm_model.pkl
+  features_path: data/features.parquet
+  
+  lgbm:
+    objective: binary
+    boosting_type: gbdt
+    n_estimators: 2000  # Increased for better learning
+    learning_rate: 0.01  # Lower learning rate for more stable training
+    num_leaves: 15  # Reduced to prevent overfitting
+    max_depth: 5  # Limited depth to prevent overfitting
+    min_child_samples: 50  # Increased to require more samples per leaf
+    subsample: 0.7  # Reduced to prevent overfitting
+    colsample_bytree: 0.7  # Reduced to prevent overfitting
+    reg_alpha: 0.1  # Added L1 regularization
+    reg_lambda: 2.0  # Increased L2 regularization
+    early_stopping_rounds: 100  # More patience
+    verbose: -1
+    min_data_in_leaf: 50  # Require more data per leaf
+    
+  scale_pos_weight_mode: balanced
+
+backtest:
+  commission: 0.10  # Per unit (oz) commission - reduced to more realistic $0.10 per oz
+  slippage: 0.10   # Per unit slippage - reduced to $0.10 per oz (more realistic for gold)
+  mode: normal
+  
+  propfirm:
+    initial_capital: 6000
+    max_drawdown_pct: 0.08
+    per_trade_risk_pct: 0.0045  # 0.45% risk to respect 8% DD
+    payout_cycle_days: 14
+
+wfa:
+  train_years: 4 # Reduced from 10 to speed up
+  test_months: 6
+  slide_months: 1
+  min_train_samples: 200
+
+adaptive:
+  enabled: true
+  threshold_grid: [0.58, 0.6, 0.62, 0.65, 0.68, 0.7]
+  min_trades_per_fold: 12
+  min_fold_win_rate: 0.6
+  skip_negative_months: true
+  risk_step: 0.0005
+  risk_bounds:
+    min: 0.0035
+    max: 0.006
+  state_path: adaptive_state.json
+  session_guard:
+    enabled: true
+    win_rate_threshold: 0.55
+    min_samples: 15
+  filter_profiles:
+    strict_killzone:
+      description: "London/NY killzone only, require sweep + strong displacement"
+      session_labels: ["london", "new_york"]
+      require_killzone: true
+      require_liquidity_sweep: true
+      min_displacement: 1.2
+    balanced_core:
+      description: "Default high-probability flow during London/NY"
+      session_labels: ["london", "new_york"]
+      require_killzone: false
+      min_displacement: 1.0
+    relaxed_asia:
+      description: "Asia + off-session range trades with softer displacement"
+      session_labels: ["asia", "london"]
+      allow_off_session: true
+      min_displacement: 0.85
+      max_displacement: 2.2
+    ny_off_guard:
+      description: "Exclude London, favor NY + off-session continuation"
+      session_labels: ["new_york", "off"]
+      allow_off_session: true
+      require_killzone: false
+      min_displacement: 0.9
+
+live_trading:
+  enabled: false
+  use_demo: true
+  epic: "CS.D.GC.MONTH2.IP"  # IG epic for Gold - update to your chosen market
+  order_type: "MARKET"
+  size: 1.0
+  currency_code: "USD"
+  expiry: "DFB"
+  force_open: true
+  guaranteed_stop: false
+  probability_threshold: 0.65
+  max_history_bars: 2000
+  min_history_bars: 300
+

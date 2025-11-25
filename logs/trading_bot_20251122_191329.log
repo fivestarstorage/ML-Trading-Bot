@@ -1,0 +1,11 @@
+2025-11-22 19:13:29,302 - trading_bot - INFO - Loading data from Data/XAU_5m_data.csv
+2025-11-22 19:13:34,019 - trading_bot - INFO - Data loaded: 828 rows (Base Timeframe 5m)
+2025-11-22 19:13:34,019 - trading_bot - INFO - Loading data from Data/XAU_4h_data.csv
+2025-11-22 19:13:34,091 - trading_bot - INFO - Loaded H4 data directly: 19 bars
+2025-11-22 19:13:34,094 - trading_bot - INFO - H4=19, H1=69
+2025-11-22 19:13:34,103 - trading_bot - INFO - Using ORB (Opening Range Breakout) strategy
+2025-11-22 19:13:34,103 - trading_bot - INFO - Generating ORB candidates...
+2025-11-22 19:13:34,104 - trading_bot - INFO - Processing date 1/3: 2024-01-02
+2025-11-22 19:13:34,117 - trading_bot - INFO - Generated 0 ORB candidates
+2025-11-22 19:13:34,117 - trading_bot - INFO - Generated 0 candidates
+2025-11-22 19:13:34,117 - trading_bot - WARNING - No candidates generated. Exiting.

@@ -1,0 +1,106 @@
+2025-11-22 22:33:28,747 - trading_bot - INFO - Loading data from Data/XAU_5m_data.csv
+2025-11-22 22:33:35,794 - trading_bot - INFO - Data loaded: 43457 rows (Base Timeframe 5m)
+2025-11-22 22:33:35,795 - trading_bot - INFO - Loading data from Data/XAU_4h_data.csv
+2025-11-22 22:33:35,884 - trading_bot - INFO - Loaded H4 data directly: 952 bars
+2025-11-22 22:33:35,884 - trading_bot - INFO - Loading data from Data/XAU_1d_data.csv
+2025-11-22 22:33:35,902 - trading_bot - INFO - Loaded Daily data directly: 160 bars
+2025-11-22 22:33:35,911 - trading_bot - INFO - H4=952, H1=3630
+2025-11-22 22:33:36,443 - trading_bot - INFO - Using SMC (Smart Money Concepts) strategy
+2025-11-22 22:33:39,661 - trading_bot - INFO - Detected 7706 FVGs and 4524 OBs on Base Timeframe
+2025-11-22 22:33:39,662 - trading_bot - INFO - Generating candidates...
+2025-11-22 22:33:42,119 - trading_bot - INFO - Scanning... 11.5% (5000/43457)
+2025-11-22 22:33:44,778 - trading_bot - INFO - Scanning... 23.0% (10000/43457)
+2025-11-22 22:33:47,456 - trading_bot - INFO - Scanning... 34.5% (15000/43457)
+2025-11-22 22:33:50,080 - trading_bot - INFO - Scanning... 46.0% (20000/43457)
+2025-11-22 22:33:52,735 - trading_bot - INFO - Scanning... 57.5% (25000/43457)
+2025-11-22 22:33:55,408 - trading_bot - INFO - Scanning... 69.0% (30000/43457)
+2025-11-22 22:33:58,277 - trading_bot - INFO - Scanning... 80.5% (35000/43457)
+2025-11-22 22:34:00,979 - trading_bot - INFO - Scanning... 92.0% (40000/43457)
+2025-11-22 22:34:02,706 - trading_bot - INFO - Generated 2 candidates
+2025-11-22 22:34:02,706 - trading_bot - INFO - ======================================================================
+2025-11-22 22:34:02,706 - trading_bot - INFO - VARIABLE OPTIMIZATION
+2025-11-22 22:34:02,706 - trading_bot - INFO - ======================================================================
+2025-11-22 22:34:02,706 - trading_bot - INFO - Testing period: 2025-01-01 to 2025-10-01
+2025-11-22 22:34:02,706 - trading_bot - INFO - Max drawdown limit: 8.0%
+2025-11-22 22:34:02,707 - trading_bot - INFO - Initial capital: $6000.00
+2025-11-22 22:34:02,707 - trading_bot - INFO - Loading data from Data/XAU_5m_data.csv
+2025-11-22 22:34:09,854 - trading_bot - INFO - Loading data from Data/XAU_4h_data.csv
+2025-11-22 22:34:09,945 - trading_bot - INFO - Loaded H4 data directly: 952 bars
+2025-11-22 22:34:09,945 - trading_bot - INFO - Loading data from Data/XAU_1d_data.csv
+2025-11-22 22:34:09,963 - trading_bot - INFO - Loaded Daily data directly: 160 bars
+2025-11-22 22:34:13,673 - trading_bot - INFO - Generating candidates...
+2025-11-22 22:34:16,109 - trading_bot - INFO - Scanning... 11.5% (5000/43457)
+2025-11-22 22:34:18,750 - trading_bot - INFO - Scanning... 23.0% (10000/43457)
+2025-11-22 22:34:21,438 - trading_bot - INFO - Scanning... 34.5% (15000/43457)
+2025-11-22 22:34:24,063 - trading_bot - INFO - Scanning... 46.0% (20000/43457)
+2025-11-22 22:34:26,701 - trading_bot - INFO - Scanning... 57.5% (25000/43457)
+2025-11-22 22:34:29,394 - trading_bot - INFO - Scanning... 69.0% (30000/43457)
+2025-11-22 22:34:32,026 - trading_bot - INFO - Scanning... 80.5% (35000/43457)
+2025-11-22 22:34:34,761 - trading_bot - INFO - Scanning... 92.0% (40000/43457)
+2025-11-22 22:34:36,489 - trading_bot - INFO - Generated 2 candidates with default config
+2025-11-22 22:34:36,499 - trading_bot - INFO - Model loaded from models/lgbm_model.pkl
+2025-11-22 22:34:36,504 - trading_bot - INFO - Testing 633 variable combinations...
+2025-11-22 22:34:36,507 - trading_bot - INFO - Progress: 10/633 configurations tested
+2025-11-22 22:34:36,510 - trading_bot - INFO - Progress: 20/633 configurations tested
+2025-11-22 22:34:36,512 - trading_bot - INFO - Progress: 30/633 configurations tested
+2025-11-22 22:34:36,515 - trading_bot - INFO - Progress: 40/633 configurations tested
+2025-11-22 22:34:36,518 - trading_bot - INFO - Progress: 50/633 configurations tested
+2025-11-22 22:34:36,520 - trading_bot - INFO - Progress: 60/633 configurations tested
+2025-11-22 22:34:36,523 - trading_bot - INFO - Progress: 70/633 configurations tested
+2025-11-22 22:34:36,526 - trading_bot - INFO - Progress: 80/633 configurations tested
+2025-11-22 22:34:36,528 - trading_bot - INFO - Progress: 90/633 configurations tested
+2025-11-22 22:34:36,531 - trading_bot - INFO - Progress: 100/633 configurations tested
+2025-11-22 22:34:36,534 - trading_bot - INFO - Progress: 110/633 configurations tested
+2025-11-22 22:34:36,536 - trading_bot - INFO - Progress: 120/633 configurations tested
+2025-11-22 22:34:36,539 - trading_bot - INFO - Progress: 130/633 configurations tested
+2025-11-22 22:34:36,541 - trading_bot - INFO - Progress: 140/633 configurations tested
+2025-11-22 22:34:36,544 - trading_bot - INFO - Progress: 150/633 configurations tested
+2025-11-22 22:34:36,547 - trading_bot - INFO - Progress: 160/633 configurations tested
+2025-11-22 22:34:36,549 - trading_bot - INFO - Progress: 170/633 configurations tested
+2025-11-22 22:34:36,552 - trading_bot - INFO - Progress: 180/633 configurations tested
+2025-11-22 22:34:36,554 - trading_bot - INFO - Progress: 190/633 configurations tested
+2025-11-22 22:34:36,557 - trading_bot - INFO - Progress: 200/633 configurations tested
+2025-11-22 22:34:36,560 - trading_bot - INFO - Progress: 210/633 configurations tested
+2025-11-22 22:34:36,562 - trading_bot - INFO - Progress: 220/633 configurations tested
+2025-11-22 22:34:36,565 - trading_bot - INFO - Progress: 230/633 configurations tested
+2025-11-22 22:34:36,568 - trading_bot - INFO - Progress: 240/633 configurations tested
+2025-11-22 22:34:36,570 - trading_bot - INFO - Progress: 250/633 configurations tested
+2025-11-22 22:34:36,573 - trading_bot - INFO - Progress: 260/633 configurations tested
+2025-11-22 22:34:36,575 - trading_bot - INFO - Progress: 270/633 configurations tested
+2025-11-22 22:34:36,578 - trading_bot - INFO - Progress: 280/633 configurations tested
+2025-11-22 22:34:36,581 - trading_bot - INFO - Progress: 290/633 configurations tested
+2025-11-22 22:34:36,583 - trading_bot - INFO - Progress: 300/633 configurations tested
+2025-11-22 22:34:36,586 - trading_bot - INFO - Progress: 310/633 configurations tested
+2025-11-22 22:34:36,589 - trading_bot - INFO - Progress: 320/633 configurations tested
+2025-11-22 22:34:36,591 - trading_bot - INFO - Progress: 330/633 configurations tested
+2025-11-22 22:34:36,594 - trading_bot - INFO - Progress: 340/633 configurations tested
+2025-11-22 22:34:36,597 - trading_bot - INFO - Progress: 350/633 configurations tested
+2025-11-22 22:34:36,600 - trading_bot - INFO - Progress: 360/633 configurations tested
+2025-11-22 22:34:36,602 - trading_bot - INFO - Progress: 370/633 configurations tested
+2025-11-22 22:34:36,605 - trading_bot - INFO - Progress: 380/633 configurations tested
+2025-11-22 22:34:36,607 - trading_bot - INFO - Progress: 390/633 configurations tested
+2025-11-22 22:34:36,610 - trading_bot - INFO - Progress: 400/633 configurations tested
+2025-11-22 22:34:36,612 - trading_bot - INFO - Progress: 410/633 configurations tested
+2025-11-22 22:34:36,615 - trading_bot - INFO - Progress: 420/633 configurations tested
+2025-11-22 22:34:36,618 - trading_bot - INFO - Progress: 430/633 configurations tested
+2025-11-22 22:34:36,620 - trading_bot - INFO - Progress: 440/633 configurations tested
+2025-11-22 22:34:36,623 - trading_bot - INFO - Progress: 450/633 configurations tested
+2025-11-22 22:34:36,625 - trading_bot - INFO - Progress: 460/633 configurations tested
+2025-11-22 22:34:36,628 - trading_bot - INFO - Progress: 470/633 configurations tested
+2025-11-22 22:34:36,630 - trading_bot - INFO - Progress: 480/633 configurations tested
+2025-11-22 22:34:36,633 - trading_bot - INFO - Progress: 490/633 configurations tested
+2025-11-22 22:34:36,636 - trading_bot - INFO - Progress: 500/633 configurations tested
+2025-11-22 22:34:36,638 - trading_bot - INFO - Progress: 510/633 configurations tested
+2025-11-22 22:34:36,641 - trading_bot - INFO - Progress: 520/633 configurations tested
+2025-11-22 22:34:36,643 - trading_bot - INFO - Progress: 530/633 configurations tested
+2025-11-22 22:34:36,646 - trading_bot - INFO - Progress: 540/633 configurations tested
+2025-11-22 22:34:36,649 - trading_bot - INFO - Progress: 550/633 configurations tested
+2025-11-22 22:34:36,651 - trading_bot - INFO - Progress: 560/633 configurations tested
+2025-11-22 22:34:36,654 - trading_bot - INFO - Progress: 570/633 configurations tested
+2025-11-22 22:34:36,656 - trading_bot - INFO - Progress: 580/633 configurations tested
+2025-11-22 22:34:36,659 - trading_bot - INFO - Progress: 590/633 configurations tested
+2025-11-22 22:34:36,661 - trading_bot - INFO - Progress: 600/633 configurations tested
+2025-11-22 22:34:36,664 - trading_bot - INFO - Progress: 610/633 configurations tested
+2025-11-22 22:34:36,667 - trading_bot - INFO - Progress: 620/633 configurations tested
+2025-11-22 22:34:36,669 - trading_bot - INFO - Progress: 630/633 configurations tested
+2025-11-22 22:34:36,670 - trading_bot - ERROR - No successful tests!

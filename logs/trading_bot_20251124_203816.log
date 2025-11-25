@@ -1,0 +1,6 @@
+2025-11-24 20:38:16,447 - trading_bot - INFO - Fetching SPY bars from Alpaca (5Min)...
+2025-11-24 20:39:30,424 - trading_bot - INFO - Data loaded: 186890 rows (Base Timeframe 5m)
+2025-11-24 20:39:30,437 - trading_bot - INFO - Loaded H4 data directly: 4316 bars
+2025-11-24 20:39:30,448 - trading_bot - INFO - Loaded Daily data directly: 1020 bars
+2025-11-24 20:39:30,462 - trading_bot - INFO - H4=4316, H1=15816
+2025-11-24 20:39:31,784 - trading_bot - INFO - Using SMC (Smart Money Concepts) strategy
