@@ -1,0 +1,5 @@
+2025-11-27 13:59:10,961 - trading_bot - INFO - Auto training window selected: 2020-11-27 -> 2025-11-27
+2025-11-27 13:59:10,963 - trading_bot - INFO - Training window: 2020-11-27 -> 2025-11-27
+2025-11-27 13:59:10,965 - trading_bot - INFO - Loading cached ccxt data from /Users/rileymartin/ML-Trading-Bot/Data/BTCUSD_5m_ccxt.parquet
+2025-11-27 13:59:16,490 - trading_bot - INFO - Loaded H4 data directly: 4164 bars
+2025-11-27 13:59:16,500 - trading_bot - INFO - Loaded Daily data directly: 695 bars

@@ -23,6 +23,7 @@ dependencies = [
     "requests>=2.31.0",
     "python-dotenv>=1.0.0",
     "lightstreamer-client-lib>=1.1.4",
+    "alpaca-py>=0.13.0",
 ]
 
 [project.optional-dependencies]

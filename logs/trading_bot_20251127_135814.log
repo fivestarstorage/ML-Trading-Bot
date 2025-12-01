@@ -1,0 +1,3 @@
+2025-11-27 13:58:14,249 - trading_bot - INFO - Auto training window selected: 2020-11-27 -> 2025-11-27
+2025-11-27 13:58:14,249 - trading_bot - INFO - Training window: 2020-11-27 -> 2025-11-27
+2025-11-27 13:58:14,253 - trading_bot - INFO - Fetching BTC crypto bars from Alpaca (5Min)...

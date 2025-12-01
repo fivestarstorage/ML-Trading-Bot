@@ -1,0 +1,265 @@
+data:
+  source: alpaca
+  folder: Data
+  symbol: BTC
+  timeframe_base: 5m
+  alpaca:
+    asset_class: crypto
+    exchange: us
+    start: "2020-01-01"
+    end: "2025-11-26"
+    limit: 10000
+
+timeframes:
+  h4: 240
+  h1: 60
+  m30: 30
+
+strategy:
+  strategy_type: crypto_momo
+  
+  # === HIGH WIN RATE RISK SETTINGS ===
+  risk_percent: 3.0           # Moderate risk for decent returns
+  risk_percent_low_vol: 1.5   # Lower during low volatility
+  
+  # Higher Timeframe Filters
+  use_daily_trend_filter: true
+  allow_daily_range_trades: true
+  daily_trend_fast: 50
+  daily_trend_slow: 200
+  daily_trend_range_threshold: 0.15
+  require_killzone_filter: true  # Only trade best sessions
+  session_filter:
+    - london
+    - new_york
+  killzones:
+    asia:
+      start: "00:00"
+      end: "03:00"
+    london:
+      start: "07:00"
+      end: "11:00"
+    new_york:
+      start: "13:00"
+      end: "17:00"
+
+  # ORB Parameters
+  orb_bars: 12
+  orb_start_hour: 13
+  orb_start_minute: 30
+  orb_end_hour: 14
+  orb_end_minute: 30
+  only_trade_after_14utc: false
+  require_atr_expansion: false
+  momentum_period: 5
+  min_momentum: 0.0
+  max_trades_per_day: 5
+  
+  # === KEY: SMALLER TP FOR HIGHER WIN RATE ===
+  atr_period: 14
+  tp_atr_mult: 1.2    # SMALL TP - easier to hit = higher win rate
+  sl_atr_mult: 1.5    # WIDER SL - less likely to be stopped out
+  label_window: 200
+  
+  # Trailing Stop - Start earlier
+  use_trailing_stop: true
+  trailing_stop_atr: 0.8
+  trailing_start_profit: 0.6  # Start trailing at 0.6R
+  
+  # Break-even - Move to BE quickly
+  breakeven_trigger_r: 0.8  # Move to BE at 0.8R
+  
+  # Partial Closes
+  partial_close_15r: 0.25
+  partial_close_2r: 0.25
+  
+  # === ULTRA-HIGH MODEL THRESHOLD FOR QUALITY ===
+  model_threshold: 0.70     # VERY HIGH - only best trades
+  entry_type_filter: both
+  
+  # SMC parameters
+  h4_swing_lookback: 60
+  inducement_lookback: 6
+  fvg_lookback: 10
+  ob_lookback: 20
+  require_discount_premium: false
+  require_inducement: false
+  require_rsi_filter: false
+  require_adx_filter: false
+  require_bull_only: false
+  require_liquidity_sweep: false
+  liquidity_sweep_lookback: 18
+  liquidity_sweep_tolerance: 0.0015
+  require_displacement: true
+  displacement_min_atr: 0.9
+  low_vol_ratio: 0.7
+  min_volume_zscore: -2.0
+
+  trend_fast_period: 21
+  trend_slow_period: 55
+
+  crypto:
+    breakout_lookback: 36
+    breakout_buffer_pct: 0.0
+    min_breakout_range_atr: 0.2
+    max_breakout_range_atr: 10.0
+    min_adx: 15
+    min_rsi_long: 52
+    max_rsi_long: 85
+    max_rsi_short: 44
+    min_rsi_short: 18
+    min_atr_ratio: 0.6
+    min_volume_zscore: -2.0
+    min_trend_gap_atr: 0.1
+    max_distance_atr: 3.0
+    min_distance_atr: -2.0
+    reversion_rsi_min_long: 32
+    reversion_rsi_max_long: 58
+    reversion_rsi_min_short: 42
+    reversion_rsi_max_short: 70
+    enable_long: true
+    enable_short: true
+    
+    # === HIGH WIN RATE TP/SL ===
+    tp_atr_mult: 1.0           # 1:1 R:R for high win rate
+    sl_atr_mult: 1.0           # Equal risk/reward
+    label_window: 100          # Faster evaluation
+    
+    min_volume_pressure: 0.85
+    min_mom_composite: 0.002
+    min_volatility_ratio: 0.7
+    max_bb_width: 0.3
+    max_range_contraction: 9.0
+    min_trend_persistence: -0.2
+    killzone_bias_only: false
+    killzone_labels: ["london", "new_york"]
+    min_liquidity_imbalance: 0.12
+    
+    momentum_minutes:
+      fast: 45
+      mid: 240
+      slow: 720
+    volume_minutes:
+      short: 180
+      long: 1440
+    volatility_minutes:
+      short: 120
+      long: 720
+    compression_minutes: 720
+    
+    # === REGIME TP/SL FOR WIN RATE ===
+    regime_tp_multipliers:
+      trend: 1.2        # Small TP in trends
+      compression: 1.0  # Even smaller in compression
+      mean_revert: 0.8  # Very small for reversions
+      neutral: 1.0
+    regime_sl_multipliers:
+      trend: 1.2        # Wider SL
+      compression: 1.0
+      mean_revert: 1.2  # Wider SL for reversions
+      neutral: 1.1
+    
+    meta_feature_columns:
+      - mom_composite
+      - mom_imbalance
+      - volume_pressure
+      - volume_acceleration
+      - volatility_ratio_fast
+      - trend_regime_code
+      - trend_persistence
+      - bb_width
+      - bb_zscore
+      - keltner_distance
+      - vwap_distance
+      - return_1h
+      - return_4h
+      - return_1d
+      - micro_trend
+      - price_acceleration
+      - hour_sin
+      - hour_cos
+      - volume_zscore
+      - atr_ratio
+      - liquidity_imbalance
+
+ml:
+  model_path: models/lgbm_model.pkl
+  features_path: data/features.parquet
+  
+  lgbm:
+    objective: binary
+    boosting_type: gbdt
+    n_estimators: 2000
+    learning_rate: 0.01
+    num_leaves: 15
+    max_depth: 5
+    min_child_samples: 50
+    subsample: 0.7
+    colsample_bytree: 0.7
+    reg_alpha: 0.1
+    reg_lambda: 2.0
+    early_stopping_rounds: 100
+    verbose: -1
+    min_data_in_leaf: 50
+    
+  scale_pos_weight_mode: balanced
+
+backtest:
+  commission: 0.0004
+  slippage: 0.5
+  mode: propfirm
+  
+  propfirm:
+    initial_capital: 6000
+    max_drawdown_pct: 0.10   # 10% max DD (reasonable for good returns)
+    per_trade_risk_pct: 0.03  # 3% risk per trade
+    payout_cycle_days: 14
+
+wfa:
+  train_years: 4
+  test_months: 6
+  slide_months: 1
+  min_train_samples: 100
+
+adaptive:
+  enabled: true
+  threshold_grid: [0.60, 0.65, 0.70, 0.72, 0.75, 0.78, 0.80]  # High thresholds only
+  min_trades_per_fold: 5
+  min_fold_win_rate: 0.65  # Require 65%+ win rate per fold
+  skip_negative_months: true
+  risk_step: 0.005
+  risk_bounds:
+    min: 0.02
+    max: 0.05
+  state_path: btc_high_winrate_state.json
+  session_guard:
+    enabled: false
+    win_rate_threshold: 0.55
+    min_samples: 15
+  filter_profiles:
+    strict_killzone:
+      description: "London/NY killzone only"
+      session_labels: ["london", "new_york"]
+      require_killzone: true
+      require_liquidity_sweep: false
+      min_displacement: 1.0
+    balanced_core:
+      description: "Default high-probability flow during London/NY"
+      session_labels: ["london", "new_york"]
+      require_killzone: false
+      min_displacement: 0.9
+
+live_trading:
+  enabled: false
+  use_demo: true
+  epic: "BTC/USD"
+  order_type: "MARKET"
+  size: 1.0
+  currency_code: "USD"
+  expiry: "DFB"
+  force_open: true
+  guaranteed_stop: false
+  probability_threshold: 0.70
+  max_history_bars: 2000
+  min_history_bars: 300
+

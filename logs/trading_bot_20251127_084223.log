@@ -1,0 +1,34 @@
+2025-11-27 08:42:23,046 - trading_bot - INFO - Loading cached ccxt data from /Users/rileymartin/ML-Trading-Bot/Data/BTCUSD_5m_ccxt.parquet
+2025-11-27 08:42:23,056 - trading_bot - INFO - Data loaded: 52118 rows (Base Timeframe 5m)
+2025-11-27 08:42:23,065 - trading_bot - INFO - Loaded H4 data directly: 1087 bars
+2025-11-27 08:42:23,074 - trading_bot - INFO - Loaded Daily data directly: 182 bars
+2025-11-27 08:42:23,077 - trading_bot - INFO - H4=1087, H1=4345
+2025-11-27 08:42:23,402 - trading_bot - INFO - Using Crypto Momentum strategy
+2025-11-27 08:42:24,920 - trading_bot - INFO - Generated 130 candidates
+2025-11-27 08:42:24,928 - trading_bot - INFO - Model loaded from /Users/rileymartin/ML-Trading-Bot/models/lgbm_model.pkl
+2025-11-27 08:42:24,929 - trading_bot - WARNING - Could not load model: "['dist_to_range_low', 'dist_to_range_high'] not in index". Training on first 50% of data as fallback.
+2025-11-27 08:42:24,929 - trading_bot - INFO - Training ensemble LightGBM with 65 samples (scale_pos_weight=0.23)...
+2025-11-27 08:42:24,939 - trading_bot - INFO - Fold 1/2 AUC proxy: mean prob 0.812
+2025-11-27 08:42:24,947 - trading_bot - INFO - Fold 2/2 AUC proxy: mean prob 0.818
+2025-11-27 08:42:24,947 - trading_bot - INFO - Skipped meta-label training (insufficient samples).
+2025-11-27 08:42:24,949 - trading_bot - INFO - 
+============================================================
+2025-11-27 08:42:24,949 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-27 08:42:24,949 - trading_bot - INFO - ============================================================
+2025-11-27 08:42:24,949 - trading_bot - INFO - Total candidates: 130
+2025-11-27 08:42:24,949 - trading_bot - INFO - Mean probability: 0.815
+2025-11-27 08:42:24,949 - trading_bot - INFO - Median probability: 0.815
+2025-11-27 08:42:24,949 - trading_bot - INFO - Std probability: 0.000
+2025-11-27 08:42:24,949 - trading_bot - INFO - Min probability: 0.815
+2025-11-27 08:42:24,949 - trading_bot - INFO - Max probability: 0.815
+2025-11-27 08:42:24,949 - trading_bot - INFO - 
+Probability distribution:
+2025-11-27 08:42:24,950 - trading_bot - INFO -   < 0.3: 0 (0.0%)
+2025-11-27 08:42:24,950 - trading_bot - INFO -   0.3-0.4: 0 (0.0%)
+2025-11-27 08:42:24,950 - trading_bot - INFO -   0.4-0.5: 0 (0.0%)
+2025-11-27 08:42:24,950 - trading_bot - INFO -   0.5-0.6: 0 (0.0%)
+2025-11-27 08:42:24,950 - trading_bot - INFO -   >= 0.6: 130 (100.0%)
+2025-11-27 08:42:24,950 - trading_bot - INFO - 
+Using threshold: 0.85
+2025-11-27 08:42:24,950 - trading_bot - INFO - Candidates above threshold: 0 (0.0%)
+2025-11-27 08:42:24,950 - trading_bot - WARNING - ⚠️  NO TRADES PASSED THRESHOLD! Consider lowering threshold.

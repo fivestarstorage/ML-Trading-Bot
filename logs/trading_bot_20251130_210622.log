@@ -1,0 +1,83 @@
+2025-11-30 21:06:23,696 - trading_bot - INFO - Fetching SPY bars from Alpaca (5Min)...
+2025-11-30 21:06:45,501 - trading_bot - INFO - Loaded H4 data directly: 1081 bars
+2025-11-30 21:06:45,505 - trading_bot - INFO - Loaded Daily data directly: 255 bars
+2025-11-30 21:06:48,602 - trading_bot - INFO - Generating candidates...
+2025-11-30 21:06:53,710 - trading_bot - INFO - Scanning... 10.7% (5000/46762)
+2025-11-30 21:06:59,182 - trading_bot - INFO - Scanning... 21.4% (10000/46762)
+2025-11-30 21:07:04,970 - trading_bot - INFO - Scanning... 32.1% (15000/46762)
+2025-11-30 21:07:10,986 - trading_bot - INFO - Scanning... 42.8% (20000/46762)
+2025-11-30 21:07:16,966 - trading_bot - INFO - Scanning... 53.5% (25000/46762)
+2025-11-30 21:07:24,066 - trading_bot - INFO - Scanning... 64.2% (30000/46762)
+2025-11-30 21:07:30,546 - trading_bot - INFO - Scanning... 74.8% (35000/46762)
+2025-11-30 21:07:38,122 - trading_bot - INFO - Scanning... 85.5% (40000/46762)
+2025-11-30 21:07:44,937 - trading_bot - INFO - Scanning... 96.2% (45000/46762)
+2025-11-30 21:07:47,138 - trading_bot - INFO - Training LGBM with 34531 samples...
+2025-11-30 21:07:53,807 - trading_bot - INFO - Fetching SPY bars from Alpaca (5Min)...
+2025-11-30 21:08:14,304 - trading_bot - INFO - Loaded H4 data directly: 1075 bars
+2025-11-30 21:08:14,307 - trading_bot - INFO - Loaded Daily data directly: 255 bars
+2025-11-30 21:08:17,283 - trading_bot - INFO - Generating candidates...
+2025-11-30 21:08:22,067 - trading_bot - INFO - Scanning... 10.8% (5000/46223)
+2025-11-30 21:08:27,289 - trading_bot - INFO - Scanning... 21.6% (10000/46223)
+2025-11-30 21:08:32,530 - trading_bot - INFO - Scanning... 32.5% (15000/46223)
+2025-11-30 21:08:38,490 - trading_bot - INFO - Scanning... 43.3% (20000/46223)
+2025-11-30 21:08:44,076 - trading_bot - INFO - Scanning... 54.1% (25000/46223)
+2025-11-30 21:08:49,428 - trading_bot - INFO - Scanning... 64.9% (30000/46223)
+2025-11-30 21:08:55,256 - trading_bot - INFO - Scanning... 75.7% (35000/46223)
+2025-11-30 21:09:01,033 - trading_bot - INFO - Scanning... 86.5% (40000/46223)
+2025-11-30 21:09:08,036 - trading_bot - INFO - Scanning... 97.4% (45000/46223)
+2025-11-30 21:09:09,142 - trading_bot - INFO - Training LGBM with 30895 samples...
+2025-11-30 21:09:15,124 - trading_bot - INFO - Fetching SPY bars from Alpaca (5Min)...
+2025-11-30 21:09:35,126 - trading_bot - INFO - Loaded H4 data directly: 1077 bars
+2025-11-30 21:09:35,129 - trading_bot - INFO - Loaded Daily data directly: 252 bars
+2025-11-30 21:09:38,144 - trading_bot - INFO - Generating candidates...
+2025-11-30 21:09:42,354 - trading_bot - INFO - Scanning... 10.7% (5000/46780)
+2025-11-30 21:09:47,907 - trading_bot - INFO - Scanning... 21.4% (10000/46780)
+2025-11-30 21:09:53,542 - trading_bot - INFO - Scanning... 32.1% (15000/46780)
+2025-11-30 21:09:59,546 - trading_bot - INFO - Scanning... 42.8% (20000/46780)
+2025-11-30 21:10:05,765 - trading_bot - INFO - Scanning... 53.4% (25000/46780)
+2025-11-30 21:10:12,385 - trading_bot - INFO - Scanning... 64.1% (30000/46780)
+2025-11-30 21:10:18,899 - trading_bot - INFO - Scanning... 74.8% (35000/46780)
+2025-11-30 21:10:25,845 - trading_bot - INFO - Scanning... 85.5% (40000/46780)
+2025-11-30 21:10:32,707 - trading_bot - INFO - Scanning... 96.2% (45000/46780)
+2025-11-30 21:10:34,908 - trading_bot - INFO - Training LGBM with 36678 samples...
+2025-11-30 21:10:40,634 - trading_bot - INFO - Fetching SPY bars from Alpaca (5Min)...
+2025-11-30 21:11:01,175 - trading_bot - INFO - Loaded H4 data directly: 1075 bars
+2025-11-30 21:11:01,178 - trading_bot - INFO - Loaded Daily data directly: 258 bars
+2025-11-30 21:11:04,179 - trading_bot - INFO - Generating candidates...
+2025-11-30 21:11:08,324 - trading_bot - INFO - Scanning... 10.7% (5000/46766)
+2025-11-30 21:11:13,675 - trading_bot - INFO - Scanning... 21.4% (10000/46766)
+2025-11-30 21:11:18,407 - trading_bot - INFO - Scanning... 32.1% (15000/46766)
+2025-11-30 21:11:24,453 - trading_bot - INFO - Scanning... 42.8% (20000/46766)
+2025-11-30 21:11:31,109 - trading_bot - INFO - Scanning... 53.5% (25000/46766)
+2025-11-30 21:11:37,396 - trading_bot - INFO - Scanning... 64.1% (30000/46766)
+2025-11-30 21:11:43,108 - trading_bot - INFO - Scanning... 74.8% (35000/46766)
+2025-11-30 21:11:49,142 - trading_bot - INFO - Scanning... 85.5% (40000/46766)
+2025-11-30 21:11:55,015 - trading_bot - INFO - Scanning... 96.2% (45000/46766)
+2025-11-30 21:11:57,781 - trading_bot - INFO - Training LGBM with 32571 samples...
+2025-11-30 21:12:03,362 - trading_bot - INFO - Fetching SPY bars from Alpaca (5Min)...
+2025-11-30 21:12:31,103 - trading_bot - INFO - Loaded H4 data directly: 1093 bars
+2025-11-30 21:12:31,105 - trading_bot - INFO - Loaded Daily data directly: 271 bars
+2025-11-30 21:12:34,115 - trading_bot - INFO - Generating candidates...
+2025-11-30 21:12:38,607 - trading_bot - INFO - Scanning... 10.7% (5000/46894)
+2025-11-30 21:12:43,164 - trading_bot - INFO - Scanning... 21.3% (10000/46894)
+2025-11-30 21:12:48,653 - trading_bot - INFO - Scanning... 32.0% (15000/46894)
+2025-11-30 21:12:54,473 - trading_bot - INFO - Scanning... 42.6% (20000/46894)
+2025-11-30 21:13:00,080 - trading_bot - INFO - Scanning... 53.3% (25000/46894)
+2025-11-30 21:13:04,816 - trading_bot - INFO - Scanning... 64.0% (30000/46894)
+2025-11-30 21:13:11,054 - trading_bot - INFO - Scanning... 74.6% (35000/46894)
+2025-11-30 21:13:16,914 - trading_bot - INFO - Scanning... 85.3% (40000/46894)
+2025-11-30 21:13:23,677 - trading_bot - INFO - Scanning... 96.0% (45000/46894)
+2025-11-30 21:13:26,346 - trading_bot - INFO - Training LGBM with 29537 samples...
+2025-11-30 22:18:03,187 - trading_bot - ERROR - Error in trading loop: ('Connection aborted.', TimeoutError(60, 'Operation timed out'))
+2025-12-01 02:01:02,676 - trading_bot - ERROR - Error in trading loop: ('Connection aborted.', TimeoutError(60, 'Operation timed out'))
+2025-12-01 05:49:33,878 - trading_bot - ERROR - Error in trading loop: ('Connection aborted.', TimeoutError(60, 'Operation timed out'))
+2025-12-01 08:59:40,966 - trading_bot - ERROR - Error in trading loop: ('Connection aborted.', TimeoutError(60, 'Operation timed out'))
+2025-12-01 09:00:41,004 - trading_bot - ERROR - Error in trading loop: HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/clock (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1314a3850>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-12-01 09:05:45,087 - trading_bot - ERROR - Error in trading loop: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+2025-12-01 09:50:30,621 - trading_bot - ERROR - Error in trading loop: ('Connection aborted.', TimeoutError(60, 'Operation timed out'))
+2025-12-01 12:49:49,392 - trading_bot - ERROR - Error in trading loop: ('Connection aborted.', TimeoutError(60, 'Operation timed out'))
+2025-12-01 12:51:50,855 - trading_bot - ERROR - Error in trading loop: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+2025-12-01 13:01:30,243 - trading_bot - ERROR - Error in trading loop: ('Connection aborted.', TimeoutError(60, 'Operation timed out'))
+2025-12-01 13:19:44,092 - trading_bot - ERROR - Error in trading loop: ('Connection aborted.', OSError(49, "Can't assign requested address"))
+2025-12-01 13:42:02,630 - trading_bot - ERROR - Error in trading loop: ('Connection aborted.', OSError(49, "Can't assign requested address"))
+2025-12-01 18:14:10,769 - trading_bot - ERROR - Error in trading loop: HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/clock (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x133c81100>: Failed to resolve 'paper-api.alpaca.markets' ([Errno 8] nodename nor servname provided, or not known)"))

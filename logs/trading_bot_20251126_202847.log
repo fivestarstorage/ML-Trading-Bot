@@ -1,0 +1,31 @@
+2025-11-26 20:28:47,529 - trading_bot - INFO - Fetching BTC crypto bars from Alpaca (5Min)...
+2025-11-26 20:29:46,320 - trading_bot - INFO - Data loaded: 194077 rows (Base Timeframe 5m)
+2025-11-26 20:29:46,335 - trading_bot - INFO - Loaded H4 data directly: 4171 bars
+2025-11-26 20:29:46,344 - trading_bot - INFO - Loaded Daily data directly: 696 bars
+2025-11-26 20:29:46,355 - trading_bot - INFO - H4=4171, H1=16678
+2025-11-26 20:29:47,601 - trading_bot - INFO - Using Crypto Momentum strategy
+2025-11-26 20:29:52,842 - trading_bot - INFO - Generated 89 candidates
+2025-11-26 20:29:52,842 - trading_bot - INFO - Applied adaptive filter profile 'crypto_baseline': 89 / 89 candidates retained.
+2025-11-26 20:29:52,846 - trading_bot - WARNING - [WFA] Fold 1: insufficient training samples (0) for window ending 2024-01-01 00:00:00+00:00. Skipping month.
+2025-11-26 20:29:52,846 - trading_bot - WARNING - [WFA] Fold 2: insufficient training samples (2) for window ending 2024-02-01 00:00:00+00:00. Skipping month.
+2025-11-26 20:29:52,847 - trading_bot - WARNING - [WFA] Fold 3: insufficient training samples (7) for window ending 2024-03-01 00:00:00+00:00. Skipping month.
+2025-11-26 20:29:52,847 - trading_bot - WARNING - [WFA] Fold 4: insufficient training samples (8) for window ending 2024-04-01 00:00:00+00:00. Skipping month.
+2025-11-26 20:29:52,847 - trading_bot - WARNING - [WFA] Fold 5: insufficient training samples (9) for window ending 2024-05-01 00:00:00+00:00. Skipping month.
+2025-11-26 20:29:52,847 - trading_bot - WARNING - [WFA] Fold 6: insufficient training samples (12) for window ending 2024-06-01 00:00:00+00:00. Skipping month.
+2025-11-26 20:29:52,848 - trading_bot - WARNING - [WFA] Fold 7: insufficient training samples (15) for window ending 2024-07-01 00:00:00+00:00. Skipping month.
+2025-11-26 20:29:52,848 - trading_bot - WARNING - [WFA] Fold 8: insufficient training samples (17) for window ending 2024-08-01 00:00:00+00:00. Skipping month.
+2025-11-26 20:29:52,848 - trading_bot - WARNING - [WFA] Fold 9: insufficient training samples (22) for window ending 2024-09-01 00:00:00+00:00. Skipping month.
+2025-11-26 20:29:52,848 - trading_bot - WARNING - [WFA] Fold 10: insufficient training samples (23) for window ending 2024-10-01 00:00:00+00:00. Skipping month.
+2025-11-26 20:29:52,848 - trading_bot - WARNING - [WFA] Fold 11: insufficient training samples (24) for window ending 2024-11-01 00:00:00+00:00. Skipping month.
+2025-11-26 20:29:52,849 - trading_bot - WARNING - [WFA] Fold 12: insufficient training samples (31) for window ending 2024-12-01 00:00:00+00:00. Skipping month.
+2025-11-26 20:29:52,849 - trading_bot - WARNING - [WFA] Fold 13: insufficient training samples (38) for window ending 2025-01-01 00:00:00+00:00. Skipping month.
+2025-11-26 20:29:52,849 - trading_bot - WARNING - [WFA] Fold 14: insufficient training samples (41) for window ending 2025-02-01 00:00:00+00:00. Skipping month.
+2025-11-26 20:29:52,849 - trading_bot - WARNING - [WFA] Fold 15: insufficient training samples (45) for window ending 2025-03-01 00:00:00+00:00. Skipping month.
+2025-11-26 20:29:52,850 - trading_bot - WARNING - [WFA] Fold 16: insufficient training samples (57) for window ending 2025-04-01 00:00:00+00:00. Skipping month.
+2025-11-26 20:29:52,850 - trading_bot - WARNING - [WFA] Fold 17: insufficient training samples (62) for window ending 2025-05-01 00:00:00+00:00. Skipping month.
+2025-11-26 20:29:52,850 - trading_bot - WARNING - [WFA] Fold 18: insufficient training samples (63) for window ending 2025-06-01 00:00:00+00:00. Skipping month.
+2025-11-26 20:29:52,850 - trading_bot - WARNING - [WFA] Fold 19: insufficient training samples (65) for window ending 2025-07-01 00:00:00+00:00. Skipping month.
+2025-11-26 20:29:52,851 - trading_bot - WARNING - [WFA] Fold 20: insufficient training samples (67) for window ending 2025-08-01 00:00:00+00:00. Skipping month.
+2025-11-26 20:29:52,851 - trading_bot - WARNING - [WFA] Fold 21: insufficient training samples (70) for window ending 2025-09-01 00:00:00+00:00. Skipping month.
+2025-11-26 20:29:52,851 - trading_bot - WARNING - [WFA] Fold 22: insufficient training samples (70) for window ending 2025-10-01 00:00:00+00:00. Skipping month.
+2025-11-26 20:29:52,851 - trading_bot - WARNING - [WFA] Fold 23: insufficient training samples (85) for window ending 2025-11-01 00:00:00+00:00. Skipping month.

@@ -1,0 +1,75 @@
+2025-11-30 13:08:06,651 - trading_bot - INFO - 
+
+
+2025-11-30 13:08:06,651 - trading_bot - INFO - ================================================================================
+2025-11-30 13:08:06,652 - trading_bot - INFO - COMPREHENSIVE TESTING SUITE - SIMPLIFIED
+2025-11-30 13:08:06,652 - trading_bot - INFO - Started: 2025-11-30 13:08:06
+2025-11-30 13:08:06,652 - trading_bot - INFO - ================================================================================
+2025-11-30 13:08:06,652 - trading_bot - INFO - 
+================================================================================
+2025-11-30 13:08:06,652 - trading_bot - INFO - Testing SPY Live Trading Components
+2025-11-30 13:08:06,652 - trading_bot - INFO - ================================================================================
+2025-11-30 13:08:06,652 - trading_bot - INFO - 
+🔍 Test 1: Configuration Loading
+2025-11-30 13:08:06,659 - trading_bot - INFO -    ✅ Config loaded: symbol=SPY
+2025-11-30 13:08:06,659 - trading_bot - INFO - 
+🔍 Test 2: Alpaca Client Connection
+2025-11-30 13:08:06,715 - trading_bot - ERROR -    ❌ Alpaca connection failed: 'AlpacaClient' object has no attribute 'get_account'
+2025-11-30 13:08:06,715 - trading_bot - INFO - 
+🔍 Test 3: Historical Data Loading
+2025-11-30 13:08:07,028 - trading_bot - INFO - Fetching SPY stocks bars from Alpaca (5Min)...
+2025-11-30 13:08:27,940 - trading_bot - INFO -    ✅ Data loaded: 50902 bars from 2024-11-01 08:00:00+00:00 to 2025-11-28 21:55:00+00:00
+2025-11-30 13:08:27,940 - trading_bot - INFO - 
+🔍 Test 4: Feature Calculation
+2025-11-30 13:08:28,431 - trading_bot - INFO -    ✅ Features calculated: 50902 rows
+2025-11-30 13:08:28,431 - trading_bot - INFO - 
+🔍 Test 5: ML Model Loading
+2025-11-30 13:08:28,431 - trading_bot - INFO -    ✅ Model exists at models/spy_lgbm.pkl
+2025-11-30 13:08:28,431 - trading_bot - INFO - 
+🔍 Test 6: Live Trader Initialization
+2025-11-30 13:08:28,433 - trading_bot - INFO -    ✅ Live trader initialized (dry_run=True, threshold=0.6)
+2025-11-30 13:08:28,433 - trading_bot - INFO - 
+🔍 Test 7: Market Hours Detection
+2025-11-30 13:08:28,435 - trading_bot - ERROR -    ❌ Market hours detection failed: No module named 'src.ensemble_model'
+2025-11-30 13:08:28,435 - trading_bot - ERROR - 
+================================================================================
+2025-11-30 13:08:28,435 - trading_bot - ERROR - ❌ SOME SPY LIVE TRADING TESTS FAILED
+2025-11-30 13:08:28,435 - trading_bot - ERROR - ================================================================================
+2025-11-30 13:08:28,436 - trading_bot - INFO - 
+
+NOTE: WFA test may take 5-10 minutes to complete...
+2025-11-30 13:08:28,436 - trading_bot - INFO - ================================================================================
+2025-11-30 13:08:28,436 - trading_bot - INFO - Testing SPY Walk-Forward Analysis for 2024
+2025-11-30 13:08:28,436 - trading_bot - INFO - ================================================================================
+2025-11-30 13:08:29,162 - trading_bot - ERROR - ❌ SPY WFA 2024 - FAILED
+2025-11-30 13:08:29,163 - trading_bot - ERROR - 
+Error:
+Traceback (most recent call last):
+  File "/Users/rileymartin/.pyenv/versions/3.9.7/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/Users/rileymartin/.pyenv/versions/3.9.7/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/Users/rileymartin/ML-Trading-Bot/src/cli.py", line 10, in <module>
+    from .ml_model import MLModel
+  File "/Users/rileymartin/ML-Trading-Bot/src/ml_model.py", line 11, in <modu
+2025-11-30 13:08:29,163 - trading_bot - INFO - 
+
+================================================================================
+2025-11-30 13:08:29,163 - trading_bot - INFO - FINAL TEST SUMMARY
+2025-11-30 13:08:29,163 - trading_bot - INFO - ================================================================================
+2025-11-30 13:08:29,163 - trading_bot - INFO - SPY Live Components                      ❌ FAIL
+2025-11-30 13:08:29,163 - trading_bot - INFO - SPY WFA 2024                             ❌ FAIL
+2025-11-30 13:08:29,163 - trading_bot - INFO - 
+--------------------------------------------------------------------------------
+2025-11-30 13:08:29,163 - trading_bot - INFO - Total Tests: 2
+2025-11-30 13:08:29,163 - trading_bot - INFO - Passed: 0
+2025-11-30 13:08:29,163 - trading_bot - INFO - Failed: 2
+2025-11-30 13:08:29,163 - trading_bot - INFO - Success Rate: 0.0%
+2025-11-30 13:08:29,163 - trading_bot - INFO - --------------------------------------------------------------------------------
+2025-11-30 13:08:29,163 - trading_bot - ERROR - 
+⚠️  SOME TESTS FAILED - REVIEW ERRORS ABOVE
+2025-11-30 13:08:29,163 - trading_bot - INFO - 
+Completed: 2025-11-30 13:08:29
+2025-11-30 13:08:29,163 - trading_bot - INFO - ================================================================================
+
+

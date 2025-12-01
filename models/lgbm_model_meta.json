@@ -1,0 +1,11 @@
+{
+  "symbol": "SPY",
+  "trained_at": "2025-11-27T09:37:03.979918+00:00",
+  "data_start": "2019-01-01T00:00:00+00:00",
+  "data_end": "2025-11-27T00:00:00+00:00",
+  "candidate_start": "2019-01-09T10:25:00+00:00",
+  "candidate_end": "2025-11-13T23:45:00+00:00",
+  "total_candidates": 23709,
+  "model_path": "models/lgbm_model.pkl",
+  "data_source": "alpaca"
+}

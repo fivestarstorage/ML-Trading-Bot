@@ -1,6 +1,0 @@
-tp_atr_mult,sl_atr_mult,model_threshold,cooldown_minutes,per_trade_risk_pct,require_killzone_filter,use_daily_trend_filter,require_liquidity_sweep,require_displacement,require_inducement,entry_type_filter,filter_profile,trades,win_rate,net_profit,profit_factor,max_drawdown,score
-3.0,1.0,0.35,15,0.04,True,True,True,True,True,ob_only,strict_institutional,5,0.0,-487.42625596226713,0.0,7.540229731748753,-0.0
-3.5,1.0,0.48,15,0.055,True,True,True,False,False,ob_only,session_focus,5,0.0,-487.42625596226713,0.0,7.540229731748753,-0.0
-3.5,1.0,0.48,15,0.045,False,False,False,False,False,both,free_fire,5,0.0,-482.71124229617294,0.0,7.461147056283372,-0.0
-3.5,1.0,0.48,30,0.045,True,True,True,True,True,ob_only,strict_institutional,5,0.0,-487.42625596226713,0.0,7.540229731748753,-0.0
-3.5,1.0,0.48,30,0.045,True,True,True,False,False,ob_only,session_focus,5,0.0,-487.42625596226713,0.0,7.540229731748753,-0.0

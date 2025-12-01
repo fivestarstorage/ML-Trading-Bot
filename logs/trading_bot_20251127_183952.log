@@ -1,0 +1,482 @@
+2025-11-27 18:39:52,499 - trading_bot - INFO - Fetching BTC crypto bars from Alpaca (5Min)...
+2025-11-27 18:40:03,430 - trading_bot - INFO - Model loaded from /Users/rileymartin/ML-Trading-Bot/models/lgbm_model.pkl
+2025-11-27 18:40:03,431 - alpaca_live_runner - INFO - Starting Alpaca polling loop (symbol=BTC, interval=60s, dry_run=True)...
+2025-11-27 18:40:04,156 - alpaca_live_runner - INFO - 🔍 Alpaca returned 11 bars for BTC (last 1 hour)
+2025-11-27 18:40:04,157 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-26 00:00:00+00:00
+2025-11-27 18:40:04,157 - alpaca_live_runner - INFO - 🔀 Filtered 11 bars, kept 11 new bars
+2025-11-27 18:40:04,157 - alpaca_live_runner - INFO - 📊 Fetched 11 new bars for BTC (latest: 2025-11-27 07:35:00)
+2025-11-27 18:40:04,262 - trading_bot - INFO - Generating candidates...
+2025-11-27 18:40:04,867 - trading_bot - INFO - Generating candidates...
+2025-11-27 18:40:05,459 - trading_bot - INFO - Generating candidates...
+2025-11-27 18:40:06,141 - trading_bot - INFO - Generating candidates...
+2025-11-27 18:40:06,701 - trading_bot - INFO - Generating candidates...
+2025-11-27 18:40:07,260 - trading_bot - INFO - Generating candidates...
+2025-11-27 18:40:07,812 - trading_bot - INFO - Generating candidates...
+2025-11-27 18:40:08,403 - trading_bot - INFO - Generating candidates...
+2025-11-27 18:40:08,959 - trading_bot - INFO - Generating candidates...
+2025-11-27 18:40:09,537 - trading_bot - INFO - Generating candidates...
+2025-11-27 18:40:10,138 - trading_bot - INFO - Generating candidates...
+2025-11-27 18:41:10,958 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 18:41:10,958 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 07:35:00+00:00
+2025-11-27 18:41:10,958 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 1 new bars
+2025-11-27 18:41:10,958 - alpaca_live_runner - INFO - 📊 Fetched 1 new bars for BTC (latest: 2025-11-27 07:40:00)
+2025-11-27 18:41:11,061 - trading_bot - INFO - Generating candidates...
+2025-11-27 18:42:11,790 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 18:42:11,790 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 07:40:00+00:00
+2025-11-27 18:42:11,790 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 18:42:11,790 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 18:43:12,077 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 18:43:12,077 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 07:40:00+00:00
+2025-11-27 18:43:12,078 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 18:43:12,078 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 18:44:12,367 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 18:44:12,367 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 07:40:00+00:00
+2025-11-27 18:44:12,367 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 18:44:12,368 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 18:45:12,669 - alpaca_live_runner - INFO - 🔍 Alpaca returned 11 bars for BTC (last 1 hour)
+2025-11-27 18:45:12,670 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 07:40:00+00:00
+2025-11-27 18:45:12,670 - alpaca_live_runner - INFO - 🔀 Filtered 11 bars, kept 0 new bars
+2025-11-27 18:45:12,671 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 18:46:12,953 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 18:46:12,956 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 07:40:00+00:00
+2025-11-27 18:46:12,956 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 1 new bars
+2025-11-27 18:46:12,958 - alpaca_live_runner - INFO - 📊 Fetched 1 new bars for BTC (latest: 2025-11-27 07:45:00)
+2025-11-27 18:46:13,069 - trading_bot - INFO - Generating candidates...
+2025-11-27 18:47:13,773 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 18:47:13,773 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 07:45:00+00:00
+2025-11-27 18:47:13,773 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 18:47:13,773 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 18:48:14,074 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 18:48:14,074 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 07:45:00+00:00
+2025-11-27 18:48:14,075 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 18:48:14,075 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 18:49:14,368 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 18:49:14,368 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 07:45:00+00:00
+2025-11-27 18:49:14,368 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 18:49:14,368 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 18:49:14,368 - alpaca_live_runner - INFO - ⏰ Status: Monitoring BTC (2000 bars in history, 10 polls completed)
+2025-11-27 18:50:14,657 - alpaca_live_runner - INFO - 🔍 Alpaca returned 11 bars for BTC (last 1 hour)
+2025-11-27 18:50:14,657 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 07:45:00+00:00
+2025-11-27 18:50:14,657 - alpaca_live_runner - INFO - 🔀 Filtered 11 bars, kept 0 new bars
+2025-11-27 18:50:14,657 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 18:51:14,942 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 18:51:14,943 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 07:45:00+00:00
+2025-11-27 18:51:14,943 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 1 new bars
+2025-11-27 18:51:14,943 - alpaca_live_runner - INFO - 📊 Fetched 1 new bars for BTC (latest: 2025-11-27 07:50:00)
+2025-11-27 18:51:15,046 - trading_bot - INFO - Generating candidates...
+2025-11-27 18:52:15,758 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 18:52:15,758 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 07:50:00+00:00
+2025-11-27 18:52:15,759 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 18:52:15,759 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 18:53:16,885 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 18:53:16,885 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 07:50:00+00:00
+2025-11-27 18:53:16,885 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 18:53:16,885 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 18:54:17,180 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 18:54:17,180 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 07:50:00+00:00
+2025-11-27 18:54:17,181 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 18:54:17,181 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 18:55:17,483 - alpaca_live_runner - INFO - 🔍 Alpaca returned 11 bars for BTC (last 1 hour)
+2025-11-27 18:55:17,483 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 07:50:00+00:00
+2025-11-27 18:55:17,484 - alpaca_live_runner - INFO - 🔀 Filtered 11 bars, kept 0 new bars
+2025-11-27 18:55:17,484 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 18:56:17,764 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 18:56:17,764 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 07:50:00+00:00
+2025-11-27 18:56:17,765 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 1 new bars
+2025-11-27 18:56:17,765 - alpaca_live_runner - INFO - 📊 Fetched 1 new bars for BTC (latest: 2025-11-27 07:55:00)
+2025-11-27 18:56:17,878 - trading_bot - INFO - Generating candidates...
+2025-11-27 18:57:18,586 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 18:57:18,587 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 07:55:00+00:00
+2025-11-27 18:57:18,588 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 18:57:18,588 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 18:58:18,870 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 18:58:18,871 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 07:55:00+00:00
+2025-11-27 18:58:18,871 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 18:58:18,871 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 18:59:19,165 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 18:59:19,167 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 07:55:00+00:00
+2025-11-27 18:59:19,167 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 18:59:19,167 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 18:59:19,167 - alpaca_live_runner - INFO - ⏰ Status: Monitoring BTC (2000 bars in history, 20 polls completed)
+2025-11-27 19:00:19,454 - alpaca_live_runner - INFO - 🔍 Alpaca returned 11 bars for BTC (last 1 hour)
+2025-11-27 19:00:19,454 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 07:55:00+00:00
+2025-11-27 19:00:19,454 - alpaca_live_runner - INFO - 🔀 Filtered 11 bars, kept 0 new bars
+2025-11-27 19:00:19,454 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 19:01:19,752 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 19:01:19,752 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 07:55:00+00:00
+2025-11-27 19:01:19,753 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 1 new bars
+2025-11-27 19:01:19,753 - alpaca_live_runner - INFO - 📊 Fetched 1 new bars for BTC (latest: 2025-11-27 08:00:00)
+2025-11-27 19:01:19,861 - trading_bot - INFO - Generating candidates...
+2025-11-27 19:02:20,565 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 19:02:20,566 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:00:00+00:00
+2025-11-27 19:02:20,566 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 19:02:20,566 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 19:03:20,859 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 19:03:20,859 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:00:00+00:00
+2025-11-27 19:03:20,860 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 19:03:20,860 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 19:04:21,593 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 19:04:21,594 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:00:00+00:00
+2025-11-27 19:04:21,594 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 19:04:21,594 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 19:05:22,124 - alpaca_live_runner - INFO - 🔍 Alpaca returned 11 bars for BTC (last 1 hour)
+2025-11-27 19:05:22,124 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:00:00+00:00
+2025-11-27 19:05:22,124 - alpaca_live_runner - INFO - 🔀 Filtered 11 bars, kept 0 new bars
+2025-11-27 19:05:22,124 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 19:06:22,384 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 19:06:22,385 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:00:00+00:00
+2025-11-27 19:06:22,385 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 1 new bars
+2025-11-27 19:06:22,386 - alpaca_live_runner - INFO - 📊 Fetched 1 new bars for BTC (latest: 2025-11-27 08:05:00)
+2025-11-27 19:06:22,506 - trading_bot - INFO - Generating candidates...
+2025-11-27 19:07:23,312 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 19:07:23,312 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:05:00+00:00
+2025-11-27 19:07:23,313 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 19:07:23,313 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 19:08:23,599 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 19:08:23,600 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:05:00+00:00
+2025-11-27 19:08:23,601 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 19:08:23,601 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 19:09:23,923 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 19:09:23,924 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:05:00+00:00
+2025-11-27 19:09:23,925 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 19:09:23,925 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 19:09:23,925 - alpaca_live_runner - INFO - ⏰ Status: Monitoring BTC (2000 bars in history, 30 polls completed)
+2025-11-27 19:10:24,211 - alpaca_live_runner - INFO - 🔍 Alpaca returned 11 bars for BTC (last 1 hour)
+2025-11-27 19:10:24,213 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:05:00+00:00
+2025-11-27 19:10:24,213 - alpaca_live_runner - INFO - 🔀 Filtered 11 bars, kept 0 new bars
+2025-11-27 19:10:24,213 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 19:11:24,505 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 19:11:24,506 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:05:00+00:00
+2025-11-27 19:11:24,506 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 1 new bars
+2025-11-27 19:11:24,506 - alpaca_live_runner - INFO - 📊 Fetched 1 new bars for BTC (latest: 2025-11-27 08:10:00)
+2025-11-27 19:11:24,622 - trading_bot - INFO - Generating candidates...
+2025-11-27 19:12:25,334 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 19:12:25,335 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:10:00+00:00
+2025-11-27 19:12:25,336 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 19:12:25,336 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 19:13:25,622 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 19:13:25,628 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:10:00+00:00
+2025-11-27 19:13:25,630 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 19:13:25,630 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 19:14:25,900 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 19:14:25,901 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:10:00+00:00
+2025-11-27 19:14:25,902 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 19:14:25,902 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 19:15:26,210 - alpaca_live_runner - INFO - 🔍 Alpaca returned 11 bars for BTC (last 1 hour)
+2025-11-27 19:15:26,212 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:10:00+00:00
+2025-11-27 19:15:26,212 - alpaca_live_runner - INFO - 🔀 Filtered 11 bars, kept 0 new bars
+2025-11-27 19:15:26,212 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 19:16:26,490 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 19:16:26,491 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:10:00+00:00
+2025-11-27 19:16:26,492 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 1 new bars
+2025-11-27 19:16:26,492 - alpaca_live_runner - INFO - 📊 Fetched 1 new bars for BTC (latest: 2025-11-27 08:15:00)
+2025-11-27 19:16:26,595 - trading_bot - INFO - Generating candidates...
+2025-11-27 19:17:27,394 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 19:17:27,396 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:15:00+00:00
+2025-11-27 19:17:27,397 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 19:17:27,397 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 19:18:27,652 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 19:18:27,654 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:15:00+00:00
+2025-11-27 19:18:27,654 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 19:18:27,654 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 19:19:27,893 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 19:19:27,893 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:15:00+00:00
+2025-11-27 19:19:27,894 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 19:19:27,894 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 19:19:27,894 - alpaca_live_runner - INFO - ⏰ Status: Monitoring BTC (2000 bars in history, 40 polls completed)
+2025-11-27 19:20:28,200 - alpaca_live_runner - INFO - 🔍 Alpaca returned 11 bars for BTC (last 1 hour)
+2025-11-27 19:20:28,201 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:15:00+00:00
+2025-11-27 19:20:28,201 - alpaca_live_runner - INFO - 🔀 Filtered 11 bars, kept 0 new bars
+2025-11-27 19:20:28,201 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 19:21:28,482 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 19:21:28,483 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:15:00+00:00
+2025-11-27 19:21:28,483 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 1 new bars
+2025-11-27 19:21:28,483 - alpaca_live_runner - INFO - 📊 Fetched 1 new bars for BTC (latest: 2025-11-27 08:20:00)
+2025-11-27 19:21:28,599 - trading_bot - INFO - Generating candidates...
+2025-11-27 19:22:29,299 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 19:22:29,300 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:20:00+00:00
+2025-11-27 19:22:29,300 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 19:22:29,303 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 19:23:29,596 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 19:23:29,596 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:20:00+00:00
+2025-11-27 19:23:29,597 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 19:23:29,597 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 19:24:29,891 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 19:24:29,892 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:20:00+00:00
+2025-11-27 19:24:29,893 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 19:24:29,893 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 19:25:30,176 - alpaca_live_runner - INFO - 🔍 Alpaca returned 11 bars for BTC (last 1 hour)
+2025-11-27 19:25:30,177 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:20:00+00:00
+2025-11-27 19:25:30,177 - alpaca_live_runner - INFO - 🔀 Filtered 11 bars, kept 0 new bars
+2025-11-27 19:25:30,177 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 19:26:30,469 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 19:26:30,471 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:20:00+00:00
+2025-11-27 19:26:30,471 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 1 new bars
+2025-11-27 19:26:30,471 - alpaca_live_runner - INFO - 📊 Fetched 1 new bars for BTC (latest: 2025-11-27 08:25:00)
+2025-11-27 19:26:30,582 - trading_bot - INFO - Generating candidates...
+2025-11-27 19:27:31,289 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 19:27:31,291 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:25:00+00:00
+2025-11-27 19:27:31,291 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 19:27:31,291 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 19:28:31,579 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 19:28:31,580 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:25:00+00:00
+2025-11-27 19:28:31,581 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 19:28:31,581 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 19:29:31,870 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 19:29:31,871 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:25:00+00:00
+2025-11-27 19:29:31,871 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 19:29:31,871 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 19:29:31,871 - alpaca_live_runner - INFO - ⏰ Status: Monitoring BTC (2000 bars in history, 50 polls completed)
+2025-11-27 19:30:32,172 - alpaca_live_runner - INFO - 🔍 Alpaca returned 11 bars for BTC (last 1 hour)
+2025-11-27 19:30:32,173 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:25:00+00:00
+2025-11-27 19:30:32,173 - alpaca_live_runner - INFO - 🔀 Filtered 11 bars, kept 0 new bars
+2025-11-27 19:30:32,173 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 19:31:32,459 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 19:31:32,459 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:25:00+00:00
+2025-11-27 19:31:32,460 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 1 new bars
+2025-11-27 19:31:32,460 - alpaca_live_runner - INFO - 📊 Fetched 1 new bars for BTC (latest: 2025-11-27 08:30:00)
+2025-11-27 19:31:32,569 - trading_bot - INFO - Generating candidates...
+2025-11-27 19:32:33,281 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 19:32:33,282 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:30:00+00:00
+2025-11-27 19:32:33,282 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 19:32:33,282 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 19:33:33,570 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 19:33:33,571 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:30:00+00:00
+2025-11-27 19:33:33,572 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 19:33:33,572 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 19:34:33,867 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 19:34:33,870 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:30:00+00:00
+2025-11-27 19:34:33,873 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 19:34:33,873 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 19:35:34,151 - alpaca_live_runner - INFO - 🔍 Alpaca returned 11 bars for BTC (last 1 hour)
+2025-11-27 19:35:34,152 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:30:00+00:00
+2025-11-27 19:35:34,152 - alpaca_live_runner - INFO - 🔀 Filtered 11 bars, kept 0 new bars
+2025-11-27 19:35:34,152 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 19:36:34,450 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 19:36:34,452 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:30:00+00:00
+2025-11-27 19:36:34,452 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 1 new bars
+2025-11-27 19:36:34,452 - alpaca_live_runner - INFO - 📊 Fetched 1 new bars for BTC (latest: 2025-11-27 08:35:00)
+2025-11-27 19:36:34,564 - trading_bot - INFO - Generating candidates...
+2025-11-27 19:37:35,272 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 19:37:35,273 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:35:00+00:00
+2025-11-27 19:37:35,273 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 19:37:35,274 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 19:38:35,560 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 19:38:35,561 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:35:00+00:00
+2025-11-27 19:38:35,562 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 19:38:35,562 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 19:39:35,850 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 19:39:35,851 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:35:00+00:00
+2025-11-27 19:39:35,851 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 19:39:35,851 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 19:39:35,851 - alpaca_live_runner - INFO - ⏰ Status: Monitoring BTC (2000 bars in history, 60 polls completed)
+2025-11-27 19:40:36,148 - alpaca_live_runner - INFO - 🔍 Alpaca returned 11 bars for BTC (last 1 hour)
+2025-11-27 19:40:36,149 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:35:00+00:00
+2025-11-27 19:40:36,150 - alpaca_live_runner - INFO - 🔀 Filtered 11 bars, kept 0 new bars
+2025-11-27 19:40:36,150 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 19:41:36,450 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 19:41:36,451 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:35:00+00:00
+2025-11-27 19:41:36,451 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 1 new bars
+2025-11-27 19:41:36,452 - alpaca_live_runner - INFO - 📊 Fetched 1 new bars for BTC (latest: 2025-11-27 08:40:00)
+2025-11-27 19:41:36,569 - trading_bot - INFO - Generating candidates...
+2025-11-27 19:42:37,269 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 19:42:37,270 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:40:00+00:00
+2025-11-27 19:42:37,270 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 19:42:37,270 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 19:43:37,548 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 19:43:37,549 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:40:00+00:00
+2025-11-27 19:43:37,549 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 19:43:37,549 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 19:44:37,839 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 19:44:37,840 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:40:00+00:00
+2025-11-27 19:44:37,841 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 19:44:37,841 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 19:45:38,151 - alpaca_live_runner - INFO - 🔍 Alpaca returned 11 bars for BTC (last 1 hour)
+2025-11-27 19:45:38,152 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:40:00+00:00
+2025-11-27 19:45:38,152 - alpaca_live_runner - INFO - 🔀 Filtered 11 bars, kept 0 new bars
+2025-11-27 19:45:38,152 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 19:46:38,424 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 19:46:38,425 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:40:00+00:00
+2025-11-27 19:46:38,425 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 1 new bars
+2025-11-27 19:46:38,425 - alpaca_live_runner - INFO - 📊 Fetched 1 new bars for BTC (latest: 2025-11-27 08:45:00)
+2025-11-27 19:46:38,550 - trading_bot - INFO - Generating candidates...
+2025-11-27 19:47:39,261 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 19:47:39,261 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:45:00+00:00
+2025-11-27 19:47:39,262 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 19:47:39,262 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 19:48:39,534 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 19:48:39,535 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:45:00+00:00
+2025-11-27 19:48:39,535 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 19:48:39,535 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 19:49:39,824 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 19:49:39,825 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:45:00+00:00
+2025-11-27 19:49:39,825 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 19:49:39,825 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 19:49:39,825 - alpaca_live_runner - INFO - ⏰ Status: Monitoring BTC (2000 bars in history, 70 polls completed)
+2025-11-27 19:50:40,115 - alpaca_live_runner - INFO - 🔍 Alpaca returned 11 bars for BTC (last 1 hour)
+2025-11-27 19:50:40,116 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:45:00+00:00
+2025-11-27 19:50:40,116 - alpaca_live_runner - INFO - 🔀 Filtered 11 bars, kept 0 new bars
+2025-11-27 19:50:40,116 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 19:51:40,406 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 19:51:40,407 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:45:00+00:00
+2025-11-27 19:51:40,408 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 1 new bars
+2025-11-27 19:51:40,408 - alpaca_live_runner - INFO - 📊 Fetched 1 new bars for BTC (latest: 2025-11-27 08:50:00)
+2025-11-27 19:51:40,521 - trading_bot - INFO - Generating candidates...
+2025-11-27 19:52:41,230 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 19:52:41,231 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:50:00+00:00
+2025-11-27 19:52:41,231 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 19:52:41,231 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 19:53:41,520 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 19:53:41,520 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:50:00+00:00
+2025-11-27 19:53:41,520 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 19:53:41,520 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 19:54:41,821 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 19:54:41,822 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:50:00+00:00
+2025-11-27 19:54:41,822 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 19:54:41,822 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 19:55:42,109 - alpaca_live_runner - INFO - 🔍 Alpaca returned 11 bars for BTC (last 1 hour)
+2025-11-27 19:55:42,110 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:50:00+00:00
+2025-11-27 19:55:42,111 - alpaca_live_runner - INFO - 🔀 Filtered 11 bars, kept 0 new bars
+2025-11-27 19:55:42,111 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 19:56:42,403 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 19:56:42,405 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:50:00+00:00
+2025-11-27 19:56:42,405 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 1 new bars
+2025-11-27 19:56:42,405 - alpaca_live_runner - INFO - 📊 Fetched 1 new bars for BTC (latest: 2025-11-27 08:55:00)
+2025-11-27 19:56:42,511 - trading_bot - INFO - Generating candidates...
+2025-11-27 19:57:43,379 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 19:57:43,380 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:55:00+00:00
+2025-11-27 19:57:43,380 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 19:57:43,380 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 19:58:43,684 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 19:58:43,687 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:55:00+00:00
+2025-11-27 19:58:43,687 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 19:58:43,687 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 19:59:43,980 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 19:59:43,981 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:55:00+00:00
+2025-11-27 19:59:43,982 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 19:59:43,982 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 19:59:43,982 - alpaca_live_runner - INFO - ⏰ Status: Monitoring BTC (2000 bars in history, 80 polls completed)
+2025-11-27 20:00:44,274 - alpaca_live_runner - INFO - 🔍 Alpaca returned 11 bars for BTC (last 1 hour)
+2025-11-27 20:00:44,275 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:55:00+00:00
+2025-11-27 20:00:44,275 - alpaca_live_runner - INFO - 🔀 Filtered 11 bars, kept 0 new bars
+2025-11-27 20:00:44,275 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 20:01:44,556 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 20:01:44,557 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 08:55:00+00:00
+2025-11-27 20:01:44,557 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 1 new bars
+2025-11-27 20:01:44,557 - alpaca_live_runner - INFO - 📊 Fetched 1 new bars for BTC (latest: 2025-11-27 09:00:00)
+2025-11-27 20:01:44,662 - trading_bot - INFO - Generating candidates...
+2025-11-27 20:02:45,386 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 20:02:45,386 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 09:00:00+00:00
+2025-11-27 20:02:45,387 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 20:02:45,387 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 20:03:45,673 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 20:03:45,674 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 09:00:00+00:00
+2025-11-27 20:03:45,675 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 20:03:45,675 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 20:04:45,962 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 20:04:45,962 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 09:00:00+00:00
+2025-11-27 20:04:45,962 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 20:04:45,962 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 20:05:46,679 - alpaca_live_runner - INFO - 🔍 Alpaca returned 11 bars for BTC (last 1 hour)
+2025-11-27 20:05:46,680 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 09:00:00+00:00
+2025-11-27 20:05:46,681 - alpaca_live_runner - INFO - 🔀 Filtered 11 bars, kept 0 new bars
+2025-11-27 20:05:46,681 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 20:06:46,918 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 20:06:46,918 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 09:00:00+00:00
+2025-11-27 20:06:46,918 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 1 new bars
+2025-11-27 20:06:46,918 - alpaca_live_runner - INFO - 📊 Fetched 1 new bars for BTC (latest: 2025-11-27 09:05:00)
+2025-11-27 20:06:47,025 - trading_bot - INFO - Generating candidates...
+2025-11-27 20:07:47,762 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 20:07:47,763 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 09:05:00+00:00
+2025-11-27 20:07:47,763 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 20:07:47,763 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 20:08:48,044 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 20:08:48,045 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 09:05:00+00:00
+2025-11-27 20:08:48,046 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 20:08:48,046 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 20:09:48,309 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 20:09:48,310 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 09:05:00+00:00
+2025-11-27 20:09:48,311 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 20:09:48,311 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 20:09:48,311 - alpaca_live_runner - INFO - ⏰ Status: Monitoring BTC (2000 bars in history, 90 polls completed)
+2025-11-27 20:10:48,619 - alpaca_live_runner - INFO - 🔍 Alpaca returned 11 bars for BTC (last 1 hour)
+2025-11-27 20:10:48,620 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 09:05:00+00:00
+2025-11-27 20:10:48,621 - alpaca_live_runner - INFO - 🔀 Filtered 11 bars, kept 0 new bars
+2025-11-27 20:10:48,621 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 20:11:48,901 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 20:11:48,902 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 09:05:00+00:00
+2025-11-27 20:11:48,903 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 1 new bars
+2025-11-27 20:11:48,903 - alpaca_live_runner - INFO - 📊 Fetched 1 new bars for BTC (latest: 2025-11-27 09:10:00)
+2025-11-27 20:11:49,031 - trading_bot - INFO - Generating candidates...
+2025-11-27 20:12:49,745 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 20:12:49,745 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 09:10:00+00:00
+2025-11-27 20:12:49,746 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 20:12:49,746 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 20:13:50,022 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 20:13:50,023 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 09:10:00+00:00
+2025-11-27 20:13:50,024 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 20:13:50,024 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 20:14:50,313 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 20:14:50,315 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 09:10:00+00:00
+2025-11-27 20:14:50,315 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 20:14:50,316 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 20:15:50,589 - alpaca_live_runner - INFO - 🔍 Alpaca returned 11 bars for BTC (last 1 hour)
+2025-11-27 20:15:50,590 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 09:10:00+00:00
+2025-11-27 20:15:50,590 - alpaca_live_runner - INFO - 🔀 Filtered 11 bars, kept 0 new bars
+2025-11-27 20:15:50,590 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 20:16:50,888 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 20:16:50,889 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 09:10:00+00:00
+2025-11-27 20:16:50,890 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 1 new bars
+2025-11-27 20:16:50,890 - alpaca_live_runner - INFO - 📊 Fetched 1 new bars for BTC (latest: 2025-11-27 09:15:00)
+2025-11-27 20:16:51,014 - trading_bot - INFO - Generating candidates...
+2025-11-27 20:17:51,779 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 20:17:51,781 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 09:15:00+00:00
+2025-11-27 20:17:51,782 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 20:17:51,782 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 20:18:52,020 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 20:18:52,022 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 09:15:00+00:00
+2025-11-27 20:18:52,022 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 20:18:52,022 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 20:19:52,295 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 20:19:52,296 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 09:15:00+00:00
+2025-11-27 20:19:52,297 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 20:19:52,297 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 20:19:52,297 - alpaca_live_runner - INFO - ⏰ Status: Monitoring BTC (2000 bars in history, 100 polls completed)
+2025-11-27 20:20:52,591 - alpaca_live_runner - INFO - 🔍 Alpaca returned 11 bars for BTC (last 1 hour)
+2025-11-27 20:20:52,593 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 09:15:00+00:00
+2025-11-27 20:20:52,593 - alpaca_live_runner - INFO - 🔀 Filtered 11 bars, kept 0 new bars
+2025-11-27 20:20:52,594 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 20:21:52,874 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 20:21:52,876 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 09:15:00+00:00
+2025-11-27 20:21:52,876 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 1 new bars
+2025-11-27 20:21:52,876 - alpaca_live_runner - INFO - 📊 Fetched 1 new bars for BTC (latest: 2025-11-27 09:20:00)
+2025-11-27 20:21:52,990 - trading_bot - INFO - Generating candidates...
+2025-11-27 20:22:53,692 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 20:22:53,692 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 09:20:00+00:00
+2025-11-27 20:22:53,693 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 20:22:53,693 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 20:23:53,984 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 20:23:53,986 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 09:20:00+00:00
+2025-11-27 20:23:53,986 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 20:23:53,986 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 20:24:54,274 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 20:24:54,276 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 09:20:00+00:00
+2025-11-27 20:24:54,276 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 20:24:54,276 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 20:25:54,583 - alpaca_live_runner - INFO - 🔍 Alpaca returned 11 bars for BTC (last 1 hour)
+2025-11-27 20:25:54,585 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 09:20:00+00:00
+2025-11-27 20:25:54,586 - alpaca_live_runner - INFO - 🔀 Filtered 11 bars, kept 0 new bars
+2025-11-27 20:25:54,586 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 20:26:54,866 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 20:26:54,869 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 09:20:00+00:00
+2025-11-27 20:26:54,870 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 1 new bars
+2025-11-27 20:26:54,870 - alpaca_live_runner - INFO - 📊 Fetched 1 new bars for BTC (latest: 2025-11-27 09:25:00)
+2025-11-27 20:26:54,989 - trading_bot - INFO - Generating candidates...
+2025-11-27 20:27:55,693 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 20:27:55,694 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 09:25:00+00:00
+2025-11-27 20:27:55,694 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 20:27:55,694 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC
+2025-11-27 20:28:55,980 - alpaca_live_runner - INFO - 🔍 Alpaca returned 12 bars for BTC (last 1 hour)
+2025-11-27 20:28:55,982 - alpaca_live_runner - INFO - 📅 Last local timestamp: 2025-11-27 09:25:00+00:00
+2025-11-27 20:28:55,982 - alpaca_live_runner - INFO - 🔀 Filtered 12 bars, kept 0 new bars
+2025-11-27 20:28:55,982 - alpaca_live_runner - INFO - ⏸️ No new bars after filtering for BTC

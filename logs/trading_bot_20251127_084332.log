@@ -1,0 +1,2 @@
+2025-11-27 08:43:32,702 - trading_bot - INFO - Loading cached ccxt data from /Users/rileymartin/ML-Trading-Bot/Data/BTCUSD_5m_ccxt.parquet
+2025-11-27 08:43:32,753 - trading_bot - WARNING - No data found for the specified date range.

@@ -1,0 +1,437 @@
+{
+  "report_id": "20251127_061705",
+  "generated_at": "2025-11-27T06:17:05.921037",
+  "data_source": "universal",
+  "symbol": "XAU",
+  "timeframe": "5m",
+  "date_range": [
+    "2022-11-17 14:40:00+00:00",
+    "2025-10-31 22:55:00+00:00"
+  ],
+  "total_hypotheses_generated": 40,
+  "total_edges_discovered": 3,
+  "edges_passed_validation": 3,
+  "edges_passed_falsification": 0,
+  "top_edges": [
+    {
+      "edge": {
+        "rank": 1,
+        "edge_id": "cf4410fa3544",
+        "edge_name": "GMM Regime Following",
+        "hypothesis_type": "regime",
+        "mechanism": "momentum",
+        "overall_score": 0.5840919728328149,
+        "oos_sharpe": 0.332828266773652,
+        "net_sharpe": -0.14646635768150446,
+        "win_rate": 0.48255813953488375,
+        "profit_factor": 1.1065173329689333,
+        "max_drawdown": 0.01592753986163841,
+        "n_trades": 110,
+        "p_value": 0.0,
+        "falsification_score": 0.0,
+        "regime_stability": 0.3629422249306792,
+        "score_sharpe": 0.166414133386826,
+        "score_stability": 0.3629422249306792,
+        "score_economic": 0.84,
+        "score_statistical": 1.0,
+        "score_turnover": 0.988999944999725,
+        "score_simplicity": 0.95,
+        "score_regime": 0.0,
+        "economic_rationale": "Market regimes reflect underlying structural conditions. Probabilistic regime detection can identify favorable trading conditions before they become obvious.",
+        "strengths": [
+          "Strong economic rationale",
+          "Highly statistically significant",
+          "Low trading costs",
+          "Simple and interpretable",
+          "Large sample size",
+          "Controlled drawdowns"
+        ],
+        "weaknesses": [
+          "Low risk-adjusted returns",
+          "Performance varies significantly over time",
+          "Regime-dependent performance"
+        ],
+        "recommendation": "MODERATE CANDIDATE: Requires additional validation before consideration. Look for ways to improve signal quality. Add regime detection for position sizing."
+      },
+      "performance_summary": {
+        "oos_sharpe": 0.332828266773652,
+        "net_sharpe": -0.14646635768150446,
+        "win_rate": 0.48255813953488375,
+        "profit_factor": 1.1065173329689333,
+        "max_drawdown": 0.01592753986163841,
+        "n_trades": 110,
+        "total_return": 0.0332828266773652
+      },
+      "analysis": {
+        "mechanism": "momentum",
+        "economic_rationale": "Market regimes reflect underlying structural conditions. Probabilistic regime detection can identify favorable trading conditions before they become obvious.",
+        "strengths": [
+          "Strong economic rationale",
+          "Highly statistically significant",
+          "Low trading costs",
+          "Simple and interpretable",
+          "Large sample size",
+          "Controlled drawdowns"
+        ],
+        "weaknesses": [
+          "Low risk-adjusted returns",
+          "Performance varies significantly over time",
+          "Regime-dependent performance"
+        ],
+        "recommendation": "MODERATE CANDIDATE: Requires additional validation before consideration. Look for ways to improve signal quality. Add regime detection for position sizing.",
+        "scores": {
+          "sharpe": 0.166414133386826,
+          "stability": 0.3629422249306792,
+          "economic": 0.84,
+          "statistical": 1.0,
+          "turnover": 0.988999944999725,
+          "simplicity": 0.95,
+          "regime": 0.0
+        },
+        "statistical_tests": {
+          "p_value": 0.0,
+          "t_statistic": -4.126201547807935,
+          "bootstrap_ci": [
+            -6.1415319010116995,
+            -2.4282316366034826
+          ]
+        },
+        "falsification": {
+          "passed": false,
+          "score": 0.0,
+          "tests_passed": 0,
+          "tests_failed": 6,
+          "vulnerabilities": [
+            "Slippage Stress Test",
+            "Entry Timing Randomization",
+            "Label Shifting Test",
+            "Feature Noise Injection",
+            "Rolling Window Stability",
+            "Regime Robustness"
+          ],
+          "test_results": [
+            {
+              "name": "Slippage Stress Test",
+              "passed": "False",
+              "degradation": 7.0158444484554545
+            },
+            {
+              "name": "Entry Timing Randomization",
+              "passed": "False",
+              "degradation": 4.182214769565961
+            },
+            {
+              "name": "Label Shifting Test",
+              "passed": false,
+              "degradation": 1.8559087163599912
+            },
+            {
+              "name": "Feature Noise Injection",
+              "passed": "False",
+              "degradation": 1.8096011848608877
+            },
+            {
+              "name": "Rolling Window Stability",
+              "passed": "False",
+              "degradation": 0.9275622736341128
+            },
+            {
+              "name": "Regime Robustness",
+              "passed": false,
+              "degradation": 1.4012697228399977
+            }
+          ]
+        }
+      }
+    },
+    {
+      "edge": {
+        "rank": 2,
+        "edge_id": "e3bf4291f031",
+        "edge_name": "Liquidity Vacuum Fade",
+        "hypothesis_type": "microstructure",
+        "mechanism": "liquidity_premium",
+        "overall_score": 0.4500188782548676,
+        "oos_sharpe": -0.6693338147706089,
+        "net_sharpe": -0.053126990168102635,
+        "win_rate": 0.4,
+        "profit_factor": 0.7695066061517166,
+        "max_drawdown": 0.013539688344877952,
+        "n_trades": 12,
+        "p_value": 0.13,
+        "falsification_score": 0.0,
+        "regime_stability": 0.6006943942743526,
+        "score_sharpe": 0.0,
+        "score_stability": 0.6006943942743526,
+        "score_economic": 1.0,
+        "score_statistical": 0.0,
+        "score_turnover": 0.99879999399997,
+        "score_simplicity": 0.8,
+        "score_regime": 0.0,
+        "economic_rationale": "Low liquidity allows prices to move further on small order flow. These moves often reverse as normal liquidity returns and fair value is restored.",
+        "strengths": [
+          "Strong economic rationale",
+          "Low trading costs",
+          "Simple and interpretable",
+          "Controlled drawdowns"
+        ],
+        "weaknesses": [
+          "Low risk-adjusted returns",
+          "Marginal statistical significance",
+          "Regime-dependent performance",
+          "Limited trade sample",
+          "Low win rate (40.0%)"
+        ],
+        "recommendation": "WEAK CANDIDATE: Likely not a genuine edge. Recommend rejection. Look for ways to improve signal quality. Add regime detection for position sizing. Test on longer history or additional assets."
+      },
+      "performance_summary": {
+        "oos_sharpe": -0.6693338147706089,
+        "net_sharpe": -0.053126990168102635,
+        "win_rate": 0.4,
+        "profit_factor": 0.7695066061517166,
+        "max_drawdown": 0.013539688344877952,
+        "n_trades": 12,
+        "total_return": -0.06693338147706089
+      },
+      "analysis": {
+        "mechanism": "liquidity_premium",
+        "economic_rationale": "Low liquidity allows prices to move further on small order flow. These moves often reverse as normal liquidity returns and fair value is restored.",
+        "strengths": [
+          "Strong economic rationale",
+          "Low trading costs",
+          "Simple and interpretable",
+          "Controlled drawdowns"
+        ],
+        "weaknesses": [
+          "Low risk-adjusted returns",
+          "Marginal statistical significance",
+          "Regime-dependent performance",
+          "Limited trade sample",
+          "Low win rate (40.0%)"
+        ],
+        "recommendation": "WEAK CANDIDATE: Likely not a genuine edge. Recommend rejection. Look for ways to improve signal quality. Add regime detection for position sizing. Test on longer history or additional assets.",
+        "scores": {
+          "sharpe": 0.0,
+          "stability": 0.6006943942743526,
+          "economic": 1.0,
+          "statistical": 0.0,
+          "turnover": 0.99879999399997,
+          "simplicity": 0.8,
+          "regime": 0.0
+        },
+        "statistical_tests": {
+          "p_value": 0.13,
+          "t_statistic": -1.4966759092807285,
+          "bootstrap_ci": [
+            -3.367395485963764,
+            -0.04453135718143228
+          ]
+        },
+        "falsification": {
+          "passed": false,
+          "score": 0.0,
+          "tests_passed": 0,
+          "tests_failed": 6,
+          "vulnerabilities": [
+            "Slippage Stress Test",
+            "Entry Timing Randomization",
+            "Label Shifting Test",
+            "Feature Noise Injection",
+            "Rolling Window Stability",
+            "Regime Robustness"
+          ],
+          "test_results": [
+            {
+              "name": "Slippage Stress Test",
+              "passed": "False",
+              "degradation": 1.9087129545975605
+            },
+            {
+              "name": "Entry Timing Randomization",
+              "passed": "False",
+              "degradation": 5.842051474408757
+            },
+            {
+              "name": "Label Shifting Test",
+              "passed": false,
+              "degradation": 1.0050158100304554
+            },
+            {
+              "name": "Feature Noise Injection",
+              "passed": "False",
+              "degradation": 1.809229626604461
+            },
+            {
+              "name": "Rolling Window Stability",
+              "passed": "False",
+              "degradation": 0.986451036372453
+            },
+            {
+              "name": "Regime Robustness",
+              "passed": false,
+              "degradation": 2.3777213680941487
+            }
+          ]
+        }
+      }
+    },
+    {
+      "edge": {
+        "rank": 3,
+        "edge_id": "9cee428983a5",
+        "edge_name": "Consecutive Down Reversal",
+        "hypothesis_type": "pattern",
+        "mechanism": "mean_reversion",
+        "overall_score": 0.4391881269000052,
+        "oos_sharpe": -0.49788255010092936,
+        "net_sharpe": -0.03951839988211858,
+        "win_rate": 0.5,
+        "profit_factor": 1.3154639352674276,
+        "max_drawdown": 0.007080995286923118,
+        "n_trades": 17,
+        "p_value": 0.29,
+        "falsification_score": 0.0,
+        "regime_stability": 0.591790638750047,
+        "score_sharpe": 0.0,
+        "score_stability": 0.591790638750047,
+        "score_economic": 0.84,
+        "score_statistical": 0.0,
+        "score_turnover": 0.9982999914999575,
+        "score_simplicity": 0.95,
+        "score_regime": 0.0,
+        "economic_rationale": "Extended losing streaks create oversold conditions. Behavioral biases cause over-reaction which then corrects.",
+        "strengths": [
+          "Strong economic rationale",
+          "Low trading costs",
+          "Simple and interpretable",
+          "Controlled drawdowns"
+        ],
+        "weaknesses": [
+          "Low risk-adjusted returns",
+          "Marginal statistical significance",
+          "Regime-dependent performance",
+          "Limited trade sample"
+        ],
+        "recommendation": "WEAK CANDIDATE: Likely not a genuine edge. Recommend rejection. Look for ways to improve signal quality. Add regime detection for position sizing. Test on longer history or additional assets."
+      },
+      "performance_summary": {
+        "oos_sharpe": -0.49788255010092936,
+        "net_sharpe": -0.03951839988211858,
+        "win_rate": 0.5,
+        "profit_factor": 1.3154639352674276,
+        "max_drawdown": 0.007080995286923118,
+        "n_trades": 17,
+        "total_return": -0.04978825501009294
+      },
+      "analysis": {
+        "mechanism": "mean_reversion",
+        "economic_rationale": "Extended losing streaks create oversold conditions. Behavioral biases cause over-reaction which then corrects.",
+        "strengths": [
+          "Strong economic rationale",
+          "Low trading costs",
+          "Simple and interpretable",
+          "Controlled drawdowns"
+        ],
+        "weaknesses": [
+          "Low risk-adjusted returns",
+          "Marginal statistical significance",
+          "Regime-dependent performance",
+          "Limited trade sample"
+        ],
+        "recommendation": "WEAK CANDIDATE: Likely not a genuine edge. Recommend rejection. Look for ways to improve signal quality. Add regime detection for position sizing. Test on longer history or additional assets.",
+        "scores": {
+          "sharpe": 0.0,
+          "stability": 0.591790638750047,
+          "economic": 0.84,
+          "statistical": 0.0,
+          "turnover": 0.9982999914999575,
+          "simplicity": 0.95,
+          "regime": 0.0
+        },
+        "statistical_tests": {
+          "p_value": 0.29,
+          "t_statistic": -1.1132992268099646,
+          "bootstrap_ci": [
+            -3.6566173734111316,
+            0.6232060519328971
+          ]
+        },
+        "falsification": {
+          "passed": false,
+          "score": 0.0,
+          "tests_passed": 0,
+          "tests_failed": 6,
+          "vulnerabilities": [
+            "Slippage Stress Test",
+            "Entry Timing Randomization",
+            "Label Shifting Test",
+            "Feature Noise Injection",
+            "Rolling Window Stability",
+            "Regime Robustness"
+          ],
+          "test_results": [
+            {
+              "name": "Slippage Stress Test",
+              "passed": "False",
+              "degradation": 2.1654719770338393
+            },
+            {
+              "name": "Entry Timing Randomization",
+              "passed": "False",
+              "degradation": 7.294863305062407
+            },
+            {
+              "name": "Label Shifting Test",
+              "passed": "False",
+              "degradation": 2.1207121548219345
+            },
+            {
+              "name": "Feature Noise Injection",
+              "passed": "False",
+              "degradation": 5.080223671205308
+            },
+            {
+              "name": "Rolling Window Stability",
+              "passed": "False",
+              "degradation": 0.9851989695185063
+            },
+            {
+              "name": "Regime Robustness",
+              "passed": false,
+              "degradation": 1.0
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "discovery_stats": {
+    "score_distribution": {
+      "mean": 0.49109965932922917,
+      "std": 0.06590399113756103,
+      "min": 0.4391881269000052,
+      "max": 0.5840919728328149,
+      "median": 0.4500188782548676
+    },
+    "sharpe_distribution": {
+      "mean": -0.2781293660326288,
+      "std": 0.43764582777431554,
+      "min": -0.6693338147706089,
+      "max": 0.332828266773652,
+      "median": -0.49788255010092936
+    },
+    "type_breakdown": {
+      "regime": 1,
+      "microstructure": 1,
+      "pattern": 1
+    },
+    "mechanism_breakdown": {
+      "momentum": 1,
+      "liquidity_premium": 1,
+      "mean_reversion": 1
+    },
+    "falsification_rate": 0.0,
+    "n_strong_candidates": 0,
+    "n_promising_candidates": 0
+  }
+}

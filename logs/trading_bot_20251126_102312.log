@@ -1,0 +1,49 @@
+2025-11-26 10:23:12,298 - trading_bot - INFO - Fetching BTC bars from Alpaca (5Min)...
+2025-11-26 10:23:22,478 - trading_bot - INFO - Data loaded: 32847 rows (Base Timeframe 5m)
+2025-11-26 10:23:22,485 - trading_bot - INFO - Loaded H4 data directly: 1234 bars
+2025-11-26 10:23:22,490 - trading_bot - INFO - Loaded Daily data directly: 310 bars
+2025-11-26 10:23:22,493 - trading_bot - INFO - H4=1234, H1=4170
+2025-11-26 10:23:22,700 - trading_bot - INFO - Using Crypto Momentum strategy
+2025-11-26 10:23:23,713 - trading_bot - INFO - Generated 633 candidates
+2025-11-26 10:23:23,713 - trading_bot - INFO - Applied adaptive filter profile 'baseline': 633 / 633 candidates retained.
+2025-11-26 10:23:23,716 - trading_bot - WARNING - [WFA] Fold 1: insufficient training samples (0) for window ending 2024-01-01 00:00:00+00:00. Skipping month.
+2025-11-26 10:23:23,717 - trading_bot - WARNING - [WFA] Fold 2: insufficient training samples (0) for window ending 2024-02-01 00:00:00+00:00. Skipping month.
+2025-11-26 10:23:23,717 - trading_bot - WARNING - [WFA] Fold 3: insufficient training samples (0) for window ending 2024-03-01 00:00:00+00:00. Skipping month.
+2025-11-26 10:23:23,717 - trading_bot - WARNING - [WFA] Fold 4: insufficient training samples (0) for window ending 2024-04-01 00:00:00+00:00. Skipping month.
+2025-11-26 10:23:23,717 - trading_bot - WARNING - [WFA] Fold 5: insufficient training samples (0) for window ending 2024-05-01 00:00:00+00:00. Skipping month.
+2025-11-26 10:23:23,717 - trading_bot - WARNING - [WFA] Fold 6: insufficient training samples (0) for window ending 2024-06-01 00:00:00+00:00. Skipping month.
+2025-11-26 10:23:23,718 - trading_bot - WARNING - [WFA] Fold 7: insufficient training samples (0) for window ending 2024-07-01 00:00:00+00:00. Skipping month.
+2025-11-26 10:23:23,718 - trading_bot - WARNING - [WFA] Fold 8: insufficient training samples (0) for window ending 2024-08-01 00:00:00+00:00. Skipping month.
+2025-11-26 10:23:23,718 - trading_bot - WARNING - [WFA] Fold 9: insufficient training samples (61) for window ending 2024-09-01 00:00:00+00:00. Skipping month.
+2025-11-26 10:23:23,718 - trading_bot - WARNING - [WFA] Fold 10: insufficient training samples (119) for window ending 2024-10-01 00:00:00+00:00. Skipping month.
+2025-11-26 10:23:23,720 - trading_bot - WARNING - [WFA] Fold 11: insufficient training samples (183) for window ending 2024-11-01 00:00:00+00:00. Skipping month.
+2025-11-26 10:23:23,720 - trading_bot - INFO - [WFA] Fold 12: base train 274 samples (2020-12-01 -> 2024-12-01), scoring 50 trades.
+2025-11-26 10:23:23,726 - trading_bot - INFO - [SessionGuard] Dropping weak sessions ['new_york', 'off'] (threshold 0.55, min_samples 15)
+2025-11-26 10:23:23,727 - trading_bot - INFO - [WFA] Fold 12: no filter profile met minimum criteria, skipping month.
+2025-11-26 10:23:23,727 - trading_bot - INFO - [WFA] Fold 13: base train 324 samples (2021-01-01 -> 2025-01-01), scoring 44 trades.
+2025-11-26 10:23:23,730 - trading_bot - INFO - [SessionGuard] Dropping weak sessions ['new_york', 'off'] (threshold 0.55, min_samples 15)
+2025-11-26 10:23:23,730 - trading_bot - INFO - [WFA] Fold 13: no filter profile met minimum criteria, skipping month.
+2025-11-26 10:23:23,731 - trading_bot - INFO - [WFA] Fold 14: base train 368 samples (2021-02-01 -> 2025-02-01), scoring 29 trades.
+2025-11-26 10:23:23,733 - trading_bot - INFO - [SessionGuard] Dropping weak sessions ['new_york', 'off'] (threshold 0.55, min_samples 15)
+2025-11-26 10:23:23,734 - trading_bot - INFO - [WFA] Fold 14: no filter profile met minimum criteria, skipping month.
+2025-11-26 10:23:23,734 - trading_bot - INFO - [WFA] Fold 15: base train 397 samples (2021-03-01 -> 2025-03-01), scoring 34 trades.
+2025-11-26 10:23:23,736 - trading_bot - INFO - [SessionGuard] Dropping weak sessions ['new_york', 'off'] (threshold 0.55, min_samples 15)
+2025-11-26 10:23:23,737 - trading_bot - INFO - [WFA] Fold 15: no filter profile met minimum criteria, skipping month.
+2025-11-26 10:23:23,737 - trading_bot - INFO - [WFA] Fold 16: base train 431 samples (2021-04-01 -> 2025-04-01), scoring 35 trades.
+2025-11-26 10:23:23,740 - trading_bot - INFO - [SessionGuard] Dropping weak sessions ['new_york', 'off'] (threshold 0.55, min_samples 15)
+2025-11-26 10:23:23,740 - trading_bot - INFO - [WFA] Fold 16: no filter profile met minimum criteria, skipping month.
+2025-11-26 10:23:23,740 - trading_bot - INFO - [WFA] Fold 17: base train 466 samples (2021-05-01 -> 2025-05-01), scoring 32 trades.
+2025-11-26 10:23:23,743 - trading_bot - INFO - [SessionGuard] Dropping weak sessions ['new_york', 'off'] (threshold 0.55, min_samples 15)
+2025-11-26 10:23:23,743 - trading_bot - INFO - [WFA] Fold 17: no filter profile met minimum criteria, skipping month.
+2025-11-26 10:23:23,743 - trading_bot - INFO - [WFA] Fold 18: base train 498 samples (2021-06-01 -> 2025-06-01), scoring 22 trades.
+2025-11-26 10:23:23,746 - trading_bot - INFO - [SessionGuard] Dropping weak sessions ['new_york', 'off'] (threshold 0.55, min_samples 15)
+2025-11-26 10:23:23,746 - trading_bot - INFO - [WFA] Fold 18: no filter profile met minimum criteria, skipping month.
+2025-11-26 10:23:23,746 - trading_bot - INFO - [WFA] Fold 19: base train 520 samples (2021-07-01 -> 2025-07-01), scoring 40 trades.
+2025-11-26 10:23:23,749 - trading_bot - INFO - [SessionGuard] Dropping weak sessions ['new_york', 'off'] (threshold 0.55, min_samples 15)
+2025-11-26 10:23:23,749 - trading_bot - INFO - [WFA] Fold 19: no filter profile met minimum criteria, skipping month.
+2025-11-26 10:23:23,749 - trading_bot - INFO - [WFA] Fold 20: base train 560 samples (2021-08-01 -> 2025-08-01), scoring 31 trades.
+2025-11-26 10:23:23,752 - trading_bot - INFO - [SessionGuard] Dropping weak sessions ['london', 'new_york', 'off'] (threshold 0.55, min_samples 15)
+2025-11-26 10:23:23,752 - trading_bot - INFO - [WFA] Fold 20: no filter profile met minimum criteria, skipping month.
+2025-11-26 10:23:23,753 - trading_bot - INFO - [WFA] Fold 21: base train 591 samples (2021-09-01 -> 2025-09-01), scoring 42 trades.
+2025-11-26 10:23:23,755 - trading_bot - INFO - [SessionGuard] Dropping weak sessions ['london', 'new_york', 'off'] (threshold 0.55, min_samples 15)
+2025-11-26 10:23:23,756 - trading_bot - INFO - [WFA] Fold 21: no filter profile met minimum criteria, skipping month.

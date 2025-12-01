@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# Manually restart the TradingBot v2 backend (FastAPI/uvicorn) via systemd
+# Usage: ./START
+ssh root@134.199.159.103
+---
+sudo systemctl restart tradingbot
+---
+watch logs
+sudo journalctl -u tradingbot -f | grep Momentum
+----
+
+set -euo pipefail
+
+SERVICE="tradingbot"
+
+echo "=================================================="
+echo "🔄 Restarting $SERVICE"
+echo "=================================================="
+
+# Ensure service is enabled to survive reboots (idempotent)
+sudo systemctl enable "$SERVICE" >/dev/null 2>&1 || true
+
+# Restart service
+sudo systemctl restart "$SERVICE"
+
+echo
+echo "✅ Status:"
+sudo systemctl status "$SERVICE" --no-pager -l || true
+
+echo
+echo "📜 Live logs (Ctrl+C to exit)"
+sudo journalctl -u "$SERVICE" -f

@@ -1,0 +1,10 @@
+2025-11-26 20:26:25,930 - trading_bot - INFO - Fetching BTC crypto bars from Alpaca (5Min)...
+2025-11-26 20:27:24,799 - trading_bot - INFO - Data loaded: 194077 rows (Base Timeframe 5m)
+2025-11-26 20:27:24,814 - trading_bot - INFO - Loaded H4 data directly: 4171 bars
+2025-11-26 20:27:24,823 - trading_bot - INFO - Loaded Daily data directly: 696 bars
+2025-11-26 20:27:24,836 - trading_bot - INFO - H4=4171, H1=16678
+2025-11-26 20:27:26,098 - trading_bot - INFO - Using Crypto Momentum strategy
+2025-11-26 20:27:31,124 - trading_bot - WARNING - Crypto momentum strategy produced no candidates for the selected window.
+2025-11-26 20:27:31,126 - trading_bot - INFO - Generated 0 candidates
+2025-11-26 20:27:31,126 - trading_bot - INFO - Applied adaptive filter profile 'crypto_baseline': 0 / 0 candidates retained.
+2025-11-26 20:27:31,126 - trading_bot - WARNING - No candidates remain after applying the active filter profile. Exiting.

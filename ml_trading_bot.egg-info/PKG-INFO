@@ -15,6 +15,10 @@ Requires-Dist: pyyaml>=6.0
 Requires-Dist: pytest>=7.0.0
 Requires-Dist: jupyter>=1.0.0
 Requires-Dist: inquirer>=3.2.1
+Requires-Dist: requests>=2.31.0
+Requires-Dist: python-dotenv>=1.0.0
+Requires-Dist: lightstreamer-client-lib>=1.1.4
+Requires-Dist: alpaca-py>=0.13.0
 Provides-Extra: dev
 Requires-Dist: pytest>=7.0.0; extra == "dev"
 Requires-Dist: jupyter>=1.0.0; extra == "dev"
@@ -91,6 +95,44 @@ Run a robust validation using rolling windows (e.g., Train 4 Years -> Test 6 Mon
 ```bash
 python scripts/run_backtest.py --wfa --config config.yml
 ```
+
+### IG demo trading (optional)
+
+Send the freshest high-confidence signal directly to IG's demo environment via their REST API ([docs](https://www.ig.com/au/trading-platforms/trading-apis/how-to-use-ig-api#:~:text=You%20can%20also%20use%20an,request%20for%20an%20access%20token.)):
+
+1. Create a `.env` file with your demo credentials (or export the variables):
+   ```bash
+   IG_API_KEY_DEMO=your_api_key
+   IG_USERNAME_DEMO=your_username
+   IG_PASSWORD_DEMO=your_password
+   IG_ACCOUNT_ID_DEMO=your_account_id
+   ```
+2. Enable `live_trading` at the bottom of `config.yml` and supply the IG epic you want to trade:
+   ```yaml
+   live_trading:
+     enabled: true
+     use_demo: true
+     epic: "CS.D.GC.MONTH2.IP"  # update to your preferred market
+     size: 1.0
+     probability_threshold: 0.65
+   ```
+3. Run the CLI in live mode (the bot loads the trained model, scores the latest candles, and sends a market order when the probability gate is met):
+   ```bash
+   python scripts/run_backtest.py --action live_demo --symbol XAUUSD --config config.yml
+   ```
+
+### Continuous IG streaming + trading
+
+If you want the bot to _stream_ IG’s gold feed and trade every time a fresh bar completes:
+
+1. In `config.yml`, set `data.source: ig` and configure `data.ig_stream` with your epic/resolution plus `live_trading.enabled: true`.
+2. Ensure a trained model exists (same as before).
+3. Launch the streaming loop:
+   ```bash
+   python scripts/run_backtest.py --action stream_live --symbol XAUUSD --config config.yml
+   ```
+
+The command bootstraps historical bars via IG’s `/prices` REST API, opens a Lightstreamer subscription to `CHART:{epic}:{resolution}`, recomputes the feature/candidate pipeline on every completed bar, and routes qualifying trades straight to IG’s demo account through `/positions/otc`.
 
 ### Configuration
 

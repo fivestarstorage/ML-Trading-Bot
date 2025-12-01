@@ -21,71 +21,123 @@ class TradingBotMenu:
         if inquirer is None:
             print("Interactive menu requires 'inquirer'. Install with: pip install inquirer")
             return
-        
+
+        print("\n" + "="*60)
+        print("  Trading Bot - Strategy Validator & Live Trading")
+        print("="*60 + "\n")
+
         while True:
-            action_answer = inquirer.prompt([
+            # Ask for mode: WFA or Live Trading
+            mode_answer = inquirer.prompt([
                 inquirer.List(
-                    'action',
-                    message="Select an action",
+                    'mode',
+                    message="Select mode",
                     choices=[
-                        ('Backtest (Normal)', 'backtest_normal'),
-                        ('Backtest (Prop Firm)', 'backtest_prop'),
-                        ('Train / Update ML Model', 'train'),
-                        ('Train latest 5y (Alpaca)', 'train_latest'),
-                        ('Walk-Forward Analysis', 'wfa'),
-                        ('Optimize Variables (grid)', 'optimize'),
-                        ('Start Alpaca Live Bot', 'alpaca_live'),
-                        ('Reset ML Model', 'reset_model'),
-                        ('Exit', 'exit')
+                        ('Walk-Forward Analysis (WFA)', 'wfa'),
+                        ('Live Trading Bot', 'live'),
+                        ('Exit', 'EXIT')
                     ]
                 )
             ])
-            
-            if not action_answer or action_answer['action'] == 'exit':
-                print("Good luck and manage risk! 👋")
+
+            if not mode_answer or mode_answer['mode'] == 'EXIT':
+                print("\nGood luck and manage risk! 👋")
                 break
-            
-            action = action_answer['action']
-            
-            if action == 'reset_model':
-                self._reset_model()
-                continue
-            if action == 'train_latest':
-                self._train_latest_window()
-                continue
-            if action == 'alpaca_live':
-                self._start_alpaca_live()
-                continue
-            
-            symbol = self._ask_symbol()
-            start_date, end_date = self._ask_dates()
-            
-            args = ['--symbol', symbol, '--config', self.config_path]
-            if start_date:
-                args.extend(['--from', start_date])
-            if end_date:
-                args.extend(['--to', end_date])
-            
-            if action == 'backtest_normal':
-                args.extend(['--mode', 'normal', '--action', 'backtest'])
-            elif action == 'backtest_prop':
-                args.extend(['--mode', 'propfirm', '--action', 'backtest'])
-            elif action == 'train':
-                args.extend(['--action', 'train_model'])
-            elif action == 'wfa':
-                if not start_date or not end_date:
-                    print("Walk-forward requires both start and end dates.")
+
+            if mode_answer['mode'] == 'wfa':
+                self._run_wfa_mode()
+            elif mode_answer['mode'] == 'live':
+                self._run_live_mode()
+
+    def _run_wfa_mode(self):
+        """Run Walk-Forward Analysis mode"""
+        while True:
+            # Ask for ticker
+            ticker_answer = inquirer.prompt([
+                inquirer.List(
+                    'ticker',
+                    message="Select ticker symbol",
+                    choices=[
+                        ('SPY - S&P 500 ETF', 'SPY'),
+                        ('QQQ - Nasdaq 100 ETF', 'QQQ'),
+                        ('IWM - Russell 2000 ETF', 'IWM'),
+                        ('DIA - Dow Jones ETF', 'DIA'),
+                        ('Custom ticker...', 'CUSTOM'),
+                        ('Back to main menu', 'BACK')
+                    ]
+                )
+            ])
+
+            if not ticker_answer or ticker_answer['ticker'] == 'BACK':
+                return
+
+            ticker = ticker_answer['ticker']
+            if ticker == 'CUSTOM':
+                custom_answer = inquirer.prompt([
+                    inquirer.Text('custom_ticker', message="Enter ticker symbol (e.g., AAPL, TSLA)")
+                ])
+                if not custom_answer or not custom_answer.get('custom_ticker'):
                     continue
-                args.append('--wfa')
-            elif action == 'optimize':
-                if not start_date or not end_date:
-                    print("Optimization requires both start and end dates. Please try again.")
-                    continue
-                args.append('--find-optimised-variables')
-                args.extend(['--mode', self.config['backtest'].get('mode', 'normal')])
-            
-            print(f"\n>>> Running: {' '.join(args)}\n")
-            self._invoke_cli(args)
+                ticker = custom_answer['custom_ticker'].upper()
+
+            # Ask for strategy
+            strategy_answer = inquirer.prompt([
+                inquirer.List(
+                    'strategy',
+                    message=f"Select strategy for {ticker}",
+                    choices=[
+                        ('Smart Money Concepts (SMC)', 'smc'),
+                        ('Back to ticker selection', 'BACK')
+                    ]
+                )
+            ])
+
+            if not strategy_answer or strategy_answer['strategy'] == 'BACK':
+                continue
+
+            strategy = strategy_answer['strategy']
+
+            # Ask for years to test
+            years_answer = inquirer.prompt([
+                inquirer.List(
+                    'years_option',
+                    message=f"Select time period for {ticker} WFA",
+                    choices=[
+                        ('Single Year', 'single'),
+                        ('Multiple Years', 'multiple'),
+                        ('All Years (2020-2025)', 'all'),
+                        ('Back to strategy selection', 'BACK')
+                    ]
+                )
+            ])
+
+            if not years_answer or years_answer['years_option'] == 'BACK':
+                continue
+
+            option = years_answer['years_option']
+            years_str = None
+
+            if option == 'single':
+                year_answer = inquirer.prompt([
+                    inquirer.Text('year', message="Enter year (e.g., 2024)", default=str(datetime.now().year))
+                ])
+                if year_answer and year_answer.get('year'):
+                    years_str = year_answer['year']
+            elif option == 'multiple':
+                years_input = inquirer.prompt([
+                    inquirer.Text('years', message="Enter years comma-separated (e.g., 2023,2024,2025)",
+                                 default="2023,2024,2025")
+                ])
+                if years_input and years_input.get('years'):
+                    years_str = years_input['years']
+            else:  # all
+                years_str = '2020,2021,2022,2023,2024,2025'
+
+            if not years_str:
+                continue
+
+            # Run WFA
+            self._run_wfa(ticker, strategy, years_str)
     
     def _ask_symbol(self):
         answer = inquirer.prompt([
@@ -155,6 +207,142 @@ class TradingBotMenu:
             args.append('--dry-run')
         print(f"\n>>> Running: {' '.join(args)}\n")
         self._invoke_cli(args)
+
+    def _run_wfa(self, ticker, strategy, years_str):
+        """Run Walk-Forward Analysis with comprehensive reporting"""
+        import subprocess
+
+        # Determine config file based on ticker and strategy
+        config_map = {
+            ('SPY', 'smc'): 'configs/config_spy_optimized.yml',
+            ('QQQ', 'smc'): 'configs/config_spy_optimized.yml',  # Can use same SMC strategy
+            ('IWM', 'smc'): 'configs/config_spy_optimized.yml',
+            ('DIA', 'smc'): 'configs/config_spy_optimized.yml',
+        }
+
+        config_file = config_map.get((ticker, strategy), 'configs/config_spy_optimized.yml')
+
+        cmd = [
+            'python3', 'scripts/run_wfa_with_reports.py',
+            '--ticker', ticker,
+            '--strategy', strategy,
+            '--years', years_str,
+            '--config', config_file
+        ]
+
+        print(f"\n{'='*60}")
+        print(f"  Running WFA: {ticker} | Strategy: {strategy.upper()}")
+        print(f"  Years: {years_str}")
+        print(f"{'='*60}\n")
+
+        subprocess.run(cmd)
+
+    def _run_live_mode(self):
+        """Run Live Trading mode"""
+        import subprocess
+
+        while True:
+            # Ask paper or live
+            mode_answer = inquirer.prompt([
+                inquirer.List(
+                    'trading_mode',
+                    message="Select trading mode",
+                    choices=[
+                        ('Paper Trading (Simulated)', 'paper'),
+                        ('Live Trading (Real Money)', 'live'),
+                        ('Back to main menu', 'BACK')
+                    ]
+                )
+            ])
+
+            if not mode_answer or mode_answer['trading_mode'] == 'BACK':
+                return
+
+            trading_mode = mode_answer['trading_mode']
+
+            # Ask for ticker
+            ticker_answer = inquirer.prompt([
+                inquirer.List(
+                    'ticker',
+                    message="Select ticker symbol",
+                    choices=[
+                        ('SPY - S&P 500 ETF', 'SPY'),
+                        ('QQQ - Nasdaq 100 ETF', 'QQQ'),
+                        ('IWM - Russell 2000 ETF', 'IWM'),
+                        ('DIA - Dow Jones ETF', 'DIA'),
+                        ('Custom ticker...', 'CUSTOM'),
+                        ('Back', 'BACK')
+                    ]
+                )
+            ])
+
+            if not ticker_answer or ticker_answer['ticker'] == 'BACK':
+                continue
+
+            ticker = ticker_answer['ticker']
+            if ticker == 'CUSTOM':
+                custom_answer = inquirer.prompt([
+                    inquirer.Text('custom_ticker', message="Enter ticker symbol (e.g., AAPL, TSLA)")
+                ])
+                if not custom_answer or not custom_answer.get('custom_ticker'):
+                    continue
+                ticker = custom_answer['custom_ticker'].upper()
+
+            # Ask for strategy
+            strategy_answer = inquirer.prompt([
+                inquirer.List(
+                    'strategy',
+                    message=f"Select strategy for {ticker}",
+                    choices=[
+                        ('Smart Money Concepts (SMC)', 'smc'),
+                        ('Back', 'BACK')
+                    ]
+                )
+            ])
+
+            if not strategy_answer or strategy_answer['strategy'] == 'BACK':
+                continue
+
+            strategy = strategy_answer['strategy']
+
+            # Confirm live trading
+            if trading_mode == 'live':
+                confirm = inquirer.prompt([
+                    inquirer.Confirm(
+                        'confirm_live',
+                        message="⚠️  WARNING: This will trade with REAL MONEY. Are you sure?",
+                        default=False
+                    )
+                ])
+                if not confirm or not confirm.get('confirm_live'):
+                    print("\n❌ Live trading cancelled. Use Paper Trading to test first.\n")
+                    continue
+
+            # Determine config file
+            config_map = {
+                ('SPY', 'smc'): 'configs/config_spy_optimized.yml',
+                ('QQQ', 'smc'): 'configs/config_spy_optimized.yml',
+                ('IWM', 'smc'): 'configs/config_spy_optimized.yml',
+                ('DIA', 'smc'): 'configs/config_spy_optimized.yml',
+            }
+            config_file = config_map.get((ticker, strategy), 'configs/config_spy_optimized.yml')
+
+            # Run live trading bot
+            cmd = [
+                'python3', 'scripts/run_live_bot.py',
+                '--ticker', ticker,
+                '--strategy', strategy,
+                '--mode', trading_mode,
+                '--config', config_file
+            ]
+
+            print(f"\n{'='*60}")
+            print(f"  Starting {'PAPER' if trading_mode == 'paper' else 'LIVE'} Trading Bot")
+            print(f"  Ticker: {ticker} | Strategy: {strategy.upper()}")
+            print(f"{'='*60}\n")
+
+            subprocess.run(cmd)
+            return  # Exit after bot stops
 
 
 def main():

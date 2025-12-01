@@ -1,0 +1,36 @@
+2025-11-26 10:29:45,057 - trading_bot - INFO - Fetching BTC bars from Alpaca (5Min)...
+2025-11-26 10:29:55,385 - trading_bot - INFO - Data loaded: 32847 rows (Base Timeframe 5m)
+2025-11-26 10:29:55,392 - trading_bot - INFO - Loaded H4 data directly: 1234 bars
+2025-11-26 10:29:55,395 - trading_bot - INFO - Loaded Daily data directly: 310 bars
+2025-11-26 10:29:55,397 - trading_bot - INFO - H4=1234, H1=4170
+2025-11-26 10:29:55,601 - trading_bot - INFO - Using Crypto Momentum strategy
+2025-11-26 10:29:56,500 - trading_bot - INFO - Generated 752 candidates
+2025-11-26 10:29:56,500 - trading_bot - INFO - Applied adaptive filter profile 'crypto_baseline': 752 / 752 candidates retained.
+2025-11-26 10:29:56,515 - trading_bot - INFO - Model loaded from /Users/rileymartin/ML-Trading-Bot/models/lgbm_model.pkl
+2025-11-26 10:29:56,517 - trading_bot - WARNING - Could not load model: "['dist_to_range_low', 'dist_to_range_high'] not in index". Training on first 50% of data as fallback.
+2025-11-26 10:29:56,517 - trading_bot - INFO - Training LGBM with 376 samples...
+2025-11-26 10:29:58,224 - trading_bot - INFO - 
+============================================================
+2025-11-26 10:29:58,224 - trading_bot - INFO - PRE-FILTER STATISTICS
+2025-11-26 10:29:58,224 - trading_bot - INFO - ============================================================
+2025-11-26 10:29:58,224 - trading_bot - INFO - Total candidates: 752
+2025-11-26 10:29:58,224 - trading_bot - INFO - Mean probability: 0.370
+2025-11-26 10:29:58,224 - trading_bot - INFO - Median probability: 0.226
+2025-11-26 10:29:58,224 - trading_bot - INFO - Std probability: 0.326
+2025-11-26 10:29:58,224 - trading_bot - INFO - Min probability: 0.003
+2025-11-26 10:29:58,224 - trading_bot - INFO - Max probability: 0.976
+2025-11-26 10:29:58,224 - trading_bot - INFO - 
+Probability distribution:
+2025-11-26 10:29:58,224 - trading_bot - INFO -   < 0.3: 414 (55.1%)
+2025-11-26 10:29:58,225 - trading_bot - INFO -   0.3-0.4: 43 (5.7%)
+2025-11-26 10:29:58,225 - trading_bot - INFO -   0.4-0.5: 26 (3.5%)
+2025-11-26 10:29:58,225 - trading_bot - INFO -   0.5-0.6: 32 (4.3%)
+2025-11-26 10:29:58,225 - trading_bot - INFO -   >= 0.6: 237 (31.5%)
+2025-11-26 10:29:58,225 - trading_bot - INFO - 
+Using threshold: 0.622
+2025-11-26 10:29:58,225 - trading_bot - INFO - Candidates above threshold: 227 (30.2%)
+2025-11-26 10:29:58,230 - trading_bot - INFO - After cooldown filter: 145 trades (removed 82 clustered trades)
+2025-11-26 10:29:58,230 - trading_bot - INFO - Backtesting 145 trades out of 752 candidates...
+2025-11-26 10:29:58,230 - trading_bot - INFO - Initial capital: $6000.00, Risk per trade: 0.55%
+2025-11-26 10:29:58,234 - trading_bot - INFO - Backtest complete! Final Equity: $-15206.11 | Total PnL: $-21206.11 | Win Rate: 3.4% (5W/140L)
+2025-11-26 10:29:58,562 - trading_bot - INFO - Reports saved to reports/20251126_102958

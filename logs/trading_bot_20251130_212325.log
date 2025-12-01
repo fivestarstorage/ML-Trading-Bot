@@ -1,0 +1,3 @@
+2025-11-30 21:23:26,162 - trading_bot - INFO - Fetching SPY bars from Alpaca (5Min)...
+2025-11-30 21:23:46,283 - trading_bot - INFO - Loaded H4 data directly: 1081 bars
+2025-11-30 21:23:46,286 - trading_bot - INFO - Loaded Daily data directly: 255 bars

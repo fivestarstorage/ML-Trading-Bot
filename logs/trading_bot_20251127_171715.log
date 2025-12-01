@@ -1,0 +1,10 @@
+2025-11-27 17:17:15,186 - trading_bot - INFO - Fetching BTC crypto bars from Alpaca (5Min)...
+2025-11-27 17:17:26,985 - trading_bot - INFO - Model loaded from /Users/rileymartin/ML-Trading-Bot/models/lgbm_model.pkl
+2025-11-27 17:17:26,986 - alpaca_live_runner - INFO - Starting Alpaca polling loop (symbol=BTC, interval=60s, dry_run=True)...
+2025-11-27 17:26:30,686 - alpaca_live_runner - INFO - ⏰ Status: Monitoring BTC (2000 bars in history, 10 polls completed)
+2025-11-27 17:36:34,771 - alpaca_live_runner - INFO - ⏰ Status: Monitoring BTC (2000 bars in history, 20 polls completed)
+2025-11-27 17:46:37,601 - alpaca_live_runner - INFO - ⏰ Status: Monitoring BTC (2000 bars in history, 30 polls completed)
+2025-11-27 17:56:40,439 - alpaca_live_runner - INFO - ⏰ Status: Monitoring BTC (2000 bars in history, 40 polls completed)
+2025-11-27 18:06:44,127 - alpaca_live_runner - INFO - ⏰ Status: Monitoring BTC (2000 bars in history, 50 polls completed)
+2025-11-27 18:16:46,930 - alpaca_live_runner - INFO - ⏰ Status: Monitoring BTC (2000 bars in history, 60 polls completed)
+2025-11-27 18:26:49,879 - alpaca_live_runner - INFO - ⏰ Status: Monitoring BTC (2000 bars in history, 70 polls completed)

@@ -1,0 +1,1 @@
+2025-11-27 20:29:11,184 - trading_bot - ERROR - Model is not trained on the last 5 years. Run 'train_latest' or the menu action before starting live trading.

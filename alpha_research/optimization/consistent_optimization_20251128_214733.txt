@@ -1,0 +1,18 @@
+Multi-Year Optimization Results
+================================================================================
+
+Best Configuration:
+Consistency Score: 0.862
+Average Return: 27.70%
+Positive Years: 5/5
+
+Strategy: {'fast_ema': 12, 'slow_ema': 30, 'breakout_period': 15, 'volume_threshold': 2.0, 'use_volume_filter': True, 'volume_ma_period': 20}
+
+Risk: {'take_profit': 0.04, 'stop_loss': 0.015, 'trailing_stop': 0.025, 'max_hold_bars': 40}
+
+Yearly Results:
+2021: 52.83% return, 36.46% WR, 192 trades, Sharpe 1.36
+2022: 42.57% return, 40.64% WR, 187 trades, Sharpe 1.20
+2023: 1.08% return, 38.24% WR, 136 trades, Sharpe 0.25
+2024: 10.95% return, 39.24% WR, 158 trades, Sharpe 0.59
+2025: 31.08% return, 37.28% WR, 169 trades, Sharpe 1.09

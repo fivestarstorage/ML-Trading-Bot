@@ -1,0 +1,5 @@
+2025-11-26 19:17:37,562 - trading_bot - INFO - Saved ccxt cache to /Users/rileymartin/ML-Trading-Bot/Data/BTCUSD_5m_ccxt.parquet
+2025-11-26 19:17:37,563 - trading_bot - INFO - Data loaded: 300 rows (Base Timeframe 5m)
+2025-11-26 19:17:37,568 - trading_bot - INFO - Loaded H4 data directly: 7 bars
+2025-11-26 19:17:37,570 - trading_bot - INFO - Loaded Daily data directly: 2 bars
+2025-11-26 19:17:37,571 - trading_bot - INFO - H4=7, H1=25

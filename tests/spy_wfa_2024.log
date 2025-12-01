@@ -1,0 +1,47 @@
+WARNING:src.deep_models:PyTorch not available. Deep learning models will be disabled.
+INFO:trading_bot:Fetching SPY stocks bars from Alpaca (5Min)...
+INFO:trading_bot:Data loaded: 46894 rows (Base Timeframe 5m)
+INFO:trading_bot:Loaded H4 data directly: 1093 bars
+INFO:trading_bot:Loaded Daily data directly: 271 bars
+INFO:trading_bot:H4=1093, H1=4012
+INFO:trading_bot:Using SMC (Smart Money Concepts) strategy
+INFO:trading_bot:Detected 8484 FVGs and 3000 OBs on Base Timeframe
+INFO:trading_bot:Generating candidates...
+INFO:trading_bot:Scanning... 10.7% (5000/46894)
+INFO:trading_bot:Scanning... 21.3% (10000/46894)
+INFO:trading_bot:Scanning... 32.0% (15000/46894)
+INFO:trading_bot:Scanning... 42.6% (20000/46894)
+INFO:trading_bot:Scanning... 53.3% (25000/46894)
+INFO:trading_bot:Scanning... 64.0% (30000/46894)
+INFO:trading_bot:Scanning... 74.6% (35000/46894)
+INFO:trading_bot:Scanning... 85.3% (40000/46894)
+INFO:trading_bot:Scanning... 96.0% (45000/46894)
+INFO:trading_bot:Generated 4975 candidates
+INFO:trading_bot:Applied adaptive filter profile 'baseline': 4975 / 4975 candidates retained.
+WARNING:trading_bot:[WFA] Fold 1: insufficient training samples (0) for window ending 2024-01-01 00:00:00+00:00. Skipping month.
+WARNING:trading_bot:[WFA] Fold 2: insufficient training samples (371) for window ending 2024-02-01 00:00:00+00:00. Skipping month.
+INFO:trading_bot:[WFA] Fold 3: base train 744 samples (2021-03-01 -> 2024-03-01), scoring 396 trades.
+INFO:trading_bot:[WFA] Fold 3: profile 'baseline' -> train 744, test 396
+INFO:src.ensemble_model:================================================================================
+INFO:src.ensemble_model:TRAINING PREDICTION ENSEMBLE
+INFO:src.ensemble_model:================================================================================
+INFO:src.ensemble_model:Training samples: 744
+INFO:src.ensemble_model:Features: 34
+INFO:src.ensemble_model:Target distribution: [407 337]
+INFO:src.ensemble_model:Positive class: 45.30%
+Traceback (most recent call last):
+  File "/Users/rileymartin/.pyenv/versions/3.9.7/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/Users/rileymartin/.pyenv/versions/3.9.7/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/Users/rileymartin/ML-Trading-Bot/src/cli.py", line 592, in <module>
+    main()
+  File "/Users/rileymartin/ML-Trading-Bot/src/cli.py", line 300, in main
+    scored_candidates, fold_summaries = wfa.sequential_walk(candidates, args.start_date, args.end_date)
+  File "/Users/rileymartin/ML-Trading-Bot/src/wfa.py", line 154, in sequential_walk
+    model.train(train_filtered)
+  File "/Users/rileymartin/ML-Trading-Bot/src/ml_model.py", line 45, in train
+    return self.ensemble.train(df_train)
+  File "/Users/rileymartin/ML-Trading-Bot/src/ensemble_model.py", line 116, in train
+    if np.any(np.isinf(X.values)):
+TypeError: ufunc 'isinf' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''

@@ -1,0 +1,175 @@
+# Alpha Research Engine Configuration
+# ====================================
+# This configuration file controls all aspects of the alpha discovery process.
+
+# Data Source Configuration
+data:
+  source: csv  # csv, parquet, ccxt, alpaca
+  data_dir: Data
+  symbol: BTCUSD
+  timeframe: 5m
+  enable_ccxt: true
+  enable_alpaca: false
+  
+  # For CCXT
+  exchange: binance
+  
+  # For enhanced crypto data
+  include_funding: true
+  include_oi: true
+
+# Hypothesis Generation Settings
+hypothesis:
+  # Regime detection
+  regime_lookback: 100
+  volatility_cluster_threshold: 1.5
+  n_regimes: 3
+  
+  # Microstructure
+  orderbook_imbalance_window: 20
+  liquidity_shift_threshold: 0.3
+  large_player_volume_zscore: 2.5
+  
+  # Cross-asset
+  basis_significance_threshold: 0.5
+  term_structure_lookback: 30
+  correlation_window: 50
+  
+  # Flow
+  funding_rate_threshold: 0.0001
+  seasonal_test_periods:
+    - hour
+    - day_of_week
+    - month
+  
+  # Pattern discovery
+  embedding_dim: 32
+  cluster_min_samples: 50
+  motif_min_length: 5
+  motif_max_length: 50
+  n_pattern_clusters: 10
+
+# Validation Settings
+validation:
+  # Train/test split
+  train_pct: 0.7
+  n_folds: 5
+  min_fold_samples: 100
+  
+  # Transaction costs (basis points)
+  commission_bps: 4.0
+  slippage_bps: 2.0
+  
+  # Statistical tests
+  bootstrap_iterations: 1000
+  monte_carlo_simulations: 1000
+  significance_level: 0.05
+  
+  # Minimum requirements for valid edges
+  min_sharpe_ratio: 0.5
+  min_win_rate: 0.45
+  min_profit_factor: 1.1
+  min_trades: 30
+
+# Falsification Settings
+falsification:
+  # Slippage stress test
+  slippage_multipliers:
+    - 1.0
+    - 1.5
+    - 2.0
+    - 3.0
+    - 5.0
+  
+  # Entry timing randomization
+  entry_noise_bars:
+    - 0
+    - 1
+    - 2
+    - 3
+  entry_noise_iterations: 100
+  
+  # Label shifting test
+  label_shift_bars:
+    - -3
+    - -2
+    - -1
+    - 1
+    - 2
+    - 3
+  
+  # Feature noise injection
+  noise_levels:
+    - 0.01
+    - 0.02
+    - 0.05
+    - 0.1
+  noise_iterations: 50
+  
+  # Rolling window stability
+  window_sizes:
+    - 100
+    - 200
+    - 500
+    - 1000
+  min_window_sharpe: 0.3
+  max_sharpe_variance: 1.0
+  
+  # Regime robustness
+  min_regime_count: 2
+  max_regime_sharpe_diff: 1.5
+
+# Ranking Settings
+ranking:
+  # Weight for each factor (must sum to 1.0)
+  weights:
+    sharpe_oos: 0.25
+    stability: 0.20
+    economic_intuition: 0.15
+    statistical_significance: 0.15
+    turnover_efficiency: 0.10
+    simplicity: 0.10
+    regime_robustness: 0.05
+  
+  # Thresholds
+  min_overall_score: 0.5
+  min_economic_score: 0.3
+
+# Machine Learning Settings
+ml:
+  # Model types to test
+  model_types:
+    - lgbm
+    - linear
+  
+  # Feature importance
+  shap_samples: 500
+  min_feature_importance: 0.01
+  
+  # Cross-validation
+  cv_folds: 5
+  early_stopping_rounds: 50
+  
+  # Neural network (if enabled)
+  nn_hidden_layers:
+    - 64
+    - 32
+  nn_dropout: 0.2
+  nn_epochs: 100
+
+# Report Settings
+report:
+  output_dir: alpha_reports
+  include_visualizations: true
+  include_detailed_stats: true
+  include_trade_log: true
+  formats:
+    - html
+    - json
+    - csv
+
+# General Settings
+random_seed: 42
+n_jobs: -1  # Use all CPU cores
+verbose: true
+

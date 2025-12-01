@@ -1,0 +1,171 @@
+{
+  "report_id": "20251126_205731",
+  "generated_at": "2025-11-26T20:57:31.199858",
+  "data_source": "universal",
+  "symbol": "BTCUSD",
+  "timeframe": "5m",
+  "date_range": [
+    "2025-06-04 03:35:00+00:00",
+    "2025-11-25 00:00:00+00:00"
+  ],
+  "total_hypotheses_generated": 27,
+  "total_edges_discovered": 1,
+  "edges_passed_validation": 1,
+  "edges_passed_falsification": 0,
+  "top_edges": [
+    {
+      "edge": {
+        "rank": 1,
+        "edge_id": "78e341cdcad3",
+        "edge_name": "Consecutive Down Reversal",
+        "hypothesis_type": "pattern",
+        "mechanism": "mean_reversion",
+        "overall_score": 0.4663745923322498,
+        "oos_sharpe": 0.20488354285162647,
+        "net_sharpe": 0.03252490467264077,
+        "win_rate": 0.6078431372549019,
+        "profit_factor": 2.2514681287855045,
+        "max_drawdown": 0.008556130400981904,
+        "n_trades": 38,
+        "p_value": 0.6,
+        "falsification_score": 0.3333333333333333,
+        "regime_stability": 0.5230875660486894,
+        "score_sharpe": 0.10244177142581323,
+        "score_stability": 0.5230875660486894,
+        "score_economic": 0.84,
+        "score_statistical": 0.0,
+        "score_turnover": 0.9847996959939199,
+        "score_simplicity": 0.95,
+        "score_regime": 0.3333333333333333,
+        "economic_rationale": "Extended losing streaks create oversold conditions. Behavioral biases cause over-reaction which then corrects.",
+        "strengths": [
+          "Strong economic rationale",
+          "Low trading costs",
+          "Simple and interpretable",
+          "High win rate (60.8%)",
+          "Controlled drawdowns"
+        ],
+        "weaknesses": [
+          "Low risk-adjusted returns",
+          "Marginal statistical significance",
+          "Regime-dependent performance",
+          "Limited trade sample"
+        ],
+        "recommendation": "WEAK CANDIDATE: Likely not a genuine edge. Recommend rejection. Look for ways to improve signal quality. Add regime detection for position sizing. Test on longer history or additional assets."
+      },
+      "performance_summary": {
+        "oos_sharpe": 0.20488354285162647,
+        "net_sharpe": 0.03252490467264077,
+        "win_rate": 0.6078431372549019,
+        "profit_factor": 2.2514681287855045,
+        "max_drawdown": 0.008556130400981904,
+        "n_trades": 38,
+        "total_return": 0.020488354285162647
+      },
+      "analysis": {
+        "mechanism": "mean_reversion",
+        "economic_rationale": "Extended losing streaks create oversold conditions. Behavioral biases cause over-reaction which then corrects.",
+        "strengths": [
+          "Strong economic rationale",
+          "Low trading costs",
+          "Simple and interpretable",
+          "High win rate (60.8%)",
+          "Controlled drawdowns"
+        ],
+        "weaknesses": [
+          "Low risk-adjusted returns",
+          "Marginal statistical significance",
+          "Regime-dependent performance",
+          "Limited trade sample"
+        ],
+        "recommendation": "WEAK CANDIDATE: Likely not a genuine edge. Recommend rejection. Look for ways to improve signal quality. Add regime detection for position sizing. Test on longer history or additional assets.",
+        "scores": {
+          "sharpe": 0.10244177142581323,
+          "stability": 0.5230875660486894,
+          "economic": 0.84,
+          "statistical": 0.0,
+          "turnover": 0.9847996959939199,
+          "simplicity": 0.95,
+          "regime": 0.3333333333333333
+        },
+        "statistical_tests": {
+          "p_value": 0.6,
+          "t_statistic": 0.45813352986654265,
+          "bootstrap_ci": [
+            -1.9527101481863323,
+            1.9779579369954414
+          ]
+        },
+        "falsification": {
+          "passed": false,
+          "score": 0.3333333333333333,
+          "tests_passed": 2,
+          "tests_failed": 4,
+          "vulnerabilities": [
+            "Slippage Stress Test",
+            "Entry Timing Randomization",
+            "Label Shifting Test",
+            "Rolling Window Stability"
+          ],
+          "test_results": [
+            {
+              "name": "Slippage Stress Test",
+              "passed": "False",
+              "degradation": 0.5070202715234492
+            },
+            {
+              "name": "Entry Timing Randomization",
+              "passed": "False",
+              "degradation": 2.860611496344719
+            },
+            {
+              "name": "Label Shifting Test",
+              "passed": false,
+              "degradation": 1.8388955926959298
+            },
+            {
+              "name": "Feature Noise Injection",
+              "passed": "True",
+              "degradation": 0.46736734279547165
+            },
+            {
+              "name": "Rolling Window Stability",
+              "passed": "False",
+              "degradation": 0.8874811083846194
+            },
+            {
+              "name": "Regime Robustness",
+              "passed": "True",
+              "degradation": 1.0
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "discovery_stats": {
+    "score_distribution": {
+      "mean": 0.4663745923322498,
+      "std": 0.0,
+      "min": 0.4663745923322498,
+      "max": 0.4663745923322498,
+      "median": 0.4663745923322498
+    },
+    "sharpe_distribution": {
+      "mean": 0.20488354285162647,
+      "std": 0.0,
+      "min": 0.20488354285162647,
+      "max": 0.20488354285162647,
+      "median": 0.20488354285162647
+    },
+    "type_breakdown": {
+      "pattern": 1
+    },
+    "mechanism_breakdown": {
+      "mean_reversion": 1
+    },
+    "falsification_rate": 0.0,
+    "n_strong_candidates": 0,
+    "n_promising_candidates": 0
+  }
+}

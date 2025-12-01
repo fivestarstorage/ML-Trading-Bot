@@ -1,0 +1,14 @@
+============================================================
+HIGH-PERFORMANCE ENSEMBLE TEST
+============================================================
+
+Loading data...
+Loaded 94506 rows from 2024-01-01 00:00:00+00:00 to 2024-11-29 00:00:00+00:00
+
+Creating features...
+Traceback (most recent call last):
+  File "/Users/rileymartin/ML-Trading-Bot/scripts/test_ensemble.py", line 168, in <module>
+    main()
+  File "/Users/rileymartin/ML-Trading-Bot/scripts/test_ensemble.py", line 51, in main
+    df = feature_engineer.create_features(df)
+AttributeError: 'FeatureEngineer' object has no attribute 'create_features'
