@@ -35,6 +35,7 @@ class TradingBotMenu:
                     choices=[
                         ('Walk-Forward Analysis (WFA)', 'wfa'),
                         ('Live Trading Bot', 'live'),
+                        ('📊 Manage Background Bots', 'manage'),
                         ('Exit', 'EXIT')
                     ]
                 )
@@ -48,6 +49,8 @@ class TradingBotMenu:
                 self._run_wfa_mode()
             elif mode_answer['mode'] == 'live':
                 self._run_live_mode()
+            elif mode_answer['mode'] == 'manage':
+                self._manage_background_bots()
 
     def _run_wfa_mode(self):
         """Run Walk-Forward Analysis mode"""
@@ -223,6 +226,7 @@ class TradingBotMenu:
         config_file = config_map.get((ticker, strategy), 'configs/config_spy_optimized.yml')
 
         cmd = [
+            'caffeinate', '-d',  # Keep display awake
             'python3', 'scripts/run_wfa_with_reports.py',
             '--ticker', ticker,
             '--strategy', strategy,
@@ -233,9 +237,29 @@ class TradingBotMenu:
         print(f"\n{'='*60}")
         print(f"  Running WFA: {ticker} | Strategy: {strategy.upper()}")
         print(f"  Years: {years_str}")
+        print(f"  ⚡ caffeinate enabled - Mac will stay awake during analysis")
         print(f"{'='*60}\n")
 
-        subprocess.run(cmd)
+        # Ask if user wants to run in background
+        bg_answer = inquirer.prompt([
+            inquirer.List(
+                'background',
+                message="How do you want to run WFA?",
+                choices=[
+                    ('Foreground (see live progress, keep terminal open)', 'foreground'),
+                    ('Background (detached, can close terminal)', 'background'),
+                    ('Cancel', 'CANCEL')
+                ]
+            )
+        ])
+
+        if not bg_answer or bg_answer['background'] == 'CANCEL':
+            return
+
+        if bg_answer['background'] == 'background':
+            self._run_in_background(cmd, f"wfa_{ticker}_{strategy}_{years_str.replace(',', '_')}")
+        else:
+            subprocess.run(cmd)
 
     def _run_live_mode(self):
         """Run Live Trading mode"""
@@ -327,8 +351,9 @@ class TradingBotMenu:
             }
             config_file = config_map.get((ticker, strategy), 'configs/config_spy_optimized.yml')
 
-            # Run live trading bot
+            # Run live trading bot with caffeinate to keep Mac awake
             cmd = [
+                'caffeinate', '-d',  # Keep display awake
                 'python3', 'scripts/run_live_bot.py',
                 '--ticker', ticker,
                 '--strategy', strategy,
@@ -339,10 +364,148 @@ class TradingBotMenu:
             print(f"\n{'='*60}")
             print(f"  Starting {'PAPER' if trading_mode == 'paper' else 'LIVE'} Trading Bot")
             print(f"  Ticker: {ticker} | Strategy: {strategy.upper()}")
+            print(f"  ⚡ caffeinate enabled - Mac will stay awake while trading")
             print(f"{'='*60}\n")
 
-            subprocess.run(cmd)
+            # Ask if user wants to run in background
+            bg_answer = inquirer.prompt([
+                inquirer.List(
+                    'background',
+                    message="How do you want to run the bot?",
+                    choices=[
+                        ('Foreground (see live logs, keep terminal open)', 'foreground'),
+                        ('Background (detached, can close terminal)', 'background'),
+                        ('Cancel', 'CANCEL')
+                    ]
+                )
+            ])
+
+            if not bg_answer or bg_answer['background'] == 'CANCEL':
+                continue
+
+            if bg_answer['background'] == 'background':
+                self._run_in_background(cmd, f"{trading_mode.upper()}_Trading_{ticker}_{strategy}")
+            else:
+                subprocess.run(cmd)
             return  # Exit after bot stops
+
+    def _manage_background_bots(self):
+        """Manage background trading bots and WFA processes"""
+        import subprocess
+
+        while True:
+            # Get list of screen sessions
+            try:
+                result = subprocess.run(['screen', '-ls'], capture_output=True, text=True)
+                screen_output = result.stdout
+
+                # Parse screen sessions
+                sessions = []
+                for line in screen_output.split('\n'):
+                    if 'trading_bot_' in line or 'wfa_' in line:
+                        parts = line.strip().split('\t')
+                        if parts:
+                            session_name = parts[0].split('.', 1)[1] if '.' in parts[0] else parts[0]
+                            status = parts[1].strip('()') if len(parts) > 1 else 'Unknown'
+                            sessions.append((session_name, status))
+
+                if not sessions:
+                    print("\n📭 No background bots running")
+                    print("   Start a bot in background mode to see it here.\n")
+                    input("Press Enter to return to main menu...")
+                    return
+
+                # Create menu choices
+                choices = []
+                for session_name, status in sessions:
+                    display = f"{session_name} ({status})"
+                    choices.append((display, session_name))
+                choices.append(('🔄 Refresh', 'REFRESH'))
+                choices.append(('← Back to main menu', 'BACK'))
+
+                # Show menu
+                action_answer = inquirer.prompt([
+                    inquirer.List(
+                        'session',
+                        message="Select a bot to manage",
+                        choices=choices
+                    )
+                ])
+
+                if not action_answer or action_answer['session'] == 'BACK':
+                    return
+
+                if action_answer['session'] == 'REFRESH':
+                    continue
+
+                session_name = action_answer['session']
+
+                # Ask what to do with selected session
+                manage_answer = inquirer.prompt([
+                    inquirer.List(
+                        'action',
+                        message=f"Manage: {session_name}",
+                        choices=[
+                            ('📺 View live logs (attach to session)', 'attach'),
+                            ('🛑 Stop bot', 'kill'),
+                            ('← Back', 'BACK')
+                        ]
+                    )
+                ])
+
+                if not manage_answer or manage_answer['action'] == 'BACK':
+                    continue
+
+                if manage_answer['action'] == 'attach':
+                    print(f"\n📺 Attaching to {session_name}...")
+                    print("   Press Ctrl+A then D to detach\n")
+                    input("Press Enter to continue...")
+                    subprocess.run(['screen', '-r', session_name])
+
+                elif manage_answer['action'] == 'kill':
+                    confirm = inquirer.prompt([
+                        inquirer.Confirm(
+                            'confirm_kill',
+                            message=f"⚠️  Are you sure you want to stop {session_name}?",
+                            default=False
+                        )
+                    ])
+                    if confirm and confirm.get('confirm_kill'):
+                        subprocess.run(['screen', '-S', session_name, '-X', 'quit'])
+                        print(f"\n✅ Stopped {session_name}\n")
+                        input("Press Enter to continue...")
+
+            except FileNotFoundError:
+                print("\n❌ 'screen' is not installed.")
+                print("   Install it with: brew install screen\n")
+                input("Press Enter to return to main menu...")
+                return
+
+    def _run_in_background(self, cmd, session_name):
+        """Run a command in a detached screen session"""
+        import subprocess
+        import time
+
+        # Create a unique session name
+        session_id = f"trading_bot_{session_name}_{int(time.time())}"
+
+        # Build screen command
+        screen_cmd = ['screen', '-dmS', session_id] + cmd
+
+        try:
+            subprocess.run(screen_cmd)
+            print(f"\n✅ Bot started in background!")
+            print(f"   Session: {session_id}")
+            print(f"\n   To view logs: screen -r {session_id}")
+            print(f"   To detach: Press Ctrl+A then D")
+            print(f"   To stop: Select 'Manage Background Bots' from main menu\n")
+            input("Press Enter to return to main menu...")
+        except FileNotFoundError:
+            print("\n❌ 'screen' is not installed.")
+            print("   Install it with: brew install screen")
+            print("\n   Falling back to foreground mode...\n")
+            input("Press Enter to continue...")
+            subprocess.run(cmd)
 
 
 def main():

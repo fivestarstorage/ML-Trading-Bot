@@ -45,9 +45,10 @@ class WFAWithReports:
         self.logger = setup_logging()
         self.timeframe = self.config['data']['timeframe_base']
 
-        # Create reports directory
-        self.reports_dir = Path('/Users/rileymartin/ML-Trading-Bot/reports')
-        self.reports_dir.mkdir(exist_ok=True)
+        # Create reports directory (use project root dynamically)
+        project_root = Path(__file__).parent.parent
+        self.reports_dir = project_root / 'reports'
+        self.reports_dir.mkdir(parents=True, exist_ok=True)
 
     def run_wfa_for_years(self, years_list):
         """Run WFA for multiple years and generate comprehensive report"""
