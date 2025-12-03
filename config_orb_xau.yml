@@ -1,0 +1,163 @@
+data:
+  source: csv  # XAU 5-minute data
+  folder: Data
+  symbol: XAU
+  timeframe_base: 5m  # 5-minute timeframe (ideal for ORB)
+  alpaca:
+    start: "2020-01-01"
+    end: null
+
+timeframes:
+  h4: 240
+  h1: 60
+  m30: 30
+
+strategy:
+  # ORB Strategy Configuration (Multi-Session for XAU/Gold 24h market)
+  strategy_type: orb
+
+  # Opening Range Parameters
+  orb_bars: 8  # 8 x 5min = 40 minutes opening range (shorter for more sensitivity)
+  orb_start_hour: 0  # Legacy: full day
+  orb_start_minute: 0
+  orb_end_hour: 23
+  orb_end_minute: 59
+
+  # Multi-Session Configuration (UTC times) - Future enhancement
+  sessions:
+    asia:      # Tokyo/Asian session open
+      start_hour: 0
+      start_minute: 0
+      end_hour: 1
+      end_minute: 0
+    london:    # London session open
+      start_hour: 7
+      start_minute: 0
+      end_hour: 8
+      end_minute: 0
+    ny:        # New York session open
+      start_hour: 13
+      start_minute: 30
+      end_hour: 14
+      end_minute: 30
+
+  # Entry Timing
+  only_trade_after_14utc: false  # Allow trading anytime
+  max_trades_per_day: 15  # Max trades per day
+  max_trades_per_session: 5  # Max trades per session (future)
+
+  # Enhanced Filters (ALL DISABLED FOR BASELINE)
+  use_vwap_filter: false  # Disabled
+  use_volume_filter: false  # Disabled
+  min_rvol_orb: 1.0  # No threshold
+  min_rvol_breakout: 1.0  # No threshold
+
+  use_gap_filter: false  # Disabled
+  max_gap_percent: 10.0  # Very permissive
+
+  # ATR Volatility Screening
+  require_atr_expansion: false  # Disabled
+  atr_vol_min: 0.1  # Very wide range
+  atr_vol_max: 10.0  # Very wide range
+
+  # Momentum Filter
+  momentum_period: 5
+  min_momentum: 0.0  # Disabled
+
+  # Retest Entry (Conservative)
+  require_retest: false  # Disabled
+
+  # Risk Management (Conservative for SPY)
+  risk_percent: 1.0  # 1% risk per trade (normal volatility)
+  risk_percent_low_vol: 0.5  # 0.5% risk during low volatility
+
+  # TP/SL Configuration
+  # Research shows 2:1 and 3:1 R:R work best for ORB
+  atr_period: 14
+  tp_atr_mult: 2.0  # 2:1 R:R ratio (simple)
+  sl_atr_mult: 1.0  # 1:1 stop loss (simplified)
+  label_window: 100  # Bars to check outcome (100 bars = ~8 hours, less strict)
+
+  # Advanced Position Management
+  use_trailing_stop: true
+  trailing_stop_atr: 1.0  # Trail by 1x ATR
+  trailing_start_profit: 1.0  # Start trailing after 1R profit
+
+  # Break-even
+  breakeven_trigger_r: 1.5  # Move SL to BE at 1.5R
+
+  # Partial Closes
+  partial_close_15r: 0.3  # Close 30% at 1.5R
+  partial_close_2r: 0.3  # Close 30% at 2R
+
+  # ML Filter
+  model_threshold: 0.45  # Lower threshold to allow more trades (was 0.50)
+  entry_type_filter: both
+
+  # Legacy SMC parameters (not used in ORB)
+  h4_swing_lookback: 60
+  require_discount_premium: false
+  require_inducement: false
+
+ml:
+  model_path: models/lgbm_orb_xau.pkl
+  features_path: data/features_orb_xau.parquet
+
+  # Deep Learning Enhancement (NEW)
+  use_deep_learning: true  # Enable GRU with Attention
+  use_ensemble: true  # Combine LGBM + GRU predictions
+  sequence_length: 20  # 20 bars lookback for temporal patterns
+  lgbm_weight: 0.6  # LGBM=60%, GRU=40% (optimized automatically)
+
+  lgbm:
+    objective: binary
+    boosting_type: gbdt
+    n_estimators: 2000  # More estimators for better learning
+    learning_rate: 0.01  # Lower for finer optimization
+    num_leaves: 20  # More leaves for complex patterns
+    max_depth: 6  # Deeper trees
+    min_child_samples: 40  # Fewer samples for more splits
+    subsample: 0.8  # Higher subsampling
+    colsample_bytree: 0.8  # Higher feature sampling
+    reg_alpha: 0.05  # Less L1 regularization
+    reg_lambda: 1.0  # Less L2 regularization
+    early_stopping_rounds: 150
+    verbose: -1
+    min_data_in_leaf: 40
+
+  scale_pos_weight_mode: balanced
+
+backtest:
+  commission: 0.01  # $0.01 per share (realistic for SPY)
+  slippage: 0.01   # $0.01 per share slippage
+  mode: normal  # or 'propfirm'
+  cooldown_minutes: 60  # 1 hour between trades
+
+  propfirm:
+    initial_capital: 10000  # Higher capital for SPY
+    max_drawdown_pct: 0.08  # 8% max DD
+    per_trade_risk_pct: 0.01  # 1% risk per trade
+    payout_cycle_days: 30  # Monthly payout
+
+wfa:
+  train_years: 2  # Use 2 years of training data (reduced for faster iteration)
+  test_months: 3  # Test on 3-month periods
+  slide_months: 1  # Slide forward by 1 month
+  min_train_samples: 50  # Lower minimum (was 150, too strict)
+
+adaptive:
+  enabled: true
+  threshold_grid: [0.50, 0.52, 0.55, 0.58, 0.60, 0.62, 0.65]
+  min_trades_per_fold: 10
+  min_fold_win_rate: 0.45  # Lowered to 45% to allow more data (was 55%)
+  skip_negative_months: false  # Disabled - was rejecting ALL folds
+  risk_step: 0.001
+  risk_bounds:
+    min: 0.005  # 0.5% min risk
+    max: 0.015  # 1.5% max risk
+  state_path: adaptive_state_orb_spy.json
+
+live_trading:
+  enabled: false
+  use_demo: true
+  probability_threshold: 0.60

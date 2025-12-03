@@ -148,7 +148,13 @@ class DataAdapter:
             # Ensure timestamp is datetime
             df['timestamp'] = pd.to_datetime(df['timestamp'])
             df.set_index('timestamp', inplace=True)
-            
+
+            # Ensure timezone is set to UTC (fix for timezone-aware comparisons)
+            if df.index.tz is None:
+                df.index = df.index.tz_localize('UTC')
+            else:
+                df.index = df.index.tz_convert('UTC')
+
             # Normalize OHLCV
             req_cols = ['open', 'high', 'low', 'close']
             

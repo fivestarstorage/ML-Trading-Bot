@@ -1,0 +1,11 @@
+{
+  "symbol": "XAU",
+  "trained_at": "2025-12-02T04:37:09.976367+00:00",
+  "data_start": "2004-06-11T07:15:00+00:00",
+  "data_end": "2025-10-31T22:55:00+00:00",
+  "candidate_start": "2004-06-14T01:55:00+00:00",
+  "candidate_end": "2025-10-31T09:45:00+00:00",
+  "total_candidates": 43625,
+  "model_path": "models/lgbm_orb_xau.pkl",
+  "data_source": "csv"
+}

@@ -1,8 +1,8 @@
 import pandas as pd
 import numpy as np
-from ta.volatility import AverageTrueRange
-from ta.momentum import RSIIndicator, StochasticOscillator
-from ta.trend import ADXIndicator
+from ta.volatility import AverageTrueRange, BollingerBands, KeltnerChannel
+from ta.momentum import RSIIndicator, StochasticOscillator, WilliamsRIndicator
+from ta.trend import ADXIndicator, MACD, CCIIndicator
 from .utils import get_logger
 
 logger = get_logger()
@@ -145,7 +145,36 @@ class FeatureEngineer:
         # ADX
         adx = ADXIndicator(high=df['high'], low=df['low'], close=df['close'], window=14)
         df['adx'] = adx.adx()
-        
+
+        # MACD
+        macd = MACD(close=df['close'], window_slow=26, window_fast=12, window_sign=9)
+        df['macd'] = macd.macd()
+        df['macd_signal'] = macd.macd_signal()
+        df['macd_diff'] = macd.macd_diff()
+
+        # Williams %R
+        willr = WilliamsRIndicator(high=df['high'], low=df['low'], close=df['close'], lbp=14)
+        df['willr'] = willr.williams_r()
+
+        # CCI (Commodity Channel Index)
+        cci = CCIIndicator(high=df['high'], low=df['low'], close=df['close'], window=20)
+        df['cci'] = cci.cci()
+
+        # Bollinger Bands
+        bollinger = BollingerBands(close=df['close'], window=20, window_dev=2)
+        df['bb_high'] = bollinger.bollinger_hband()
+        df['bb_mid'] = bollinger.bollinger_mavg()
+        df['bb_low'] = bollinger.bollinger_lband()
+        df['bb_width'] = (df['bb_high'] - df['bb_low']) / df['bb_mid']
+        df['bb_position'] = (df['close'] - df['bb_low']) / (df['bb_high'] - df['bb_low'])
+
+        # Keltner Channels
+        keltner = KeltnerChannel(high=df['high'], low=df['low'], close=df['close'], window=20, window_atr=10)
+        df['kc_high'] = keltner.keltner_channel_hband()
+        df['kc_mid'] = keltner.keltner_channel_mband()
+        df['kc_low'] = keltner.keltner_channel_lband()
+        df['kc_width'] = (df['kc_high'] - df['kc_low']) / df['kc_mid']
+
         # Rolling volatility (std of returns)
         df['returns'] = df['close'].pct_change()
         df['rolling_vol'] = df['returns'].rolling(window=20).std()
