@@ -361,15 +361,16 @@ class LiveTradingBot:
         """Scan for trading signals"""
         try:
             # Get recent data
-            end = datetime.now()
-            start = end - timedelta(days=5)
+            # Note: Do NOT set 'end' parameter - free Alpaca plans require end to be
+            # at least 15 minutes in the past. Omitting it lets Alpaca default correctly.
+            start = datetime.now() - timedelta(days=5)
 
             # Fetch bars
             request = StockBarsRequest(
                 symbol_or_symbols=self.ticker,
                 timeframe=TimeFrame.Minute,
-                start=start,
-                end=end
+                start=start
+                # end parameter omitted for free plan compatibility
             )
 
             bars = self.data_client.get_stock_bars(request)
